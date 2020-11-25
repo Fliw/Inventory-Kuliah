@@ -20,3 +20,6 @@ Aplikasi ini adalah aplikasi manajemen inventori gudang, menggunakan WPF C# untu
 - git pull repofliw master
 - git push origin main
 - kirim pull req
+
+
+indro test
