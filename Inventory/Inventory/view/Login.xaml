@@ -5,9 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Inventory.view"
         mc:Ignorable="d"
-        Title="Window1" Height="450" Width="800">
-    <Grid>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="307,153,0,0" VerticalAlignment="Top"/>
-
+        Title="Window1" Height="600" Width="600">
+    <Grid Background="#FF47BFC5">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100*"/>
+            <ColumnDefinition Width="10*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Login" HorizontalAlignment="Left" Margin="293,147,0,0" VerticalAlignment="Top" FontSize="14" Width="48" Foreground="White"/>
+        <TextBox HorizontalAlignment="Left" Height="25" Margin="231,185,0,0" TextWrapping="Wrap" Text="username" VerticalAlignment="Top" Width="169" Foreground="#FF18E4EE" FontSize="14"/>
+        <TextBox HorizontalAlignment="Left" Height="25" Margin="231,220,0,0" TextWrapping="Wrap" Text="password" VerticalAlignment="Top" Width="169" Foreground="#FF18E4EE"/>
+        <Label Content="Belum punya akun ?? daftar sekarang" HorizontalAlignment="Left" Margin="218,250,0,0" VerticalAlignment="Top" FontFamily="Times New Roman"/>
+        <Button Content="Login" HorizontalAlignment="Left" Height="24" Margin="231,289,0,0" VerticalAlignment="Top" Width="172" Foreground="#FF18E4EE" Background="White" FontSize="14"/>
     </Grid>
 </Window>
