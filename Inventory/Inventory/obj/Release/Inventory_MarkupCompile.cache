@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\Pemograman Lanjut\PROJECT INVERNTORY\Inventory-Kuliah\Inventory\Inventory\obj\Debug\
+D:\Pemograman Lanjut\PROJECT INVERNTORY\Inventory-Kuliah\Inventory\Inventory\obj\Release\
 Inventory
 none
 false
-DEBUG;TRACE
+TRACE
 D:\Pemograman Lanjut\PROJECT INVERNTORY\Inventory-Kuliah\Inventory\Inventory\App.xaml
 2-577256887
 
-836149921
+7878509288
 1361907637045
 MainWindow.xaml;view\Login.xaml;
 
-False
+True
 
