@@ -1,0 +1,128 @@
+D:\Project Gabut\pemogramansmt3\Inventory-Kuliah\Inventory\Inventory\bin\Debug\Inventory.exe.config
+D:\Project Gabut\pemogramansmt3\Inventory-Kuliah\Inventory\Inventory\bin\Debug\Inventory.exe
+D:\Project Gabut\pemogramansmt3\Inventory-Kuliah\Inventory\Inventory\bin\Debug\Inventory.pdb
+D:\Project Gabut\pemogramansmt3\Inventory-Kuliah\Inventory\Inventory\obj\Debug\Inventory.csprojAssemblyReference.cache
+D:\Project Gabut\pemogramansmt3\Inventory-Kuliah\Inventory\Inventory\obj\Debug\MainWindow.g.cs
+D:\Project Gabut\pemogramansmt3\Inventory-Kuliah\Inventory\Inventory\obj\Debug\App.g.cs
+D:\Project Gabut\pemogramansmt3\Inventory-Kuliah\Inventory\Inventory\obj\Debug\Inventory_MarkupCompile.cache
+D:\Project Gabut\pemogramansmt3\Inventory-Kuliah\Inventory\Inventory\obj\Debug\Inventory_MarkupCompile.lref
+D:\Project Gabut\pemogramansmt3\Inventory-Kuliah\Inventory\Inventory\obj\Debug\MainWindow.baml
+D:\Project Gabut\pemogramansmt3\Inventory-Kuliah\Inventory\Inventory\obj\Debug\Inventory.g.resources
+D:\Project Gabut\pemogramansmt3\Inventory-Kuliah\Inventory\Inventory\obj\Debug\Inventory.Properties.Resources.resources
+D:\Project Gabut\pemogramansmt3\Inventory-Kuliah\Inventory\Inventory\obj\Debug\Inventory.csproj.GenerateResource.cache
+D:\Project Gabut\pemogramansmt3\Inventory-Kuliah\Inventory\Inventory\obj\Debug\Inventory.csproj.CoreCompileInputs.cache
+D:\Project Gabut\pemogramansmt3\Inventory-Kuliah\Inventory\Inventory\obj\Debug\Inventory.exe
+D:\Project Gabut\pemogramansmt3\Inventory-Kuliah\Inventory\Inventory\obj\Debug\Inventory.pdb
+D:\Project Gabut\pemogramansmt3\Inventory-Kuliah\Inventory\Inventory\obj\Debug\view\Login.g.cs
+D:\Project Gabut\pemogramansmt3\Inventory-Kuliah\Inventory\Inventory\obj\Debug\view\Login.baml
+D:\Project Gabut\pemogramansmt3\Inventory-Kuliah\Inventory\Inventory\bin\Debug\BouncyCastle.Crypto.dll
+D:\Project Gabut\pemogramansmt3\Inventory-Kuliah\Inventory\Inventory\bin\Debug\Google.Protobuf.dll
+D:\Project Gabut\pemogramansmt3\Inventory-Kuliah\Inventory\Inventory\bin\Debug\K4os.Compression.LZ4.dll
+D:\Project Gabut\pemogramansmt3\Inventory-Kuliah\Inventory\Inventory\bin\Debug\K4os.Compression.LZ4.Streams.dll
+D:\Project Gabut\pemogramansmt3\Inventory-Kuliah\Inventory\Inventory\bin\Debug\K4os.Hash.xxHash.dll
+D:\Project Gabut\pemogramansmt3\Inventory-Kuliah\Inventory\Inventory\bin\Debug\MySql.Data.dll
+D:\Project Gabut\pemogramansmt3\Inventory-Kuliah\Inventory\Inventory\bin\Debug\Renci.SshNet.dll
+D:\Project Gabut\pemogramansmt3\Inventory-Kuliah\Inventory\Inventory\bin\Debug\System.Buffers.dll
+D:\Project Gabut\pemogramansmt3\Inventory-Kuliah\Inventory\Inventory\bin\Debug\System.Memory.dll
+D:\Project Gabut\pemogramansmt3\Inventory-Kuliah\Inventory\Inventory\bin\Debug\System.Numerics.Vectors.dll
+D:\Project Gabut\pemogramansmt3\Inventory-Kuliah\Inventory\Inventory\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Project Gabut\pemogramansmt3\Inventory-Kuliah\Inventory\Inventory\bin\Debug\Ubiety.Dns.Core.dll
+D:\Project Gabut\pemogramansmt3\Inventory-Kuliah\Inventory\Inventory\bin\Debug\Zstandard.Net.dll
+D:\Project Gabut\pemogramansmt3\Inventory-Kuliah\Inventory\Inventory\bin\Debug\Google.Protobuf.pdb
+D:\Project Gabut\pemogramansmt3\Inventory-Kuliah\Inventory\Inventory\bin\Debug\Google.Protobuf.xml
+D:\Project Gabut\pemogramansmt3\Inventory-Kuliah\Inventory\Inventory\bin\Debug\K4os.Compression.LZ4.xml
+D:\Project Gabut\pemogramansmt3\Inventory-Kuliah\Inventory\Inventory\bin\Debug\K4os.Compression.LZ4.Streams.xml
+D:\Project Gabut\pemogramansmt3\Inventory-Kuliah\Inventory\Inventory\bin\Debug\K4os.Hash.xxHash.xml
+D:\Project Gabut\pemogramansmt3\Inventory-Kuliah\Inventory\Inventory\bin\Debug\MySql.Data.xml
+D:\Project Gabut\pemogramansmt3\Inventory-Kuliah\Inventory\Inventory\bin\Debug\Renci.SshNet.xml
+D:\Project Gabut\pemogramansmt3\Inventory-Kuliah\Inventory\Inventory\bin\Debug\System.Buffers.xml
+D:\Project Gabut\pemogramansmt3\Inventory-Kuliah\Inventory\Inventory\bin\Debug\System.Memory.xml
+D:\Project Gabut\pemogramansmt3\Inventory-Kuliah\Inventory\Inventory\bin\Debug\System.Numerics.Vectors.xml
+D:\Project Gabut\pemogramansmt3\Inventory-Kuliah\Inventory\Inventory\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Project Gabut\pemogramansmt3\Inventory-Kuliah\Inventory\Inventory\obj\Debug\Inventory.csproj.CopyComplete
+D:\Pemograman Lanjut\PROJECT INVERNTORY\Inventory-Kuliah\Inventory\Inventory\bin\Debug\Inventory.exe.config
+D:\Pemograman Lanjut\PROJECT INVERNTORY\Inventory-Kuliah\Inventory\Inventory\bin\Debug\Inventory.exe
+D:\Pemograman Lanjut\PROJECT INVERNTORY\Inventory-Kuliah\Inventory\Inventory\bin\Debug\Inventory.pdb
+D:\Pemograman Lanjut\PROJECT INVERNTORY\Inventory-Kuliah\Inventory\Inventory\bin\Debug\BouncyCastle.Crypto.dll
+D:\Pemograman Lanjut\PROJECT INVERNTORY\Inventory-Kuliah\Inventory\Inventory\bin\Debug\Google.Protobuf.dll
+D:\Pemograman Lanjut\PROJECT INVERNTORY\Inventory-Kuliah\Inventory\Inventory\bin\Debug\K4os.Compression.LZ4.dll
+D:\Pemograman Lanjut\PROJECT INVERNTORY\Inventory-Kuliah\Inventory\Inventory\bin\Debug\K4os.Compression.LZ4.Streams.dll
+D:\Pemograman Lanjut\PROJECT INVERNTORY\Inventory-Kuliah\Inventory\Inventory\bin\Debug\K4os.Hash.xxHash.dll
+D:\Pemograman Lanjut\PROJECT INVERNTORY\Inventory-Kuliah\Inventory\Inventory\bin\Debug\MySql.Data.dll
+D:\Pemograman Lanjut\PROJECT INVERNTORY\Inventory-Kuliah\Inventory\Inventory\bin\Debug\Renci.SshNet.dll
+D:\Pemograman Lanjut\PROJECT INVERNTORY\Inventory-Kuliah\Inventory\Inventory\bin\Debug\System.Buffers.dll
+D:\Pemograman Lanjut\PROJECT INVERNTORY\Inventory-Kuliah\Inventory\Inventory\bin\Debug\System.Memory.dll
+D:\Pemograman Lanjut\PROJECT INVERNTORY\Inventory-Kuliah\Inventory\Inventory\bin\Debug\System.Numerics.Vectors.dll
+D:\Pemograman Lanjut\PROJECT INVERNTORY\Inventory-Kuliah\Inventory\Inventory\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Pemograman Lanjut\PROJECT INVERNTORY\Inventory-Kuliah\Inventory\Inventory\bin\Debug\Ubiety.Dns.Core.dll
+D:\Pemograman Lanjut\PROJECT INVERNTORY\Inventory-Kuliah\Inventory\Inventory\bin\Debug\Zstandard.Net.dll
+D:\Pemograman Lanjut\PROJECT INVERNTORY\Inventory-Kuliah\Inventory\Inventory\bin\Debug\Google.Protobuf.pdb
+D:\Pemograman Lanjut\PROJECT INVERNTORY\Inventory-Kuliah\Inventory\Inventory\bin\Debug\Google.Protobuf.xml
+D:\Pemograman Lanjut\PROJECT INVERNTORY\Inventory-Kuliah\Inventory\Inventory\bin\Debug\K4os.Compression.LZ4.xml
+D:\Pemograman Lanjut\PROJECT INVERNTORY\Inventory-Kuliah\Inventory\Inventory\bin\Debug\K4os.Compression.LZ4.Streams.xml
+D:\Pemograman Lanjut\PROJECT INVERNTORY\Inventory-Kuliah\Inventory\Inventory\bin\Debug\K4os.Hash.xxHash.xml
+D:\Pemograman Lanjut\PROJECT INVERNTORY\Inventory-Kuliah\Inventory\Inventory\bin\Debug\MySql.Data.xml
+D:\Pemograman Lanjut\PROJECT INVERNTORY\Inventory-Kuliah\Inventory\Inventory\bin\Debug\Renci.SshNet.xml
+D:\Pemograman Lanjut\PROJECT INVERNTORY\Inventory-Kuliah\Inventory\Inventory\bin\Debug\System.Buffers.xml
+D:\Pemograman Lanjut\PROJECT INVERNTORY\Inventory-Kuliah\Inventory\Inventory\bin\Debug\System.Memory.xml
+D:\Pemograman Lanjut\PROJECT INVERNTORY\Inventory-Kuliah\Inventory\Inventory\bin\Debug\System.Numerics.Vectors.xml
+D:\Pemograman Lanjut\PROJECT INVERNTORY\Inventory-Kuliah\Inventory\Inventory\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Pemograman Lanjut\PROJECT INVERNTORY\Inventory-Kuliah\Inventory\Inventory\obj\Debug\Inventory.csprojAssemblyReference.cache
+D:\Pemograman Lanjut\PROJECT INVERNTORY\Inventory-Kuliah\Inventory\Inventory\obj\Debug\MainWindow.g.cs
+D:\Pemograman Lanjut\PROJECT INVERNTORY\Inventory-Kuliah\Inventory\Inventory\obj\Debug\view\Login.g.cs
+D:\Pemograman Lanjut\PROJECT INVERNTORY\Inventory-Kuliah\Inventory\Inventory\obj\Debug\App.g.cs
+D:\Pemograman Lanjut\PROJECT INVERNTORY\Inventory-Kuliah\Inventory\Inventory\obj\Debug\Inventory_MarkupCompile.cache
+D:\Pemograman Lanjut\PROJECT INVERNTORY\Inventory-Kuliah\Inventory\Inventory\obj\Debug\Inventory_MarkupCompile.lref
+D:\Pemograman Lanjut\PROJECT INVERNTORY\Inventory-Kuliah\Inventory\Inventory\obj\Debug\MainWindow.baml
+D:\Pemograman Lanjut\PROJECT INVERNTORY\Inventory-Kuliah\Inventory\Inventory\obj\Debug\view\Login.baml
+D:\Pemograman Lanjut\PROJECT INVERNTORY\Inventory-Kuliah\Inventory\Inventory\obj\Debug\Inventory.g.resources
+D:\Pemograman Lanjut\PROJECT INVERNTORY\Inventory-Kuliah\Inventory\Inventory\obj\Debug\Inventory.Properties.Resources.resources
+D:\Pemograman Lanjut\PROJECT INVERNTORY\Inventory-Kuliah\Inventory\Inventory\obj\Debug\Inventory.csproj.GenerateResource.cache
+D:\Pemograman Lanjut\PROJECT INVERNTORY\Inventory-Kuliah\Inventory\Inventory\obj\Debug\Inventory.csproj.CoreCompileInputs.cache
+D:\Pemograman Lanjut\PROJECT INVERNTORY\Inventory-Kuliah\Inventory\Inventory\obj\Debug\Inventory.csproj.CopyComplete
+D:\Pemograman Lanjut\PROJECT INVERNTORY\Inventory-Kuliah\Inventory\Inventory\obj\Debug\Inventory.exe
+D:\Pemograman Lanjut\PROJECT INVERNTORY\Inventory-Kuliah\Inventory\Inventory\obj\Debug\Inventory.pdb
+C:\Users\ASUS X505Z\Desktop\Semester 3\TestGut\Inventory-Kuliah\Inventory\Inventory\obj\Debug\Inventory.csprojAssemblyReference.cache
+C:\Users\ASUS X505Z\Desktop\Semester 3\TestGut\Inventory-Kuliah\Inventory\Inventory\obj\Debug\MainWindow.g.cs
+C:\Users\ASUS X505Z\Desktop\Semester 3\TestGut\Inventory-Kuliah\Inventory\Inventory\obj\Debug\view\Login.g.cs
+C:\Users\ASUS X505Z\Desktop\Semester 3\TestGut\Inventory-Kuliah\Inventory\Inventory\obj\Debug\view\MenuUtama.g.cs
+C:\Users\ASUS X505Z\Desktop\Semester 3\TestGut\Inventory-Kuliah\Inventory\Inventory\obj\Debug\App.g.cs
+C:\Users\ASUS X505Z\Desktop\Semester 3\TestGut\Inventory-Kuliah\Inventory\Inventory\obj\Debug\Inventory_MarkupCompile.cache
+C:\Users\ASUS X505Z\Desktop\Semester 3\TestGut\Inventory-Kuliah\Inventory\Inventory\obj\Debug\Inventory_MarkupCompile.lref
+C:\Users\ASUS X505Z\Desktop\Semester 3\TestGut\Inventory-Kuliah\Inventory\Inventory\obj\Debug\Inventory.exe
+C:\Users\ASUS X505Z\Desktop\Semester 3\TestGut\Inventory-Kuliah\Inventory\Inventory\obj\Debug\Inventory.pdb
+C:\Users\ASUS X505Z\Desktop\Semester 3\TestGut\Inventory-Kuliah\Inventory\Inventory\bin\Debug\Inventory.exe.config
+C:\Users\ASUS X505Z\Desktop\Semester 3\TestGut\Inventory-Kuliah\Inventory\Inventory\bin\Debug\Inventory.exe
+C:\Users\ASUS X505Z\Desktop\Semester 3\TestGut\Inventory-Kuliah\Inventory\Inventory\bin\Debug\Inventory.pdb
+C:\Users\ASUS X505Z\Desktop\Semester 3\TestGut\Inventory-Kuliah\Inventory\Inventory\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\ASUS X505Z\Desktop\Semester 3\TestGut\Inventory-Kuliah\Inventory\Inventory\bin\Debug\Google.Protobuf.dll
+C:\Users\ASUS X505Z\Desktop\Semester 3\TestGut\Inventory-Kuliah\Inventory\Inventory\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\ASUS X505Z\Desktop\Semester 3\TestGut\Inventory-Kuliah\Inventory\Inventory\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\ASUS X505Z\Desktop\Semester 3\TestGut\Inventory-Kuliah\Inventory\Inventory\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\ASUS X505Z\Desktop\Semester 3\TestGut\Inventory-Kuliah\Inventory\Inventory\bin\Debug\MySql.Data.dll
+C:\Users\ASUS X505Z\Desktop\Semester 3\TestGut\Inventory-Kuliah\Inventory\Inventory\bin\Debug\Renci.SshNet.dll
+C:\Users\ASUS X505Z\Desktop\Semester 3\TestGut\Inventory-Kuliah\Inventory\Inventory\bin\Debug\System.Buffers.dll
+C:\Users\ASUS X505Z\Desktop\Semester 3\TestGut\Inventory-Kuliah\Inventory\Inventory\bin\Debug\System.Memory.dll
+C:\Users\ASUS X505Z\Desktop\Semester 3\TestGut\Inventory-Kuliah\Inventory\Inventory\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\ASUS X505Z\Desktop\Semester 3\TestGut\Inventory-Kuliah\Inventory\Inventory\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\ASUS X505Z\Desktop\Semester 3\TestGut\Inventory-Kuliah\Inventory\Inventory\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\ASUS X505Z\Desktop\Semester 3\TestGut\Inventory-Kuliah\Inventory\Inventory\bin\Debug\Zstandard.Net.dll
+C:\Users\ASUS X505Z\Desktop\Semester 3\TestGut\Inventory-Kuliah\Inventory\Inventory\bin\Debug\Google.Protobuf.pdb
+C:\Users\ASUS X505Z\Desktop\Semester 3\TestGut\Inventory-Kuliah\Inventory\Inventory\bin\Debug\Google.Protobuf.xml
+C:\Users\ASUS X505Z\Desktop\Semester 3\TestGut\Inventory-Kuliah\Inventory\Inventory\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\ASUS X505Z\Desktop\Semester 3\TestGut\Inventory-Kuliah\Inventory\Inventory\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\ASUS X505Z\Desktop\Semester 3\TestGut\Inventory-Kuliah\Inventory\Inventory\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\ASUS X505Z\Desktop\Semester 3\TestGut\Inventory-Kuliah\Inventory\Inventory\bin\Debug\MySql.Data.xml
+C:\Users\ASUS X505Z\Desktop\Semester 3\TestGut\Inventory-Kuliah\Inventory\Inventory\bin\Debug\Renci.SshNet.xml
+C:\Users\ASUS X505Z\Desktop\Semester 3\TestGut\Inventory-Kuliah\Inventory\Inventory\bin\Debug\System.Buffers.xml
+C:\Users\ASUS X505Z\Desktop\Semester 3\TestGut\Inventory-Kuliah\Inventory\Inventory\bin\Debug\System.Memory.xml
+C:\Users\ASUS X505Z\Desktop\Semester 3\TestGut\Inventory-Kuliah\Inventory\Inventory\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\ASUS X505Z\Desktop\Semester 3\TestGut\Inventory-Kuliah\Inventory\Inventory\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\ASUS X505Z\Desktop\Semester 3\TestGut\Inventory-Kuliah\Inventory\Inventory\obj\Debug\MainWindow.baml
+C:\Users\ASUS X505Z\Desktop\Semester 3\TestGut\Inventory-Kuliah\Inventory\Inventory\obj\Debug\view\Login.baml
+C:\Users\ASUS X505Z\Desktop\Semester 3\TestGut\Inventory-Kuliah\Inventory\Inventory\obj\Debug\view\MenuUtama.baml
+C:\Users\ASUS X505Z\Desktop\Semester 3\TestGut\Inventory-Kuliah\Inventory\Inventory\obj\Debug\Inventory.g.resources
+C:\Users\ASUS X505Z\Desktop\Semester 3\TestGut\Inventory-Kuliah\Inventory\Inventory\obj\Debug\Inventory.Properties.Resources.resources
+C:\Users\ASUS X505Z\Desktop\Semester 3\TestGut\Inventory-Kuliah\Inventory\Inventory\obj\Debug\Inventory.csproj.GenerateResource.cache
+C:\Users\ASUS X505Z\Desktop\Semester 3\TestGut\Inventory-Kuliah\Inventory\Inventory\obj\Debug\Inventory.csproj.CoreCompileInputs.cache
+C:\Users\ASUS X505Z\Desktop\Semester 3\TestGut\Inventory-Kuliah\Inventory\Inventory\obj\Debug\Inventory.csproj.CopyComplete

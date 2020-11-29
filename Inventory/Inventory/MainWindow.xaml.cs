@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using MySql.Data.MySqlClient;
 
 namespace Inventory
 {
@@ -20,9 +21,23 @@ namespace Inventory
     /// </summary>
     public partial class MainWindow : Window
     {
+        private MySqlConnection conn;
         public MainWindow()
         {
+            conn = model.DBConnect.GetConnection();
+            try
+            {
+                conn.Open();
+                MessageBox.Show("Koneksi Berhasil!");
+            }
+            catch(MySqlException se)
+            {
+                MessageBox.Show("Koneksi Gagal!" + se);
+            }
             InitializeComponent();
+            view.Window1 init = new view.Window1();
+            init.Show();
+            this.Close();
         }
     }
 }
