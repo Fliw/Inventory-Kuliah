@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Inventory"
+    "\\Inventory",
+    "\\Inventory\\Inventory",
+    "\\Inventory\\Inventory\\view"
   ],
-  "SelectedNode": "\\Inventory\\Inventory.sln",
-  "PreviewInSolutionExplorer": false
+  "SelectedNode": "\\Inventory\\Inventory\\view\\Login.xaml",
+  "PreviewInSolutionExplorer": true
 }
