@@ -82,3 +82,5 @@ D:\Pemograman Lanjut\PROJECT INVERNTORY\Inventory-Kuliah\Inventory\Inventory\obj
 D:\Pemograman Lanjut\PROJECT INVERNTORY\Inventory-Kuliah\Inventory\Inventory\obj\Debug\Inventory.csproj.CopyComplete
 D:\Pemograman Lanjut\PROJECT INVERNTORY\Inventory-Kuliah\Inventory\Inventory\obj\Debug\Inventory.exe
 D:\Pemograman Lanjut\PROJECT INVERNTORY\Inventory-Kuliah\Inventory\Inventory\obj\Debug\Inventory.pdb
+D:\Pemograman Lanjut\PROJECT INVERNTORY\Inventory-Kuliah\Inventory\Inventory\obj\Debug\view\register.g.cs
+D:\Pemograman Lanjut\PROJECT INVERNTORY\Inventory-Kuliah\Inventory\Inventory\obj\Debug\view\register.baml
