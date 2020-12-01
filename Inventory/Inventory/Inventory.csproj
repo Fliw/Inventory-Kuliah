@@ -101,8 +101,13 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="controller\LoginController.cs" />
+    <Compile Include="model\LoginModel.cs" />
     <Compile Include="view\Login.xaml.cs">
       <DependentUpon>Login.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="view\MenuUtama.xaml.cs">
+      <DependentUpon>MenuUtama.xaml</DependentUpon>
     </Compile>
     <Compile Include="view\register.xaml.cs">
       <DependentUpon>register.xaml</DependentUpon>
@@ -120,6 +125,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="view\Login.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="view\MenuUtama.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
