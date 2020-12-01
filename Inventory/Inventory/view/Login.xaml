@@ -14,14 +14,9 @@
         <Canvas HorizontalAlignment="Left" Height="368" Margin="64,90,0,0" VerticalAlignment="Top" Width="452" RenderTransformOrigin="0.55,0.531" Background="#FF47BFC5">
             <Label Content="Login" Canvas.Left="189" Canvas.Top="34" Background="{x:Null}" Foreground="White" FontSize="18" Width="86"/>
             <TextBox x:Name="txtusername" Height="27" Canvas.Left="117" TextWrapping="Wrap" Text="username" Canvas.Top="92" Width="203" Foreground="#FF47BFC5" Background="White" BorderBrush="#FF47BFC5"/>
-            <TextBox x:Name="txtpassword" Height="27" Canvas.Left="117" TextWrapping="Wrap" Text="password" Canvas.Top="134" Width="203" Foreground="#FF47BFC5" BorderBrush="#FF47BFC5"/>
+            <PasswordBox x:Name="txtpassword" Canvas.Left="117" Canvas.Top="135" Width="203" Height="25"/>
             <Label Content="Belum punya akun ?" Canvas.Left="117" Canvas.Top="183" Background="{x:Null}" Foreground="White" Width="203"/>
             <Button x:Name="btnLogin" Content="Login" Height="29" Canvas.Left="117" Canvas.Top="227" Width="203" Click="Button_Click_1" Foreground="#FF47BFC5" BorderBrush="#FF47BFC5"/>
-            <Image x:Name="image" Height="21" Canvas.Left="143" Canvas.Top="140" Width="27" RenderTransformOrigin="1.741,2.857">
-                <Image.OpacityMask>
-                    <ImageBrush ImageSource="../assets/images.jpeg.jpg"/>
-                </Image.OpacityMask>
-            </Image>
             <Button x:Name="btnRegister" Content="Register" Canvas.Left="245" Canvas.Top="183" Width="75" Click="btnRegister_Click"/>
         </Canvas>
     </Grid>
