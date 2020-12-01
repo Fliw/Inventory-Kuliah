@@ -33,5 +33,12 @@ namespace Inventory.view
         {
 
         }
+
+        private void btnRegister_Click(object sender, RoutedEventArgs e)
+        {
+            register registerPage = new register();
+            registerPage.Show();
+            this.Close();
+        }
     }
 }
