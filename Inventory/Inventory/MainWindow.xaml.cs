@@ -28,7 +28,6 @@ namespace Inventory
             try
             {
                 conn.Open();
-                MessageBox.Show("Koneksi Berhasil!");
             }
             catch(MySqlException se)
             {

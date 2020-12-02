@@ -23,7 +23,7 @@ namespace Inventory.controller
 
         public void HasilLogin()
         {
-            model.CheckLogin(view.txtusername.Text, view.txtpassword.Password);
+            model.CheckLogin(view.txtUsername.Text, view.txtPassword.Password);
             bool hasil = model.GetHasil();
             if (hasil)
             {
@@ -34,9 +34,9 @@ namespace Inventory.controller
             else
             {
                 MessageBox.Show("Username/password salah !");
-                view.txtusername.Text = "username";
-                view.txtpassword.Password = "password";
-                view.txtusername.Focus();
+                view.txtUsername.Text = "username";
+                view.txtPassword.Password = "password";
+                view.txtUsername.Focus();
             }
         }
     }

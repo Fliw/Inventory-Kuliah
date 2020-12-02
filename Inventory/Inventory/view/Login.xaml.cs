@@ -29,7 +29,7 @@ namespace Inventory.view
             InitializeComponent();
             WindowStartupLocation = WindowStartupLocation.CenterScreen;
             ResizeMode = ResizeMode.NoResize;
-            txtusername.Focus();
+            txtUsername.Focus();
             //2. instance ke class contrl
             controller = new LoginController(this);
         }
@@ -40,6 +40,13 @@ namespace Inventory.view
         }
 
         private void btnRegister_Click(object sender, RoutedEventArgs e)
+        {
+            register registerPage = new register();
+            registerPage.Show();
+            this.Close();
+        }
+
+        private void btnRegister_Click_1(object sender, RoutedEventArgs e)
         {
             register registerPage = new register();
             registerPage.Show();

@@ -174,3 +174,5 @@ C:\Users\ASUS X505Z\Desktop\Semester 3\Gitasd\Inventory-Kuliah\Inventory\Invento
 C:\Users\ASUS X505Z\Desktop\Semester 3\Gitasd\Inventory-Kuliah\Inventory\Inventory\obj\Debug\Inventory.pdb
 C:\Users\ASUS X505Z\Desktop\Semester 3\Gitasd\Inventory-Kuliah\Inventory\Inventory\obj\Debug\view\MenuUtama.g.cs
 C:\Users\ASUS X505Z\Desktop\Semester 3\Gitasd\Inventory-Kuliah\Inventory\Inventory\obj\Debug\view\MenuUtama.baml
+D:\Project Gabut\smt3\Inventory-Kuliah\Inventory\Inventory\obj\Debug\view\MenuUtama.g.cs
+D:\Project Gabut\smt3\Inventory-Kuliah\Inventory\Inventory\obj\Debug\view\MenuUtama.baml

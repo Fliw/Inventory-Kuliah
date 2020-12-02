@@ -174,5 +174,17 @@
   <ItemGroup>
     <Resource Include="assets\I %284%29.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="view\image 9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="view\my-password 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="view\Vector.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="view\Vector %281%29.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
