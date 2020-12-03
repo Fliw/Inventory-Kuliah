@@ -32,11 +32,6 @@ namespace Inventory.view
             controller = new LoginController(this);
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-            controller.HasilLogin();
-        }
-
         private void btnRegister_Click(object sender, RoutedEventArgs e)
         {
             register registerPage = new register();
@@ -49,6 +44,11 @@ namespace Inventory.view
             register registerPage = new register();
             registerPage.Show();
             this.Close();
+        }
+
+        private void btnLogin_Click(object sender, RoutedEventArgs e)
+        {
+            controller.HasilLogin();
         }
     }
 }
