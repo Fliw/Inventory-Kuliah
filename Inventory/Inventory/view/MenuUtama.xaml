@@ -6,7 +6,35 @@
         xmlns:local="clr-namespace:Inventory.view"
         mc:Ignorable="d"
         Title="MenuUtama" Height="450" Width="800">
-    <Grid>
-        
+    <Grid Background="#FF29BFEE">
+        <Canvas HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="792" Background="White">
+            <Label Content="Aplikasi Inventory" Canvas.Left="42" Background="{x:Null}" Foreground="#FF29BFEE"/>
+        </Canvas>
+        <Canvas x:Name="btnTransaksi" HorizontalAlignment="Left" Height="375" Margin="0,44,0,0" VerticalAlignment="Top" Width="143" Background="White">
+            <Button x:Name="btnBeranda" Content="Beranda" Height="21" Canvas.Left="10" Canvas.Top="10" Width="108" Background="{x:Null}" Foreground="#FF29BFEE" BorderBrush="{x:Null}" FontWeight="Bold"/>
+            <Canvas Height="21" Canvas.Left="10" Canvas.Top="10" Width="21">
+                <Canvas.Background>
+                    <ImageBrush ImageSource="icon-rumah.png"/>
+                </Canvas.Background>
+            </Canvas>
+            <Button x:Name="btnDataBarang" Content="Data Barang" Height="22" Canvas.Left="10" Canvas.Top="41" Width="127" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF29BFEE" FontWeight="Bold"/>
+            <Canvas Height="21" Canvas.Left="10" Canvas.Top="41" Width="21">
+                <Canvas.Background>
+                    <ImageBrush ImageSource="icon-data-check.png"/>
+                </Canvas.Background>
+            </Canvas>
+            <Button Content="Transaksi" Height="19" Canvas.Left="10" Canvas.Top="71" Width="108" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF29BFEE" FontWeight="Bold"/>
+            <Canvas Height="19" Canvas.Left="10" Canvas.Top="71" Width="21">
+                <Canvas.Background>
+                    <ImageBrush ImageSource="icon-transaksi2.png"/>
+                </Canvas.Background>
+            </Canvas>
+            <Button x:Name="btnSetting" Content="Setting Akun" Height="19" Canvas.Left="10" Canvas.Top="100" Width="127" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF29BFEE" FontWeight="Bold"/>
+            <Canvas Height="19" Canvas.Left="10" Canvas.Top="100" Width="21">
+                <Canvas.Background>
+                    <ImageBrush ImageSource="icon-setting-akun2.png"/>
+                </Canvas.Background>
+            </Canvas>
+        </Canvas>
     </Grid>
 </Window>

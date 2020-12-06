@@ -186,5 +186,32 @@
   <ItemGroup>
     <Resource Include="assets\Vector %281%29.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="view\icon-rumah.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="view\icon-data-check.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="view\icon-transaksi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="view\icon-transaksi2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="view\icon-setting-akun2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="view\icon-image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="view\icon-bulat-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="view\icon-bulat2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="view\icon-bulat3.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
