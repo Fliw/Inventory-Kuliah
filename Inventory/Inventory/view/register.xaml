@@ -15,7 +15,7 @@
             <Label Content="Let's start with your name" Canvas.Left="272" Canvas.Top="153" Background="{x:Null}" Foreground="#FF47BFC5"/>
             <TextBox x:Name="txtnameregister" Height="28" Canvas.Left="262" TextWrapping="Wrap" Text="Please enter your name" Canvas.Top="184" Width="166" Background="#FF47BFC5" Foreground="White" BorderBrush="{x:Null}"/>
             <Label Content="Already Done ? Let's Go" Canvas.Left="272" Canvas.Top="227" Foreground="#FF47BFC5"/>
-            <Button x:Name="btnLetsGo" Content="Let's Go" Height="29" Canvas.Left="262" Canvas.Top="258" Width="166" Click="Button_Click" Background="#FF47BFC5" BorderBrush="{x:Null}" Foreground="White"/>
+            <Button x:Name="btnLetsGo" Content="Let's Go" Height="29" Canvas.Left="262" Canvas.Top="258" Width="166" Click="Button_Click" Background="#FF47BFC5" BorderBrush="{x:Null}" Foreground="White" FontFamily="Adobe Caslon Pro Bold"/>
         </Canvas>
     </Grid>
 </Window>
