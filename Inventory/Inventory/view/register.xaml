@@ -7,15 +7,29 @@
         mc:Ignorable="d"
         Title="register" Height="450" Width="800">
     <Grid Background="#FF47BFC5">
-        <Label Content="Register" HorizontalAlignment="Left" Margin="358,40,0,0" VerticalAlignment="Top" Background="{x:Null}" Foreground="White" Height="32" Width="73" FontSize="16"/>
-        <Canvas HorizontalAlignment="Left" Height="508" Margin="10,-55,0,-34" VerticalAlignment="Top" Width="715">
+        <Canvas HorizontalAlignment="Left" Height="343" Margin="10,10,0,0" VerticalAlignment="Top" Width="346">
             <Canvas.Background>
-                <ImageBrush ImageSource="../assets/I (4).png"/>
+                <ImageBrush ImageSource="icon-image.png"/>
             </Canvas.Background>
-            <Label Content="Let's start with your name" Canvas.Left="272" Canvas.Top="153" Background="{x:Null}" Foreground="#FF47BFC5"/>
-            <TextBox x:Name="txtnameregister" Height="28" Canvas.Left="262" TextWrapping="Wrap" Text="Please enter your name" Canvas.Top="184" Width="166" Background="#FF47BFC5" Foreground="White" BorderBrush="{x:Null}"/>
-            <Label Content="Already Done ? Let's Go" Canvas.Left="272" Canvas.Top="227" Foreground="#FF47BFC5"/>
-            <Button x:Name="btnLetsGo" Content="Let's Go" Height="29" Canvas.Left="262" Canvas.Top="258" Width="166" Click="Button_Click" Background="#FF47BFC5" BorderBrush="{x:Null}" Foreground="White" FontFamily="Adobe Caslon Pro Bold"/>
         </Canvas>
+        <Canvas HorizontalAlignment="Left" Height="56" Margin="0,10,0,0" VerticalAlignment="Top" Width="39">
+            <Canvas.Background>
+                <ImageBrush ImageSource="icon-bulat2.png"/>
+            </Canvas.Background>
+        </Canvas>
+        <Canvas HorizontalAlignment="Left" Height="29" Margin="100,380,0,0" VerticalAlignment="Top" Width="31">
+            <Canvas.Background>
+                <ImageBrush ImageSource="icon-bulat-1.png"/>
+            </Canvas.Background>
+        </Canvas>
+        <Canvas HorizontalAlignment="Left" Height="31" Margin="709,0,0,0" VerticalAlignment="Top" Width="44">
+            <Canvas.Background>
+                <ImageBrush ImageSource="icon-bulat3.png"/>
+            </Canvas.Background>
+        </Canvas>
+        <Label Content="Let's Start With Your Name" HorizontalAlignment="Left" Margin="442,89,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <TextBox x:Name="txtname" HorizontalAlignment="Left" Height="23" Margin="430,115,0,0" TextWrapping="Wrap" Text="Place your name here !" VerticalAlignment="Top" Width="164" BorderBrush="{x:Null}" Foreground="#FF47BFC5" TextAlignment="Center"/>
+        <Label Content="Alreaady Done ? Let's Go" HorizontalAlignment="Left" Margin="442,160,0,0" VerticalAlignment="Top" Foreground="White" Width="152"/>
+        <Button x:Name="btnLetsgo" Content="Lest Go" HorizontalAlignment="Left" Height="28" Margin="430,205,0,0" VerticalAlignment="Top" Width="164" BorderBrush="{x:Null}" Foreground="#FF47BFC5" Background="White"/>
     </Grid>
 </Window>
