@@ -186,5 +186,17 @@
   <ItemGroup>
     <Resource Include="assets\Vector %281%29.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\icon-image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\icon-bulat-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\icon-bulat2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\icon-bulat3.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
