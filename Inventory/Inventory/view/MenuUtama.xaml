@@ -5,29 +5,29 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Inventory.view"
         mc:Ignorable="d"
-        Title="MenuUtama" Height="553.5" Width="800">
-    <Grid Background="White">
+        Title="MenuUtama" Height="553.5" Width="867">
+    <Grid Background="White" Margin="0,0,76,-170">
         <Label Content="Aplikasi Inventory" HorizontalAlignment="Left" Margin="48,10,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20" Foreground="#FF29BFEE"/>
-        <Canvas HorizontalAlignment="Left" Height="146" Margin="181,47,0,0" VerticalAlignment="Top" Width="611" Background="#FF29BFEE">
-            <Canvas Height="62" Canvas.Left="26" Canvas.Top="26" Width="122" Background="White">
-                <Image Height="84" Canvas.Left="54" Canvas.Top="-17" Width="88" Source="../assets/Total Transaksi (5).png"/>
+        <Canvas HorizontalAlignment="Left" Height="129" Margin="193,47,-76,0" VerticalAlignment="Top" Width="666" Background="#FF29BFEE">
+            <Canvas Height="70" Canvas.Left="10" Canvas.Top="26" Width="150" Background="White">
+                <Image Height="84" Canvas.Left="84" Canvas.Top="-14" Width="88" Source="../assets/Total Transaksi (5).png" RenderTransformOrigin="0.409,0.512"/>
             </Canvas>
-            <Label Content="50" Canvas.Left="26" Canvas.Top="26" FontWeight="Bold" Foreground="#FF29BFEE"/>
-            <Label Content="Total Barang Keluar" Canvas.Left="26" Canvas.Top="62" FontWeight="Bold" Foreground="#FF29BFEE"/>
-            <Canvas Height="62" Canvas.Left="153" Canvas.Top="26" Width="122" Background="White">
-                <Label Content="80" FontWeight="Bold" Background="{x:Null}" Foreground="#FF29BFEE"/>
+            <Label Content="50" Canvas.Left="10" Canvas.Top="26" FontWeight="Bold" Foreground="#FF29BFEE" RenderTransformOrigin="-0.375,0.577" FontSize="24"/>
+            <Label Content="Total Barang Keluar" Canvas.Left="10" Canvas.Top="64" FontWeight="Bold" Foreground="#FF29BFEE"/>
+            <Canvas Height="70" Canvas.Left="165" Canvas.Top="26" Width="168" Background="White">
+                <Label Content="80" FontWeight="Bold" Background="{x:Null}" Foreground="#FF29BFEE" FontSize="24"/>
             </Canvas>
-            <Label Content="Total Barang Masuk" Canvas.Left="153" Canvas.Top="62" FontWeight="Bold" Foreground="#FF29BFEE"/>
-            <Image Height="86" Canvas.Left="168" Width="153" Source="../assets/Total Transaksi (6).png" Canvas.Top="10"/>
-            <Canvas Height="62" Canvas.Left="280" Canvas.Top="26" Width="122" Background="White"/>
-            <Label Content="10jt" Canvas.Left="280" Canvas.Top="26" FontWeight="Bold" Foreground="#FF29BFEE" RenderTransformOrigin="0.328,-0.058"/>
-            <Label Content="Total Transaksi" Canvas.Left="280" Canvas.Top="62" Foreground="#FF29BFEE" FontWeight="Bold"/>
-            <Image Height="70" Canvas.Left="304" Width="133" Source="../assets/Total Transaksi (11).png" Canvas.Top="10"/>
-            <Canvas Height="62" Canvas.Left="407" Canvas.Top="26" Width="121" Background="White">
-                <Label Content="5" FontWeight="Bold" Foreground="#FF29BFEE"/>
-                <Label Content="Total Laporan" Canvas.Top="36" FontWeight="Bold" Foreground="#FF29BFEE"/>
+            <Label Content="Total Barang Masuk" Canvas.Left="165" Canvas.Top="64" FontWeight="Bold" Foreground="#FF29BFEE"/>
+            <Image Height="86" Canvas.Left="234" Width="153" Source="../assets/Total Transaksi (6).png" Canvas.Top="10" RenderTransformOrigin="0.683,0.5"/>
+            <Canvas Height="70" Canvas.Left="338" Canvas.Top="26" Width="170" Background="White"/>
+            <Label Content="10jt" Canvas.Left="338" Canvas.Top="22" FontWeight="Bold" Foreground="#FF29BFEE" RenderTransformOrigin="0.328,-0.058" FontSize="24"/>
+            <Label Content="Total Transaksi" Canvas.Left="338" Canvas.Top="64" Foreground="#FF29BFEE" FontWeight="Bold" RenderTransformOrigin="1.441,0.654"/>
+            <Image Height="96" Canvas.Left="387" Width="196" Source="../assets/Total Transaksi (11).png" RenderTransformOrigin="0.989,0.643"/>
+            <Canvas Height="70" Canvas.Left="513" Canvas.Top="26" Width="147" Background="White">
+                <Label Content="5" FontWeight="Bold" Foreground="#FF29BFEE" FontSize="24" Canvas.Top="-8"/>
+                <Label Content="Total Laporan" Canvas.Top="34" FontWeight="Bold" Foreground="#FF29BFEE"/>
             </Canvas>
-            <Image Height="72" Canvas.Left="407" Width="170" Source="../assets/Total Transaksi (12).png" Canvas.Top="10"/>
+            <Image Height="72" Canvas.Left="553" Width="170" Source="../assets/Total Transaksi (12).png" Canvas.Top="10"/>
         </Canvas>
         <Image HorizontalAlignment="Left" Height="28" Margin="10,68,0,0" VerticalAlignment="Top" Width="35" Source="../assets/icon-rumah.png">
             <Image.OpacityMask>
@@ -43,7 +43,7 @@
         <Label Content="Laporan" HorizontalAlignment="Left" Margin="50,206,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Width="96" Foreground="#FF29BFEE"/>
         <Image HorizontalAlignment="Left" Height="36" Margin="12,263,0,0" VerticalAlignment="Top" Width="33" Source="../assets/icon-setting-akun2.png"/>
         <Label Content="Setting Akun" HorizontalAlignment="Left" Margin="50,263,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Foreground="#FF29BFEE"/>
-        <Image HorizontalAlignment="Left" Height="277" Margin="182,241,0,0" VerticalAlignment="Top" Width="404" Source="../assets/Total Transaksi (2).png" RenderTransformOrigin="0.5,0.5">
+        <Image HorizontalAlignment="Left" Height="275" Margin="182,243,0,0" VerticalAlignment="Top" Width="404" Source="../assets/Total Transaksi (2).png" RenderTransformOrigin="0.5,0.5">
             <Image.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
