@@ -28,5 +28,10 @@ namespace Inventory.view
         {
 
         }
+
+        private void txtName_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }
