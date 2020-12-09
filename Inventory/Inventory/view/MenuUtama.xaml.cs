@@ -25,15 +25,16 @@ namespace Inventory.view
         {
             InitializeComponent();
             SeriesCollection series = new SeriesCollection
-{
-             new LineSeries
             {
-                Values = new ChartValues<double> { 3, 5, 7, 4 }
-            },
-            new ColumnSeries
-            {
-                Values = new ChartValues<decimal> { 5, 6, 2, 7 }
-            }
+                new LineSeries
+                {
+                    Values = new ChartValues<double> { 3, 5, 7, 4 }
+                },
+                new ColumnSeries
+                {
+                    Values = new ChartValues<decimal> { 5, 6, 2, 7 }
+                }
+            };
         }
     }
 }
