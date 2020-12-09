@@ -9,11 +9,11 @@
     <Grid Background="White">
         <Label Content="Aplikasi Inventory" HorizontalAlignment="Left" Margin="48,10,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20" Foreground="#FF29BFEE"/>
         <Canvas HorizontalAlignment="Left" Height="146" Margin="181,47,0,0" VerticalAlignment="Top" Width="611" Background="#FF29BFEE">
-            <Canvas Height="62" Canvas.Left="9" Canvas.Top="26" Width="122" Background="White">
+            <Canvas Height="62" Canvas.Left="26" Canvas.Top="26" Width="122" Background="White">
                 <Image Height="84" Canvas.Left="54" Canvas.Top="-17" Width="88" Source="../assets/Total Transaksi (5).png"/>
             </Canvas>
-            <Label Content="50" Canvas.Left="10" Canvas.Top="26" FontWeight="Bold" Foreground="#FF29BFEE"/>
-            <Label Content="Total Barang Keluar" Canvas.Left="10" Canvas.Top="62" FontWeight="Bold" Foreground="#FF29BFEE"/>
+            <Label Content="50" Canvas.Left="26" Canvas.Top="26" FontWeight="Bold" Foreground="#FF29BFEE"/>
+            <Label Content="Total Barang Keluar" Canvas.Left="26" Canvas.Top="62" FontWeight="Bold" Foreground="#FF29BFEE"/>
             <Canvas Height="62" Canvas.Left="153" Canvas.Top="26" Width="122" Background="White">
                 <Label Content="80" FontWeight="Bold" Background="{x:Null}" Foreground="#FF29BFEE"/>
             </Canvas>
@@ -53,7 +53,7 @@
                 </TransformGroup>
             </Image.RenderTransform>
         </Image>
-        <Image HorizontalAlignment="Left" Height="267" Margin="452,246,0,0" VerticalAlignment="Top" Width="340" Source="Total Transaksi.png"/>
+        <Image HorizontalAlignment="Left" Height="267" Margin="452,246,0,0" VerticalAlignment="Top" Width="340" Source="../assets/Total Transaksi.png"/>
 
     </Grid>
 </Window>
