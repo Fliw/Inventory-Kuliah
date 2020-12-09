@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Inventory.view"
         mc:Ignorable="d"
-        Title="register" Height="545" Width="811.333" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+        Title="register" Height="548" Width="871.333" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     <Grid Background="#FF29BFEE" Margin="0,0,0,-1">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="8*"/>
@@ -40,5 +40,7 @@
                 <ImageBrush ImageSource="/Inventory;component/assets/icon-bulat2.png"/>
             </Canvas.Background>
         </Canvas>
+        <Ellipse Grid.Column="2" Fill="#FFF4F4F5" Height="69" Margin="120,425,45,0" VerticalAlignment="Top"/>
+        <Ellipse Fill="#FFF4F4F5" Height="40" Margin="416,38,171,0" VerticalAlignment="Top"/>
     </Grid>
 </Window>
