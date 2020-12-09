@@ -14,7 +14,7 @@
         <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="569" VerticalAlignment="Top" Width="450"/>
         <TextBlock HorizontalAlignment="Left" Margin="109,99,0,0" TextWrapping="Wrap" Text="WELCOME TO" VerticalAlignment="Top" Foreground="#FF29BFEE" FontSize="40" FontFamily="Trebuchet MS"/>
         <TextBlock HorizontalAlignment="Left" Margin="32,193,0,0" TextWrapping="Wrap" Text="&quot;INVENTORY APPLICATION&quot;" VerticalAlignment="Top" Foreground="#FF29BFEE" FontSize="30" FontWeight="Bold"/>
-        <Image HorizontalAlignment="Left" Height="277" Margin="10,292,0,0" VerticalAlignment="Top" Width="440" Source="../assets/image 9.png" Stretch="Fill"/>
+        <Image HorizontalAlignment="Left" Height="277" Margin="10,292,0,0" VerticalAlignment="Top" Width="440" Source="/assets/image 9.png" Stretch="Fill"/>
         <Ellipse Fill="#AA29BFEE" HorizontalAlignment="Left" Height="58" Margin="0,10,0,0" VerticalAlignment="Top" Width="68" RenderTransformOrigin="-0.64,-0.06"/>
         <Ellipse Fill="#AA29BFEE" HorizontalAlignment="Left" Height="58" Margin="404,94,0,0" VerticalAlignment="Top" Width="68" RenderTransformOrigin="-0.64,-0.06"/>
         <Ellipse Fill="#AA29BFEE" HorizontalAlignment="Left" Height="48" Margin="42,280,0,0" VerticalAlignment="Top" Width="58" RenderTransformOrigin="-0.64,-0.06"/>

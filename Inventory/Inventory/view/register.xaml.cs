@@ -33,5 +33,10 @@ namespace Inventory.view
         {
 
         }
+
+        private void btnLetsgo_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

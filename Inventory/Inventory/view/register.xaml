@@ -5,11 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Inventory.view"
         mc:Ignorable="d"
-        Title="register" Height="450" Width="664" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
-    <Grid Background="#FF29BFEE">
+        Title="register" Height="545" Width="811.333" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid Background="#FF29BFEE" Margin="0,0,0,-1">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="241*"/>
-            <ColumnDefinition Width="87*"/>
+            <ColumnDefinition Width="8*"/>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="3*"/>
         </Grid.ColumnDefinitions>
         <Canvas HorizontalAlignment="Left" Height="56" Margin="0,10,0,0" VerticalAlignment="Top" Width="39">
             <Canvas.Background>
@@ -21,22 +22,23 @@
                 <ImageBrush ImageSource="../assets/icon-bulat-1.png"/>
             </Canvas.Background>
         </Canvas>
-        <Canvas HorizontalAlignment="Left" Height="31" Margin="120,0,0,0" VerticalAlignment="Top" Width="44" Grid.Column="1">
+        <Canvas HorizontalAlignment="Left" Height="31" Margin="120,0,0,0" VerticalAlignment="Top" Width="44" Grid.Column="2">
             <Canvas.Background>
                 <ImageBrush ImageSource="../assets/icon-bulat3.png"/>
             </Canvas.Background>
         </Canvas>
-        <Label Content="Let's Start With Your Name" HorizontalAlignment="Left" Margin="430,89,0,0" VerticalAlignment="Top" Foreground="White" Grid.ColumnSpan="2"/>
-        <TextBox x:Name="txtName" HorizontalAlignment="Left" Height="36" Margin="341,115,0,0" TextWrapping="Wrap" Text="Place your name here !" VerticalAlignment="Top" Width="301" BorderBrush="{x:Null}" Foreground="#FF47BFC5" TextAlignment="Center" Grid.ColumnSpan="2" TextChanged="txtName_TextChanged" FontWeight="Bold"/>
-        <Label Content="Already Done ? Let's Go" HorizontalAlignment="Left" Margin="430,218,0,0" VerticalAlignment="Top" Foreground="White" Width="152" Grid.ColumnSpan="2"/>
-        <Button x:Name="btnLetsgo" Content=" Register Me" HorizontalAlignment="Left" Height="36" Margin="341,249,0,0" VerticalAlignment="Top" Width="301" BorderBrush="{x:Null}" Foreground="#FF47BFC5" Background="White" Grid.ColumnSpan="2" FontWeight="Bold" Click="btnLetsgo_Click"/>
+        <Label Content="Let's Start With Your Name" HorizontalAlignment="Left" Margin="511,102,0,0" VerticalAlignment="Top" Foreground="White" FontSize="20" Height="37" Width="246" Grid.ColumnSpan="3"/>
+        <TextBox x:Name="txtName" HorizontalAlignment="Left" Height="43" Margin="476,144,-7,0" TextWrapping="Wrap" Text="Place your name here !" VerticalAlignment="Top" Width="301" BorderBrush="{x:Null}" Foreground="#FF29BFEE" TextChanged="txtName_TextChanged" FontWeight="Bold" FontSize="20" Grid.ColumnSpan="3"/>
+        <Label Content="Already Done ? Let's Go" HorizontalAlignment="Left" Margin="559,277,0,0" VerticalAlignment="Top" Foreground="White" Width="152" Height="26" Grid.ColumnSpan="3"/>
+        <Button x:Name="btnLetsgo" Content=" Register Me" HorizontalAlignment="Left" Height="48" Margin="476,322,-7,0" VerticalAlignment="Top" Width="301" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" FontWeight="Bold" Click="btnLetsgo_Click" FontSize="20" Grid.ColumnSpan="3"/>
         <Image HorizontalAlignment="Left" Height="100" Margin="201,195,0,0" VerticalAlignment="Top" Width="100"/>
-        <Image HorizontalAlignment="Left" Height="298" Margin="44,47,0,0" VerticalAlignment="Top" Width="311" Source="../assets/icon-image.png"/>
-        <Label Content="Then Your Password" HorizontalAlignment="Left" Margin="430,159,0,0" VerticalAlignment="Top" Foreground="White" Grid.ColumnSpan="2"/>
-        <TextBox x:Name="txtPassword" HorizontalAlignment="Left" Height="36" Margin="341,185,0,0" TextWrapping="Wrap" Text="Place your name here !" VerticalAlignment="Top" Width="301" BorderBrush="{x:Null}" Foreground="#FF47BFC5" TextAlignment="Center" Grid.ColumnSpan="2" FontWeight="Bold"/>
-        <Image HorizontalAlignment="Left" Height="68" Margin="92,36,0,0" VerticalAlignment="Top" Width="64" Source="icon-bulat-1.png"/>
-        <Image HorizontalAlignment="Left" Height="100" Margin="0,144,0,0" VerticalAlignment="Top" Width="100" Source="icon-bulat2.png"/>
-        <Image HorizontalAlignment="Left" Height="100" Margin="407,0,0,0" VerticalAlignment="Top" Width="100" Source="icon-bulat3.png" Grid.ColumnSpan="2"/>
-        <Image HorizontalAlignment="Left" Height="68" Margin="341,320,0,0" VerticalAlignment="Top" Width="64" Source="icon-bulat-1.png"/>
+        <Image HorizontalAlignment="Left" Height="440" Margin="70,54,0,0" VerticalAlignment="Top" Width="401" Source="../assets/icon-image.png"/>
+        <Label Content="Then Your Password" HorizontalAlignment="Left" Margin="539,195,0,0" VerticalAlignment="Top" Foreground="White" FontSize="20" Height="37" Width="186" Grid.ColumnSpan="3"/>
+        <PasswordBox x:Name="txtPassword" HorizontalAlignment="Left" Margin="476,235,-7,0" VerticalAlignment="Top" Width="301" Height="37" Grid.ColumnSpan="3" FontSize="20"/>
+        <Canvas HorizontalAlignment="Left" Height="56" Margin="0,216,0,0" VerticalAlignment="Top" Width="39">
+            <Canvas.Background>
+                <ImageBrush ImageSource="/Inventory;component/assets/icon-bulat2.png"/>
+            </Canvas.Background>
+        </Canvas>
     </Grid>
 </Window>
