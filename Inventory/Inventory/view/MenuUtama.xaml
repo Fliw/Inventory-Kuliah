@@ -5,12 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Inventory.view"
         mc:Ignorable="d"
-        Title="MenuUtama" Height="553.5" Width="867">
-    <Grid Background="White" Margin="0,0,76,-170">
-        <Label Content="Aplikasi Inventory" HorizontalAlignment="Left" Margin="48,10,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20" Foreground="#FF29BFEE"/>
-        <Canvas HorizontalAlignment="Left" Height="129" Margin="193,47,-76,0" VerticalAlignment="Top" Width="666" Background="#FF29BFEE">
+        Title="MenuUtama" Height="575.5" Width="914">
+    <Grid Background="White" Margin="0,0,2,2">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="361*"/>
+            <ColumnDefinition Width="91*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="46*"/>
+            <RowDefinition Height="135*"/>
+        </Grid.RowDefinitions>
+        <Rectangle Fill="#FF29BFEE" HorizontalAlignment="Left" Height="546" VerticalAlignment="Top" Width="211" Margin="0,0,0,-3" Grid.RowSpan="2"/>
+
+        <Label Content="Aplikasi Inventory" HorizontalAlignment="Left" Margin="12,17,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20" Foreground="White" RenderTransformOrigin="0.409,0.541" Background="{x:Null}" Height="37" Width="181"/>
+        <Canvas HorizontalAlignment="Left" Height="123" Margin="211,0,-2,0" VerticalAlignment="Top" Width="695" Background="#FF29BFEE" Grid.ColumnSpan="2">
             <Canvas Height="70" Canvas.Left="10" Canvas.Top="26" Width="150" Background="White">
-                <Image Height="84" Canvas.Left="84" Canvas.Top="-14" Width="88" Source="../assets/Total Transaksi (5).png" RenderTransformOrigin="0.409,0.512"/>
+                <Image Height="78" Canvas.Left="94" Width="78" Source="../assets/Total Transaksi (5).png" RenderTransformOrigin="0.409,0.512" Canvas.Top="-11"/>
             </Canvas>
             <Label Content="50" Canvas.Left="10" Canvas.Top="26" FontWeight="Bold" Foreground="#FF29BFEE" RenderTransformOrigin="-0.375,0.577" FontSize="24"/>
             <Label Content="Total Barang Keluar" Canvas.Left="10" Canvas.Top="64" FontWeight="Bold" Foreground="#FF29BFEE"/>
@@ -18,32 +28,23 @@
                 <Label Content="80" FontWeight="Bold" Background="{x:Null}" Foreground="#FF29BFEE" FontSize="24"/>
             </Canvas>
             <Label Content="Total Barang Masuk" Canvas.Left="165" Canvas.Top="64" FontWeight="Bold" Foreground="#FF29BFEE"/>
-            <Image Height="86" Canvas.Left="234" Width="153" Source="../assets/Total Transaksi (6).png" Canvas.Top="10" RenderTransformOrigin="0.683,0.5"/>
+            <Image Height="80" Canvas.Left="272" Width="81" Source="../assets/Total Transaksi (6).png" Canvas.Top="14" RenderTransformOrigin="0.683,0.5"/>
             <Canvas Height="70" Canvas.Left="338" Canvas.Top="26" Width="170" Background="White"/>
             <Label Content="10jt" Canvas.Left="338" Canvas.Top="22" FontWeight="Bold" Foreground="#FF29BFEE" RenderTransformOrigin="0.328,-0.058" FontSize="24"/>
             <Label Content="Total Transaksi" Canvas.Left="338" Canvas.Top="64" Foreground="#FF29BFEE" FontWeight="Bold" RenderTransformOrigin="1.441,0.654"/>
-            <Image Height="96" Canvas.Left="387" Width="196" Source="../assets/Total Transaksi (11).png" RenderTransformOrigin="0.989,0.643"/>
+            <Image Height="68" Canvas.Left="456" Width="72" Source="../assets/Total Transaksi (11).png" RenderTransformOrigin="0.989,0.643" Canvas.Top="14"/>
             <Canvas Height="70" Canvas.Left="513" Canvas.Top="26" Width="147" Background="White">
                 <Label Content="5" FontWeight="Bold" Foreground="#FF29BFEE" FontSize="24" Canvas.Top="-8"/>
                 <Label Content="Total Laporan" Canvas.Top="34" FontWeight="Bold" Foreground="#FF29BFEE"/>
             </Canvas>
-            <Image Height="72" Canvas.Left="553" Width="170" Source="../assets/Total Transaksi (12).png" Canvas.Top="10"/>
+            <Image Height="54" Canvas.Left="618" Width="47" Source="../assets/Total Transaksi (12).png" Canvas.Top="18"/>
         </Canvas>
-        <Image HorizontalAlignment="Left" Height="28" Margin="10,68,0,0" VerticalAlignment="Top" Width="35" Source="../assets/icon-rumah.png">
-            <Image.OpacityMask>
-                <ImageBrush ImageSource="icon-rumah.png"/>
-            </Image.OpacityMask>
-        </Image>
-        <Label Content="Beranda" HorizontalAlignment="Left" Margin="50,59,0,0" VerticalAlignment="Top" Foreground="#FF29BFEE" FontSize="20" FontWeight="Bold"/>
-        <Image HorizontalAlignment="Left" Height="33" Margin="10,112,0,0" VerticalAlignment="Top" Width="35" Source="../assets/icon-data-check.png"/>
-        <Label Content="Data Barang" HorizontalAlignment="Left" Margin="50,112,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Foreground="#FF29BFEE"/>
-        <Image HorizontalAlignment="Left" Height="30" Margin="10,163,0,0" VerticalAlignment="Top" Width="35" Source="../assets/icon-transaksi2.png"/>
-        <Label Content="Transaksi" HorizontalAlignment="Left" Margin="50,156,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Foreground="#FF29BFEE"/>
-        <Image HorizontalAlignment="Left" Height="34" Margin="12,209,0,0" VerticalAlignment="Top" Width="33" Source="../assets/icon-laporan2.png"/>
-        <Label Content="Laporan" HorizontalAlignment="Left" Margin="50,206,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Width="96" Foreground="#FF29BFEE"/>
-        <Image HorizontalAlignment="Left" Height="36" Margin="12,263,0,0" VerticalAlignment="Top" Width="33" Source="../assets/icon-setting-akun2.png"/>
-        <Label Content="Setting Akun" HorizontalAlignment="Left" Margin="50,263,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Foreground="#FF29BFEE"/>
-        <Image HorizontalAlignment="Left" Height="275" Margin="182,243,0,0" VerticalAlignment="Top" Width="404" Source="../assets/Total Transaksi (2).png" RenderTransformOrigin="0.5,0.5">
+        <Label Content="Beranda" HorizontalAlignment="Left" Margin="50,65,0,0" VerticalAlignment="Top" Foreground="White" FontSize="20" FontWeight="Bold" Height="37" Width="88"/>
+        <Label Content="Data Barang" HorizontalAlignment="Left" Margin="50,110,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Foreground="White" Grid.RowSpan="2" Height="37" Width="126"/>
+        <Label Content="Transaksi" HorizontalAlignment="Left" Margin="50,25,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Foreground="White" Background="{x:Null}" Grid.Row="1" Height="37" Width="96"/>
+        <Label Content="Laporan" HorizontalAlignment="Left" Margin="50,75,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Width="96" Foreground="White" Grid.Row="1" Height="37"/>
+        <Label Content="Setting Akun" HorizontalAlignment="Left" Margin="50,129,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Foreground="White" Grid.Row="1" Height="37" Width="133"/>
+        <Image HorizontalAlignment="Left" Height="355" Margin="218,25,0,0" VerticalAlignment="Top" Width="333" Source="../assets/Total Transaksi (2).png" RenderTransformOrigin="0.5,0.5" Grid.Row="1">
             <Image.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -53,7 +54,20 @@
                 </TransformGroup>
             </Image.RenderTransform>
         </Image>
-        <Image HorizontalAlignment="Left" Height="267" Margin="452,246,0,0" VerticalAlignment="Top" Width="340" Source="../assets/Total Transaksi.png"/>
+        <Image HorizontalAlignment="Left" Height="352" Margin="560,32,0,0" VerticalAlignment="Top" Width="334" Source="../assets/Total Transaksi.png" Grid.Row="1" Grid.ColumnSpan="2"/>
+        <Rectangle Fill="White" HorizontalAlignment="Left" Height="39" Margin="4,63,0,0" VerticalAlignment="Top" Width="41"/>
+        <Image HorizontalAlignment="Left" Margin="10,65,0,38" Width="29" Source="../assets/icon-rumah.png" OpacityMask="Black"/>
+        <Rectangle Fill="White" HorizontalAlignment="Left" Height="39" Margin="4,110,0,0" VerticalAlignment="Top" Width="41" Grid.RowSpan="2"/>
+        <Image HorizontalAlignment="Left" Height="33" Margin="10,112,0,0" VerticalAlignment="Top" Width="35" Source="../assets/icon-data-check.png" Grid.RowSpan="2"/>
+        <Rectangle Fill="White" HorizontalAlignment="Left" Height="39" Margin="4,25,0,0" VerticalAlignment="Top" Width="41" Grid.Row="1"/>
+        <Rectangle Fill="White" HorizontalAlignment="Left" Height="39" Margin="4,75,0,0" VerticalAlignment="Top" Width="41" Grid.Row="1"/>
+        <Rectangle Fill="White" HorizontalAlignment="Left" Height="39" Margin="3,129,0,0" VerticalAlignment="Top" Width="41" Grid.Row="1"/>
+        <Image HorizontalAlignment="Left" Height="30" Margin="7,29,0,0" VerticalAlignment="Top" Width="35" Source="../assets/icon-transaksi2.png" Grid.Row="1"/>
+        <Image HorizontalAlignment="Left" Height="34" Margin="11,78,0,0" VerticalAlignment="Top" Width="33" Source="../assets/icon-laporan2.png" Grid.Row="1"/>
+        <Image HorizontalAlignment="Left" Height="36" Margin="7,133,0,0" VerticalAlignment="Top" Width="33" Source="../assets/icon-setting-akun2.png" Grid.Row="1"/>
+        <Ellipse Fill="White" HorizontalAlignment="Left" Height="85" Margin="0,210,0,0" Grid.Row="1" VerticalAlignment="Top" Width="89"/>
+        <Ellipse Fill="White" HorizontalAlignment="Left" Height="48" Margin="144,270,0,0" Grid.Row="1" VerticalAlignment="Top" Width="49"/>
+        <Ellipse Fill="White" HorizontalAlignment="Left" Height="72" Margin="61,330,0,0" Grid.Row="1" VerticalAlignment="Top" Width="77"/>
 
     </Grid>
 </Window>

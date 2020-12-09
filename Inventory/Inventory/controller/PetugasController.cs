@@ -12,16 +12,19 @@ namespace Inventory.controller
     {
         private PetugasModel model;
         private register registerPage;
+        private Window1 LoginPage;
 
-        public PetugasController() 
+        public PetugasController(register registerPage) 
         {
             this.model = new PetugasModel();
-        }
-        public void RegisterPage(register registerPage) {
             this.registerPage = registerPage;
             model.Nama = registerPage.txtName.Text;
             model.Password = registerPage.txtPassword.Password;
             model.RegisterPetugas();
+        }
+        public PetugasController(Window1 LoginPage)
+        {
+            this.model = new PetugasModel();
         }
     }
 }

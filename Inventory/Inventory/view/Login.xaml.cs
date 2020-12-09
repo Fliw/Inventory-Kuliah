@@ -11,6 +11,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.Windows;
+using Inventory.controller;
 
 namespace Inventory.view
 {
@@ -19,7 +20,7 @@ namespace Inventory.view
     /// </summary>
     public partial class Window1 : Window
     {
-       // private PetugasController controller;
+        private PetugasController controller;
 
         public Window1()
         {
@@ -27,8 +28,8 @@ namespace Inventory.view
             WindowStartupLocation = WindowStartupLocation.CenterScreen;
             ResizeMode = ResizeMode.NoResize;
             txtUsername.Focus();
-            //2. instance ke class contrl
-            //controller = new PetugasController(this);
+            
+            controller = new PetugasController(this);
         }
 
         private void btnRegister_Click(object sender, RoutedEventArgs e)
