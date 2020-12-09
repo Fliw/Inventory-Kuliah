@@ -20,7 +20,7 @@ namespace Inventory.view
     /// </summary>
     public partial class Window1 : Window
     {
-        private LoginController controller;
+       // private PetugasController controller;
 
         public Window1()
         {
@@ -29,7 +29,7 @@ namespace Inventory.view
             ResizeMode = ResizeMode.NoResize;
             txtUsername.Focus();
             //2. instance ke class contrl
-            controller = new LoginController(this);
+            //controller = new PetugasController(this);
         }
 
         private void btnRegister_Click(object sender, RoutedEventArgs e)
@@ -48,7 +48,7 @@ namespace Inventory.view
 
         private void btnLogin_Click(object sender, RoutedEventArgs e)
         {
-            controller.HasilLogin();
+            //controller.HasilLogin();
         }
     }
 }

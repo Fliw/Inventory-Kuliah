@@ -11,7 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-
+using Inventory.controller;
 namespace Inventory.view
 {
     /// <summary>
@@ -19,6 +19,7 @@ namespace Inventory.view
     /// </summary>
     public partial class register : Window
     {
+        private PetugasController controller;
         public register()
         {
             InitializeComponent();
@@ -36,7 +37,8 @@ namespace Inventory.view
 
         private void btnLetsgo_Click(object sender, RoutedEventArgs e)
         {
-
+            PetugasController controller = new PetugasController(this);
+            controller.RegisterPetugas();
         }
     }
 }
