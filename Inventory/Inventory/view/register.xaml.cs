@@ -37,8 +37,7 @@ namespace Inventory.view
 
         private void btnLetsgo_Click(object sender, RoutedEventArgs e)
         {
-            PetugasController controller = new PetugasController();
-            controller.RegisterPage(this);
+            PetugasController controller = new PetugasController(this);
         }
     }
 }
