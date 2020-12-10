@@ -21,8 +21,6 @@
         <Ellipse Fill="White" HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="44" Margin="4,196,0,0"/>
         <Ellipse Fill="White" HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="43" Margin="4,111,0,0"/>
         <Ellipse Fill="White" HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="43" Margin="4,63,0,0"/>
-
-        <Label Content="Aplikasi Inventory" HorizontalAlignment="Left" Margin="12,17,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20" Foreground="White" RenderTransformOrigin="0.409,0.541" Background="{x:Null}" Height="37" Width="181"/>
         <Canvas HorizontalAlignment="Left" Height="123" Margin="211,0,-2,0" VerticalAlignment="Top" Width="695" Background="#FF29BFEE">
             <Canvas Height="70" Canvas.Left="10" Canvas.Top="26" Width="150" Background="White"/>
             <Label Content="50" Canvas.Left="10" Canvas.Top="30" FontWeight="Bold" Foreground="#FF29BFEE" RenderTransformOrigin="-0.375,0.577" FontSize="24"/>
@@ -39,7 +37,7 @@
                 <Label Content="Total Laporan" Canvas.Top="34" FontWeight="Bold" Foreground="#FF29BFEE"/>
             </Canvas>
         </Canvas>
-        <Image HorizontalAlignment="Left" Height="355" Margin="218,163,0,0" VerticalAlignment="Top" Width="333" Source="../assets/Total Transaksi (2).png" RenderTransformOrigin="0.5,0.5">
+        <Image HorizontalAlignment="Left" Height="356" Margin="216,188,0,-1" VerticalAlignment="Top" Width="334" Source="/Inventory;component/assets/Total Transaksi (2).png" RenderTransformOrigin="0.5,0.5">
             <Image.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -49,12 +47,12 @@
                 </TransformGroup>
             </Image.RenderTransform>
         </Image>
-        <Image HorizontalAlignment="Left" Height="352" Margin="560,170,0,0" VerticalAlignment="Top" Width="334" Source="../assets/Total Transaksi.png"/>
-        <Image HorizontalAlignment="Left" Height="36" VerticalAlignment="Top" Width="36" Source="../assets/icon-rumah.png" Margin="8,64,0,0"/>
-        <Image HorizontalAlignment="Left" Height="36" VerticalAlignment="Top" Width="36" Source="../assets/icon-data-check.png" Margin="8,112,0,0"/>
-        <Image HorizontalAlignment="Left" Height="36" VerticalAlignment="Top" Width="36" Source="../assets/icon-transaksi2.png" Margin="8,201,0,0"/>
-        <Image HorizontalAlignment="Left" Height="36" VerticalAlignment="Top" Width="36" Source="../assets/icon-laporan2.png" Margin="12,272,0,0" RenderTransformOrigin="0.87,1.981"/>
-        <Image HorizontalAlignment="Left" Height="36" VerticalAlignment="Top" Width="36" Source="../assets/icon-setting-akun2.png" Margin="10,412,0,0" RenderTransformOrigin="0.741,2.056"/>
+        <Image HorizontalAlignment="Left" Height="352" Margin="558,192,0,-1" VerticalAlignment="Top" Width="334" Source="/Inventory;component/assets/Total Transaksi (1).png"/>
+        <Image HorizontalAlignment="Left" Height="26" VerticalAlignment="Top" Width="28" Source="../assets/icon-rumah.png" Margin="12,69,0,0"/>
+        <Image HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="28" Source="../assets/icon-data-check.png" Margin="12,117,0,0"/>
+        <Image HorizontalAlignment="Left" Height="26" VerticalAlignment="Top" Width="27" Source="../assets/icon-transaksi2.png" Margin="13,204,0,0"/>
+        <Image HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="29" Source="../assets/icon-laporan2.png" Margin="16,277,0,0" RenderTransformOrigin="0.87,1.981"/>
+        <Image HorizontalAlignment="Left" Height="26" VerticalAlignment="Top" Width="27" Source="../assets/icon-setting-akun2.png" Margin="15,417,0,0" RenderTransformOrigin="0.741,2.056"/>
         <Image HorizontalAlignment="Left" Height="94" Margin="305,6,0,0" VerticalAlignment="Top" Width="96" Source="/Inventory;component/assets/Total Transaksi (8).png"/>
         <Image HorizontalAlignment="Left" Height="94" Margin="473,5,0,0" VerticalAlignment="Top" Width="96" Source="/Inventory;component/assets/Total Transaksi (7).png"/>
         <Image HorizontalAlignment="Left" Height="101" Margin="647,4,0,0" VerticalAlignment="Top" Width="107" Source="/Inventory;component/assets/Total Transaksi (5).png" RenderTransformOrigin="0.526,0.399">
@@ -96,6 +94,9 @@
         <Ellipse Fill="White" HorizontalAlignment="Left" Height="25" Margin="137,510,0,0" VerticalAlignment="Top" Width="26"/>
         <Ellipse Fill="White" HorizontalAlignment="Left" Height="50" Margin="62,488,0,0" VerticalAlignment="Top" Width="53"/>
         <Ellipse Fill="White" HorizontalAlignment="Left" Height="25" Margin="5,513,0,0" VerticalAlignment="Top" Width="26"/>
+        <Rectangle Fill="White" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="211"/>
+        <Label Content="Inventory apps" HorizontalAlignment="Left" Margin="5,4,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="26" Foreground="#FF29BFEE" RenderTransformOrigin="0.409,0.541" Background="{x:Null}" Height="52" Width="223"/>
+        <Label Content="Summary Dashboard" HorizontalAlignment="Left" Margin="236,139,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="26" Foreground="#FF29BFEE" RenderTransformOrigin="0.409,0.541" Background="{x:Null}" Height="52" Width="271"/>
 
     </Grid>
 </Window>

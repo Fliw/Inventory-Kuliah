@@ -231,5 +231,11 @@
   <ItemGroup>
     <Resource Include="assets\Total Transaksi %2812%29.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\Total Transaksi %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\Total Transaksi %281%29.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
