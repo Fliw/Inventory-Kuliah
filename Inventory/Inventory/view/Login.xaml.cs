@@ -20,7 +20,7 @@ namespace Inventory.view
     /// </summary>
     public partial class Window1 : Window
     {
-        private controller.LoginController loginController;
+        private controller.PetugasController loginController;
         private PetugasController controller;
 
         public Window1()
@@ -30,7 +30,7 @@ namespace Inventory.view
             ResizeMode = ResizeMode.NoResize;
             txtUsername.Focus();
 
-            loginController = new controller.LoginController(this);
+            loginController = new controller.PetugasController(this);
             controller = new PetugasController(this);
         }
 

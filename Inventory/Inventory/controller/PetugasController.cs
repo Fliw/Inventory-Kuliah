@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Inventory.view;
 using Inventory.model;
+using System.Windows;
 
 namespace Inventory.controller
 {
@@ -21,9 +22,35 @@ namespace Inventory.controller
             model.Password = registerPage.txtPassword.Password;
             model.RegisterPetugas();
         }
-        public PetugasController(Window1 LoginPage)
+        
+        private Window1 login;
+        private model.PetugasModel petugas;
+
+        public PetugasController(Window1 login)
         {
-            this.model = new PetugasModel();
+            this.login = login;
+            petugas = new model.PetugasModel();
+        }
+
+        public void LoginCheck()
+        {
+            petugas.Nama = login.txtUsername.Text;
+            petugas.Password = login.txtPassword.Password;
+
+            bool result = petugas.LoginCheck();
+            if (result)
+            {
+                view.MenuUtama home = new view.MenuUtama();
+                home.Show();
+                login.Close();
+            }
+            else
+            {
+                MessageBox.Show("Login Error, Cek Kembali Username dan Password");
+                login.txtUsername.Text = "";
+                login.txtPassword.Password = "";
+                login.txtUsername.Focus();
+            }
         }
     }
 }
