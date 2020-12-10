@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using MySql.Data.MySqlClient;
+
 namespace Inventory.model
 {
     class PetugasModel
@@ -20,6 +21,7 @@ namespace Inventory.model
         private bool result;
         private MySqlCommand command;
         public PetugasModel()
+
         {
             this.koneksi = DBConnect.GetConnection();
         }

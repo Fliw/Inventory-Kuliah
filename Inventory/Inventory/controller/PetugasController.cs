@@ -23,11 +23,14 @@ namespace Inventory.controller
             model.Password = registerPage.txtPassword.Password;
             model.RegisterPetugas();
         }
-        public PetugasController(Window1 LoginPage)
+        
+
+        public PetugasController(Window1 login)
         {
-            this.login = LoginPage;
+            this.login = login;
             model = new model.PetugasModel();
         }
+
         public void LoginCheck()
         {
             model.Nama = login.txtUsername.Text;

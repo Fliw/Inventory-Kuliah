@@ -20,3 +20,4 @@ Aplikasi ini adalah aplikasi manajemen inventori gudang, menggunakan WPF C# untu
 - git commit -m "pesanku"
 - git push origin main
 - kirim pull req
+- ***
