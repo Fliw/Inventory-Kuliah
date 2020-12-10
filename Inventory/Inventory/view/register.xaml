@@ -42,5 +42,6 @@
         </Canvas>
         <Ellipse Grid.Column="2" Fill="#FFF4F4F5" Height="69" Margin="120,425,45,0" VerticalAlignment="Top"/>
         <Ellipse Fill="#FFF4F4F5" Height="40" Margin="416,38,171,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnBack" Content="Go Back To Login" HorizontalAlignment="Left" Margin="70,38,0,0" VerticalAlignment="Top" Width="152" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Height="40" FontWeight="Bold" FontSize="15" Click="btnBack_Click"/>
     </Grid>
 </Window>

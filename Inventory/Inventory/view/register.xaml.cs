@@ -19,7 +19,6 @@ namespace Inventory.view
     /// </summary>
     public partial class register : Window
     {
-        private PetugasController controller;
         public register()
         {
             InitializeComponent();
@@ -38,6 +37,13 @@ namespace Inventory.view
         private void btnLetsgo_Click(object sender, RoutedEventArgs e)
         {
             PetugasController controller = new PetugasController(this);
+        }
+
+        private void btnBack_Click(object sender, RoutedEventArgs e)
+        {
+            Window1 loginpage = new Window1();
+            this.Close();
+            loginpage.Show();
         }
     }
 }

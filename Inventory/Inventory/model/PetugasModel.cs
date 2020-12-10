@@ -16,6 +16,9 @@ namespace Inventory.model
         public string Password { get { return password; } set { password = value; } }
         public string Status { get { return status; } set { status = value; } }
         public MySqlConnection koneksi;
+        private string query;
+        private bool result;
+        private MySqlCommand command;
         public PetugasModel()
 
         {
@@ -28,22 +31,13 @@ namespace Inventory.model
             query.ExecuteNonQuery();
             MessageBox.Show("Hai " +nama+ "!, Selamat akunmu telah berhasil dibuat!");
         }
-
-        private string query;
-        private bool result;
-        private MySqlCommand command;
         public bool LoginCheck()
         {
-            //siapkan query
             query = "SELECT Nama_Petugas, Password_Petugas FROM petugas WHERE Nama_Petugas = '" + nama + "' AND Password_Petugas = '" + password + "'";
-            //opendb
             koneksi.Open();
-            //Execute query
             command = koneksi.CreateCommand();
             command.CommandText = query;
-            //data
             MySqlDataReader datareader = command.ExecuteReader();
-            //read data
             while (datareader.Read())
             {
                 if (datareader.GetString(0).ToString() == nama &&

@@ -11,6 +11,7 @@ namespace Inventory.controller
 {
     class PetugasController
     {
+        private Window1 login;
         private PetugasModel model;
         private register registerPage;
 
