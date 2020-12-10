@@ -39,5 +39,12 @@ namespace Inventory.view
         {
             PetugasController controller = new PetugasController(this);
         }
+
+        private void btnBack_Click(object sender, RoutedEventArgs e)
+        {
+            Window1 loginpage = new Window1();
+            this.Close();
+            loginpage.Show();
+        }
     }
 }
