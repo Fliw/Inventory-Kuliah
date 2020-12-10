@@ -24,21 +24,19 @@ namespace Inventory.controller
             model.RegisterPetugas();
         }
         
-        private Window1 login;
-        private model.PetugasModel petugas;
 
         public PetugasController(Window1 login)
         {
             this.login = login;
-            petugas = new model.PetugasModel();
+            model = new model.PetugasModel();
         }
 
         public void LoginCheck()
         {
-            petugas.Nama = login.txtUsername.Text;
-            petugas.Password = login.txtPassword.Password;
+            model.Nama = login.txtUsername.Text;
+            model.Password = login.txtPassword.Password;
 
-            bool result = petugas.LoginCheck();
+            bool result = model.LoginCheck();
             if (result)
             {
                 view.MenuUtama home = new view.MenuUtama();
