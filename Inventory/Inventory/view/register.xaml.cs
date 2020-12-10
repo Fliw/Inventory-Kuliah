@@ -19,7 +19,6 @@ namespace Inventory.view
     /// </summary>
     public partial class register : Window
     {
-        private PetugasController controller;
         public register()
         {
             InitializeComponent();
