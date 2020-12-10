@@ -23,7 +23,7 @@
         <Image HorizontalAlignment="Left" Height="39" Margin="15,130,0,0" VerticalAlignment="Top" Width="41" Source="../assets/icon-data-check.png"/>
         <Button x:Name="btnTransaksi" Content="Transaksi" HorizontalAlignment="Left" Height="34" Margin="56,243,0,0" VerticalAlignment="Top" Width="125" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF29BFEE" FontSize="20" FontWeight="Bold" RenderTransformOrigin="0.528,0.176"/>
         <Image HorizontalAlignment="Left" Height="34" Margin="15,243,0,0" VerticalAlignment="Top" Width="41" Source="../assets/icon-transaksi2.png"/>
-        <Button x:Name="btnLaporan" Content="Laporan" HorizontalAlignment="Left" Height="35" Margin="66,362,0,0" VerticalAlignment="Top" Width="108" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF29BFEE" FontSize="20" FontWeight="Bold"/>
+        <Button x:Name="btnLaporan" Content="Laporan" HorizontalAlignment="Left" Height="35" Margin="73,371,0,0" VerticalAlignment="Top" Width="108" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF29BFEE" FontSize="20" FontWeight="Bold"/>
         <Image HorizontalAlignment="Left" Height="35" Margin="20,362,0,0" VerticalAlignment="Top" Width="41" Source="../assets/icon-laporan2.png"/>
         <Button x:Name="btnSetting" Content="Setting Akun" HorizontalAlignment="Left" Height="37" Margin="66,477,0,0" VerticalAlignment="Top" Width="140" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF29BFEE" FontWeight="Bold" FontSize="20"/>
         <Image HorizontalAlignment="Left" Height="37" Margin="10,477,0,0" VerticalAlignment="Top" Width="46" Source="../assets/icon-setting-akun2.png"/>
