@@ -109,6 +109,9 @@
     </ApplicationDefinition>
     <Compile Include="controller\PetugasController.cs" />
     <Compile Include="model\PetugasModel.cs" />
+    <Compile Include="view\DataBarang.xaml.cs">
+      <DependentUpon>DataBarang.xaml</DependentUpon>
+    </Compile>
     <Compile Include="view\Login.xaml.cs">
       <DependentUpon>Login.xaml</DependentUpon>
     </Compile>
@@ -130,6 +133,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="view\DataBarang.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="view\Login.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -236,6 +243,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="assets\Total Transaksi %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\image 6.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
