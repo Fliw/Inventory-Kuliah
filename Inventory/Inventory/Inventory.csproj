@@ -107,7 +107,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="controller\MenuUtamaController.cs" />
     <Compile Include="controller\PetugasController.cs" />
+    <Compile Include="model\MenuUtamaModel.cs" />
     <Compile Include="model\PetugasModel.cs" />
     <Compile Include="view\Login.xaml.cs">
       <DependentUpon>Login.xaml</DependentUpon>
