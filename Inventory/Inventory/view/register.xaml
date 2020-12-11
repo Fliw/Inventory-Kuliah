@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Inventory.view"
         mc:Ignorable="d"
-        Title="register" Height="548" Width="871.333" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+        Title="register" Height="520" Width="871.333" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None">
     <Grid Background="#FF29BFEE" Margin="0,0,0,-1">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="8*"/>

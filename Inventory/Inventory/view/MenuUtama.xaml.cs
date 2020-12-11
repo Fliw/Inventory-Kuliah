@@ -51,5 +51,12 @@ namespace Inventory.view
             dataBarangPage.Show();
             this.Close();
         }
+
+        private void btnLogout_Click(object sender, RoutedEventArgs e)
+        {
+            Window1 loginPage = new Window1();
+            loginPage.Show();
+            this.Hide();
+        }
     }
 }

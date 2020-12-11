@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Inventory.view;
 
 namespace Inventory.view
 {
@@ -22,6 +23,13 @@ namespace Inventory.view
         public DataBarang()
         {
             InitializeComponent();
+        }
+
+        private void btnLogout_Click(object sender, RoutedEventArgs e)
+        {
+            Window1 loginPage = new Window1();
+            loginPage.Show();
+            this.Hide();
         }
     }
 }

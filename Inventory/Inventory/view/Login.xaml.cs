@@ -38,7 +38,6 @@ namespace Inventory.view
             registerPage.Show();
             this.Close();
         }
-
         private void btnRegister_Click_1(object sender, RoutedEventArgs e)
         {
             register registerPage = new register();
@@ -49,6 +48,11 @@ namespace Inventory.view
         private void btnLogin_Click(object sender, RoutedEventArgs e)
         {
             controller.LoginCheck();
+        }
+
+        private void btnExit_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
         }
     }
 }

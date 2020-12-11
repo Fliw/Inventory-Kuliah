@@ -5,27 +5,29 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Inventory.view"
         mc:Ignorable="d"
-        Title="Window1" Height="600" Width="954">
+        Title="Window1" Height="567.385" Width="954" WindowStyle="None" ResizeMode="NoResize">
     <Grid Background="#FF29BFEE" RenderTransformOrigin="0.466,0.525">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="100*"/>
-            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="9*"/>
+            <ColumnDefinition Width="223*"/>
+            <ColumnDefinition Width="628*"/>
+            <ColumnDefinition Width="86*"/>
         </Grid.ColumnDefinitions>
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="569" VerticalAlignment="Top" Width="450"/>
-        <TextBlock HorizontalAlignment="Left" Margin="109,99,0,0" TextWrapping="Wrap" Text="WELCOME TO" VerticalAlignment="Top" Foreground="#FF29BFEE" FontSize="40" FontFamily="Trebuchet MS"/>
-        <TextBlock HorizontalAlignment="Left" Margin="32,193,0,0" TextWrapping="Wrap" Text="&quot;INVENTORY APPLICATION&quot;" VerticalAlignment="Top" Foreground="#FF29BFEE" FontSize="30" FontWeight="Bold"/>
-        <Image HorizontalAlignment="Left" Height="277" Margin="10,292,0,0" VerticalAlignment="Top" Width="440" Source="/assets/image 9.png" Stretch="Fill"/>
-        <Ellipse Fill="#AA29BFEE" HorizontalAlignment="Left" Height="58" Margin="0,10,0,0" VerticalAlignment="Top" Width="68" RenderTransformOrigin="-0.64,-0.06"/>
-        <Ellipse Fill="#AA29BFEE" HorizontalAlignment="Left" Height="58" Margin="404,94,0,0" VerticalAlignment="Top" Width="68" RenderTransformOrigin="-0.64,-0.06"/>
-        <Ellipse Fill="#AA29BFEE" HorizontalAlignment="Left" Height="48" Margin="42,280,0,0" VerticalAlignment="Top" Width="58" RenderTransformOrigin="-0.64,-0.06"/>
-        <Ellipse Fill="#AAFFFFFF" HorizontalAlignment="Left" Height="58" Margin="18,55,0,0" VerticalAlignment="Top" Width="68" RenderTransformOrigin="-0.64,-0.06" Grid.Column="1"/>
-        <Ellipse Fill="#AAFFFFFF" HorizontalAlignment="Left" Height="58" Margin="478,482,0,0" VerticalAlignment="Top" Width="68" RenderTransformOrigin="-0.64,-0.06"/>
-        <Ellipse Fill="#AAFFFFFF" HorizontalAlignment="Left" Height="77" Margin="2,492,0,0" VerticalAlignment="Top" Width="84" RenderTransformOrigin="-0.64,-0.06" Grid.Column="1"/>
-        <Ellipse Fill="#AAFFFFFF" HorizontalAlignment="Left" Height="43" Margin="478,0,0,0" VerticalAlignment="Top" Width="47" RenderTransformOrigin="-0.64,-0.06"/>
-        <Image HorizontalAlignment="Left" Height="360" Margin="498,-32,0,0" VerticalAlignment="Top" Width="414" Source="../assets/my-password 1.png" Stretch="Fill" Grid.ColumnSpan="2"/>
-        <TextBlock HorizontalAlignment="Left" Margin="678,200,0,0" TextWrapping="Wrap" Text="LOGIN" VerticalAlignment="Top" Foreground="White" FontSize="25" FontFamily="Trebuchet MS" FontWeight="Bold"/>
-        <TextBox x:Name="txtUsername" HorizontalAlignment="Left" Height="36" Margin="559,264,0,0" TextWrapping="Wrap" Text="Username" VerticalAlignment="Top" Width="301" Background="White" Foreground="#FF29BFEE" BorderBrush="{x:Null}" FontSize="20" TextAlignment="Center"/>
-        <Image HorizontalAlignment="Left" Height="22" Margin="574,271,0,0" VerticalAlignment="Top" Width="22" Source="../assets/Vector.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="569" VerticalAlignment="Top" Width="450" Grid.ColumnSpan="3"/>
+        <TextBlock HorizontalAlignment="Left" Margin="99.954,99,0,0" TextWrapping="Wrap" Text="WELCOME TO" VerticalAlignment="Top" Foreground="#FF29BFEE" FontSize="40" FontFamily="Trebuchet MS" Grid.ColumnSpan="2" Grid.Column="1"/>
+        <TextBlock HorizontalAlignment="Left" Margin="22.954,193,0,0" TextWrapping="Wrap" Text="&quot;INVENTORY APPLICATION&quot;" VerticalAlignment="Top" Foreground="#FF29BFEE" FontSize="30" FontWeight="Bold" Grid.ColumnSpan="2" Grid.Column="1"/>
+        <Image HorizontalAlignment="Left" Height="277" Margin="0.954,292,0,0" VerticalAlignment="Top" Width="440" Source="/assets/image 9.png" Stretch="Fill" Grid.ColumnSpan="2" Grid.Column="1"/>
+        <Ellipse Fill="#AA29BFEE" HorizontalAlignment="Left" Height="58" Margin="0,10,0,0" VerticalAlignment="Top" Width="68" RenderTransformOrigin="-0.64,-0.06" Grid.ColumnSpan="2"/>
+        <Ellipse Fill="#AA29BFEE" HorizontalAlignment="Left" Height="58" Margin="172,94,0,0" VerticalAlignment="Top" Width="68" RenderTransformOrigin="-0.64,-0.06" Grid.Column="2"/>
+        <Ellipse Fill="#AA29BFEE" HorizontalAlignment="Left" Height="48" Margin="32.954,280,0,0" VerticalAlignment="Top" Width="58" RenderTransformOrigin="-0.64,-0.06" Grid.Column="1"/>
+        <Ellipse Fill="#AAFFFFFF" HorizontalAlignment="Left" Height="58" Margin="18,55,0,0" VerticalAlignment="Top" Width="68" RenderTransformOrigin="-0.64,-0.06" Grid.Column="3"/>
+        <Ellipse Fill="#AAFFFFFF" HorizontalAlignment="Left" Height="58" Margin="246,482,0,0" VerticalAlignment="Top" Width="68" RenderTransformOrigin="-0.64,-0.06" Grid.Column="2"/>
+        <Ellipse Fill="#AAFFFFFF" HorizontalAlignment="Left" Height="77" Margin="2,492,0,0" VerticalAlignment="Top" Width="84" RenderTransformOrigin="-0.64,-0.06" Grid.Column="3"/>
+        <Ellipse Fill="#AAFFFFFF" HorizontalAlignment="Left" Height="43" Margin="246,0,0,0" VerticalAlignment="Top" Width="47" RenderTransformOrigin="-0.64,-0.06" Grid.Column="2"/>
+        <Image HorizontalAlignment="Left" Height="360" Margin="266,-32,0,0" VerticalAlignment="Top" Width="414" Source="../assets/my-password 1.png" Stretch="Fill" Grid.ColumnSpan="2" Grid.Column="2"/>
+        <TextBlock HorizontalAlignment="Left" Margin="446,200,0,0" TextWrapping="Wrap" Text="LOGIN" VerticalAlignment="Top" Foreground="White" FontSize="25" FontFamily="Trebuchet MS" FontWeight="Bold" Grid.Column="2"/>
+        <TextBox x:Name="txtUsername" HorizontalAlignment="Left" Height="36" Margin="327,264,0,0" TextWrapping="Wrap" Text="Username" VerticalAlignment="Top" Width="301" Background="White" Foreground="#FF29BFEE" BorderBrush="{x:Null}" FontSize="20" TextAlignment="Center" Grid.Column="2"/>
+        <Image HorizontalAlignment="Left" Height="22" Margin="342,271,0,0" VerticalAlignment="Top" Width="22" Source="../assets/Vector.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Grid.Column="2">
             <Image.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -35,13 +37,14 @@
                 </TransformGroup>
             </Image.RenderTransform>
         </Image>
-        <Ellipse Fill="#FF29BFEE" HorizontalAlignment="Left" Height="4" Margin="583,344,0,0" VerticalAlignment="Top" Width="4"/>
-        <TextBlock HorizontalAlignment="Left" Margin="559,381,0,0" TextWrapping="Wrap" Text="Doesn't Have An Account?" VerticalAlignment="Top" Foreground="White" FontSize="15"/>
-        <Button x:Name="btnLogin" Content="LOGIN" HorizontalAlignment="Left" Height="55" Margin="559,431,0,0" VerticalAlignment="Top" Width="301" Background="White" BorderBrush="{x:Null}" Foreground="#FF29BFEE" FontSize="20" FontWeight="Bold" Click="btnLogin_Click"/>
-        <PasswordBox x:Name="txtPassword" HorizontalAlignment="Center" Margin="559,322,0,0" VerticalAlignment="Top" Width="301" Height="34" BorderBrush="{x:Null}" Background="White" Password="******" Foreground="#FF29BFEE" TextOptions.TextFormattingMode="Display" TextOptions.TextHintingMode="Fixed"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
-        <Image HorizontalAlignment="Left" Height="17" Margin="573,331,0,0" VerticalAlignment="Top" Width="24" Source="../assets/Vector (1).png"/>
-        <Ellipse Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="3" Margin="583,337,0,0" VerticalAlignment="Top" Width="3"/>
-        <Ellipse Fill="#FF29BFEE" HorizontalAlignment="Left" Height="4" Margin="583,336,0,0" VerticalAlignment="Top" Width="4"/>
-        <Button x:Name="btnRegister" Content="REGISTER" HorizontalAlignment="Left" Height="39" Margin="758,372,0,0" VerticalAlignment="Top" Width="102" Background="White" BorderBrush="{x:Null}" Foreground="#FF29BFEE" FontSize="15" FontWeight="Bold" Click="btnRegister_Click_1"/>
+        <Ellipse Fill="#FF29BFEE" HorizontalAlignment="Left" Height="4" Margin="351,344,0,0" VerticalAlignment="Top" Width="4" Grid.Column="2"/>
+        <TextBlock HorizontalAlignment="Left" Margin="327,381,0,0" TextWrapping="Wrap" Text="Doesn't Have An Account?" VerticalAlignment="Top" Foreground="White" FontSize="15" Grid.Column="2"/>
+        <Button x:Name="btnLogin" Content="LOGIN" HorizontalAlignment="Left" Height="55" Margin="327,431,0,0" VerticalAlignment="Top" Width="301" Background="White" BorderBrush="{x:Null}" Foreground="#FF29BFEE" FontSize="20" FontWeight="Bold" Click="btnLogin_Click" Grid.Column="2"/>
+        <PasswordBox x:Name="txtPassword" HorizontalAlignment="Center" Margin="327,322,0,0" VerticalAlignment="Top" Width="301" Height="34" BorderBrush="{x:Null}" Background="White" Password="******" Foreground="#FF29BFEE" TextOptions.TextFormattingMode="Display" TextOptions.TextHintingMode="Fixed"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="2" />
+        <Image HorizontalAlignment="Left" Height="17" Margin="341,331,0,0" VerticalAlignment="Top" Width="24" Source="../assets/Vector (1).png" Grid.Column="2"/>
+        <Ellipse Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="3" Margin="351,337,0,0" VerticalAlignment="Top" Width="3" Grid.Column="2"/>
+        <Ellipse Fill="#FF29BFEE" HorizontalAlignment="Left" Height="4" Margin="351,336,0,0" VerticalAlignment="Top" Width="4" Grid.Column="2"/>
+        <Button x:Name="btnRegister" Content="REGISTER" HorizontalAlignment="Left" Height="39" Margin="526,372,0,0" VerticalAlignment="Top" Width="102" Background="White" BorderBrush="{x:Null}" Foreground="#FF29BFEE" FontSize="15" FontWeight="Bold" Click="btnRegister_Click_1" Grid.Column="2"/>
+        <Button x:Name="btnExit" Content="EXIT" Grid.Column="2" HorizontalAlignment="Left" Margin="328,501,0,0" VerticalAlignment="Top" Width="128" Height="41" Background="White" BorderBrush="{x:Null}" Foreground="#FF29BFEE" FontWeight="Bold" FontSize="18" Click="btnExit_Click"/>
     </Grid>
 </Window>
