@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using LiveCharts;
 using LiveCharts.Wpf;
+using Inventory.view;
 
 namespace Inventory.view
 {
@@ -35,6 +36,20 @@ namespace Inventory.view
                     Values = new ChartValues<decimal> { 5, 6, 2, 7 }
                 }
             };
+        }
+
+        private void btnBarang_Click(object sender, RoutedEventArgs e)
+        {
+            DataBarang dataBarangPage = new DataBarang();
+            dataBarangPage.Show();
+            this.Close();
+        }
+
+        private void btnDataBarang_Click(object sender, RoutedEventArgs e)
+        {
+            DataBarang dataBarangPage = new DataBarang();
+            dataBarangPage.Show();
+            this.Close();
         }
     }
 }

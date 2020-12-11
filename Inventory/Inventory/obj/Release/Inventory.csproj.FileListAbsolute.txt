@@ -1,0 +1,9 @@
+D:\Project Gabut\smt3\Inventory-Kuliah\Inventory\Inventory\obj\Release\Inventory.csprojAssemblyReference.cache
+D:\Project Gabut\smt3\Inventory-Kuliah\Inventory\Inventory\obj\Release\MainWindow.g.cs
+D:\Project Gabut\smt3\Inventory-Kuliah\Inventory\Inventory\obj\Release\view\Login.g.cs
+D:\Project Gabut\smt3\Inventory-Kuliah\Inventory\Inventory\obj\Release\view\MenuUtama.g.cs
+D:\Project Gabut\smt3\Inventory-Kuliah\Inventory\Inventory\obj\Release\view\register.g.cs
+D:\Project Gabut\smt3\Inventory-Kuliah\Inventory\Inventory\obj\Release\view\DataBarang.g.cs
+D:\Project Gabut\smt3\Inventory-Kuliah\Inventory\Inventory\obj\Release\App.g.cs
+D:\Project Gabut\smt3\Inventory-Kuliah\Inventory\Inventory\obj\Release\Inventory_MarkupCompile.cache
+D:\Project Gabut\smt3\Inventory-Kuliah\Inventory\Inventory\obj\Release\Inventory_MarkupCompile.lref

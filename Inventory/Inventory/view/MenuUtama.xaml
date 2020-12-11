@@ -37,8 +37,8 @@
                 <Label Content="Total Laporan" Canvas.Top="34" FontWeight="Bold" Foreground="#FF29BFEE"/>
             </Canvas>
             <Button x:Name="btnBeranda" Content="BERANDA" Canvas.Left="-177" Canvas.Top="67" Width="178" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="32" FontSize="18" FontWeight="Bold"/>
-            <Button x:Name="btnBarang" Content="DATA BARANG" Canvas.Left="-176" Canvas.Top="115" Width="177" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="32" FontSize="18" FontWeight="Bold"/>
-            <Button x:Name="btnDataBarang" Content="Barang" Canvas.Left="-173" Canvas.Top="146" Width="90" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="24"/>
+            <Button x:Name="btnBarang" Content="DATA BARANG" Canvas.Left="-176" Canvas.Top="115" Width="177" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="32" FontSize="18" FontWeight="Bold" Click="btnBarang_Click"/>
+            <Button x:Name="btnDataBarang" Content="Barang" Canvas.Left="-173" Canvas.Top="146" Width="90" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="24" Click="btnDataBarang_Click"/>
             <Button x:Name="btnKategori" Content="Kategori" Canvas.Left="-173" Canvas.Top="168" Width="90" BorderBrush="#FF29BFEE" Foreground="#FF29BFEE" Background="White" Height="23"/>
             <Button x:Name="btnTransaksi" Content="TRANSAKSI" Canvas.Left="-176" Canvas.Top="197" Width="177" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="32" FontWeight="Bold" FontSize="18"/>
             <Button x:Name="btnBarangMasuk" Content="Barang Masuk" Canvas.Left="-171" Canvas.Top="228" Width="90" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="24"/>
