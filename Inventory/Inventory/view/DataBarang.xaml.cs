@@ -10,24 +10,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Inventory.view
 {
     /// <summary>
-    /// Interaction logic for DataBarang.xaml
+    /// Interaction logic for Window2.xaml
     /// </summary>
-    public partial class DataBarang : Page
+    public partial class Window2 : Window
     {
-        public DataBarang()
+        public Window2()
         {
             InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }

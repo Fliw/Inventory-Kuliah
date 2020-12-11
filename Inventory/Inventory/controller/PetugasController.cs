@@ -39,7 +39,8 @@ namespace Inventory.controller
             bool result = model.LoginCheck();
             if (result)
             {
-                view.MenuUtama home = new view.MenuUtama();
+                DataBarang home = new DataBarang();
+                MessageBox.Show("asu");
                 home.Show();
                 login.Close();
             }

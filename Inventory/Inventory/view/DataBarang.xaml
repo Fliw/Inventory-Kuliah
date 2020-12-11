@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Inventory.view"
         xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
         mc:Ignorable="d"
-        Title="MenuUtama" Height="575.5" Width="914">
+        Title="DataBarang" Height="575.5" Width="914">
     <Grid Background="White" Margin="0,0,2,2">
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
@@ -22,6 +22,7 @@
         <Ellipse Fill="White" HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="43" Margin="4,111,0,0" Stroke="#FF0092BF" StrokeThickness="2"/>
         <Ellipse Fill="White" HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="43" Margin="4,63,0,0" Stroke="#FF0092BF" StrokeThickness="2"/>
         <Canvas HorizontalAlignment="Left" Height="123" Margin="211,0,-2,0" VerticalAlignment="Top" Width="695" Background="#FF29BFEE">
+            <Label Content="50" Canvas.Left="10" Canvas.Top="30" FontWeight="Bold" Foreground="#FF29BFEE" RenderTransformOrigin="-0.375,0.577" FontSize="24"/>
             <Button x:Name="btnBeranda" Content="BERANDA" Canvas.Left="-177" Canvas.Top="67" Width="178" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="32" FontSize="18" FontWeight="Bold"/>
             <Button x:Name="btnBarang" Content="DATA BARANG" Canvas.Left="-176" Canvas.Top="115" Width="177" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="32" FontSize="18" FontWeight="Bold"/>
             <Button x:Name="btnDataBarang" Content="Barang" Canvas.Left="-173" Canvas.Top="146" Width="90" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="24"/>
@@ -38,10 +39,6 @@
             <Button x:Name="btnStockBarang" Content="Stock Barang" Canvas.Left="-171" Canvas.Top="401" Width="90" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="24"/>
             <Button x:Name="btnSetting" Content="SETTING AKUN" Canvas.Left="-175" Canvas.Top="435" Width="176" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="32" FontSize="18" FontWeight="Bold"/>
             <Button x:Name="btnLogout" Content="Logout" Canvas.Left="-172" Canvas.Top="466" Width="90" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="24"/>
-            <Button Content="Tambah +" Canvas.Left="35" Canvas.Top="70" Width="138" Height="38" Background="White" BorderBrush="{x:Null}" Foreground="#FF29BFEE" FontSize="18" FontWeight="Bold" Click="Button_Click"/>
-            <Image Height="78" Canvas.Left="591" Canvas.Top="25" Width="92" Source="/Inventory;component/assets/image 6.png"/>
-            <Button Content="Edit" Canvas.Left="183" Canvas.Top="70" Width="138" Height="38" Background="White" BorderBrush="{x:Null}" Foreground="#FF29BFEE" FontSize="18" FontWeight="Bold" Click="Button_Click"/>
-            <Button Content="Hapus" Canvas.Left="333" Canvas.Top="70" Width="138" Height="38" Background="White" BorderBrush="{x:Null}" Foreground="#FF29BFEE" FontSize="18" FontWeight="Bold" Click="Button_Click"/>
         </Canvas>
         <Image HorizontalAlignment="Left" Height="26" VerticalAlignment="Top" Width="28" Source="../assets/icon-rumah.png" Margin="12,69,0,0"/>
         <Image HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="28" Source="../assets/icon-data-check.png" Margin="12,117,0,0"/>
@@ -54,7 +51,11 @@
         <Ellipse Fill="White" HorizontalAlignment="Left" Height="25" Margin="5,513,0,0" VerticalAlignment="Top" Width="26"/>
         <Rectangle Fill="White" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="211" Stroke="#FF0092BF" Margin="0,-1,0,0"/>
         <Label Content="Inventory apps" HorizontalAlignment="Left" Margin="5,4,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="26" Foreground="#FF29BFEE" RenderTransformOrigin="0.409,0.541" Background="{x:Null}" Height="52" Width="223"/>
-        <Label Content="Data Barang" HorizontalAlignment="Left" Margin="244,-2,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="40" Foreground="White" RenderTransformOrigin="0.409,0.541" Background="{x:Null}" Height="68" Width="243"/>
+        <Label Content="Data Barang&#xD;&#xA;" HorizontalAlignment="Left" Margin="228,2,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="40" Foreground="White" RenderTransformOrigin="0.409,0.541" Background="{x:Null}" Height="64" Width="256"/>
+        <Image HorizontalAlignment="Left" Height="100" Margin="786,13,0,0" VerticalAlignment="Top" Width="110" Source="/Inventory;component/assets/image 6.png"/>
+        <Button x:Name="btnTambah" Content="Tambah" HorizontalAlignment="Left" VerticalAlignment="Top" Width="136" Margin="237,74,0,0" Height="38" Background="White" BorderBrush="{x:Null}" Foreground="#FF29BFEE" FontSize="18" FontWeight="Bold"/>
+        <Button x:Name="btnEdit" Content="Edit" HorizontalAlignment="Left" VerticalAlignment="Top" Width="136" Margin="386,74,0,0" Height="38" Background="White" BorderBrush="{x:Null}" Foreground="#FF29BFEE" FontSize="18" FontWeight="Bold"/>
+        <Button x:Name="btnHapus1" Content="Hapus" HorizontalAlignment="Left" VerticalAlignment="Top" Width="136" Margin="536,74,0,0" Height="38" Background="White" BorderBrush="{x:Null}" Foreground="#FF29BFEE" FontSize="18" FontWeight="Bold"/>
 
     </Grid>
 </Window>
