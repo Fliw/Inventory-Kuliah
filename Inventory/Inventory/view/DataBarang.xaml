@@ -78,9 +78,9 @@
         <ComboBox x:Name="cmbKategori" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="497,106,0,0" Height="34" SelectionChanged="ComboBox_SelectionChanged" Foreground="#FF29BFEE" BorderBrush="#FF29BFEE"/>
         <ComboBox x:Name="cmbRak" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="497,171,0,0" Height="33" SelectionChanged="ComboBox_SelectionChanged" BorderBrush="#FF29BFEE" Foreground="#FF29BFEE"/>
         <Rectangle Fill="#FF29BFEE" HorizontalAlignment="Left" Height="6" Margin="212,211,-2,0" Stroke="#FF29BFEE" VerticalAlignment="Top" Width="694"/>
-        <Button x:Name="btnSimpan" Content="Simpan" HorizontalAlignment="Left" Margin="654,169,0,0" VerticalAlignment="Top" Width="84" Height="36" Foreground="White" Background="#FF29BFEE" BorderBrush="{x:Null}" FontWeight="Bold" FontSize="16" Click="btnSimpan_Click"/>
-        <Button x:Name="btnCancel" Content="Cancel" HorizontalAlignment="Left" Margin="774,169,0,0" VerticalAlignment="Top" Width="84" Height="36" Foreground="White" BorderBrush="{x:Null}" Background="#FF29BFEE" FontSize="16" FontWeight="Bold"/>
         <DataGrid x:Name="dgBarang" HorizontalAlignment="Left" Height="330" Margin="212,216,-1,0" VerticalAlignment="Top" Width="693"/>
+        <Button x:Name="btnSimpan" Content="Simpan" HorizontalAlignment="Left" VerticalAlignment="Top" Width="92" Margin="654,172,0,0" Height="31" Background="#FF29BFEE" BorderBrush="{x:Null}" Foreground="Black" FontSize="18" FontWeight="Bold" Click="btnHapus1_Click"/>
+        <Button x:Name="btnCancel" Content="Cancel" HorizontalAlignment="Left" VerticalAlignment="Top" Width="98" Margin="761,172,0,0" Height="31" Background="#FF29BFEE" BorderBrush="{x:Null}" Foreground="Black" FontSize="18" FontWeight="Bold" Click="btnHapus1_Click"/>
 
     </Grid>
 </Window>
