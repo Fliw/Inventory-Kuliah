@@ -21,7 +21,7 @@ namespace Inventory.controller
         public void selectBarang()
         {
             DataSet data = model.selectBarang();
-            //view.dgBarang.ItemsSource = data.Tables[0].DefaultView;
+            view.dgBarang.ItemsSource = data.Tables[0].DefaultView;
         }
         public Boolean insertBarang()
         {

@@ -107,6 +107,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="controller\BarangController.cs" />
     <Compile Include="controller\PetugasController.cs" />
     <Compile Include="model\BarangModel.cs" />
     <Compile Include="model\PetugasModel.cs" />

@@ -39,6 +39,7 @@ namespace Inventory.model
                 command.CommandType = CommandType.Text;
                 command.CommandText = "SELECT * FROM barang";
                 MySqlDataAdapter sda = new MySqlDataAdapter();
+                sda.SelectCommand = command;
                 sda.Fill(ds, "barang");
                 koneksi.Close();
             }
