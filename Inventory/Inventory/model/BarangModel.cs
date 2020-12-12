@@ -37,7 +37,7 @@ namespace Inventory.model
                 command = new MySqlCommand();
                 command.Connection = koneksi;
                 command.CommandType = CommandType.Text;
-                command.CommandText = "SELECT barang.Nama_Barang,rak.Nama_Rak,kategori.Nama_Kategori, barang.Satuan,barang.Stock,barang.Tanggal FROM barang " +
+                command.CommandText = "SELECT barang.ID_Barang,barang.Nama_Barang,rak.Nama_Rak,kategori.Nama_Kategori, barang.Satuan,barang.Stock,barang.Tanggal FROM barang " +
                     "INNER JOIN rak ON barang.ID_Rak = rak.ID_Rak " +
                     "INNER JOIN kategori ON barang.ID_Kategori = kategori.ID_Kategori";
                 MySqlDataAdapter sda = new MySqlDataAdapter();
@@ -125,7 +125,7 @@ namespace Inventory.model
                 MySqlDataReader reader = command.ExecuteReader();
                 while (reader.Read())
                 {
-                    kode = Int16.Parse(reader.GetByte(0).ToString()) + 1;
+                    kode = Int16.Parse(reader.GetString(0).ToString()) + 1;
                 }
                 koneksi.Close();
             }
