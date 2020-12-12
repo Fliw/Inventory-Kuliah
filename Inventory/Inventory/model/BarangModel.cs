@@ -37,7 +37,9 @@ namespace Inventory.model
                 command = new MySqlCommand();
                 command.Connection = koneksi;
                 command.CommandType = CommandType.Text;
-                command.CommandText = "SELECT * FROM barang";
+                command.CommandText = "SELECT barang.Nama_Barang,rak.Nama_Rak,kategori.Nama_Kategori, barang.Satuan,barang.Stock,barang.Tanggal FROM barang " +
+                    "INNER JOIN rak ON barang.ID_Rak = rak.ID_Rak " +
+                    "INNER JOIN kategori ON barang.ID_Kategori = kategori.ID_Kategori";
                 MySqlDataAdapter sda = new MySqlDataAdapter();
                 sda.SelectCommand = command;
                 sda.Fill(ds, "barang");
