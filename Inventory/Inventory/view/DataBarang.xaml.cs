@@ -23,6 +23,9 @@ namespace Inventory.view
         public DataBarang()
         {
             InitializeComponent();
+            cmbKategori.Items.Add("Buku");
+            cmbKategori.Items.Add("Baju");
+            cmbKategori.Items.Add("Kain");
         }
 
         private void btnLogout_Click(object sender, RoutedEventArgs e)
@@ -30,6 +33,11 @@ namespace Inventory.view
             Window1 loginPage = new Window1();
             loginPage.Show();
             this.Hide();
+        }
+
+        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+           
         }
     }
 }
