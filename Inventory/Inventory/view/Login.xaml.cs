@@ -20,7 +20,6 @@ namespace Inventory.view
     /// </summary>
     public partial class Window1 : Window
     {
-        private PetugasController loginController;
         private PetugasController controller;
 
         public Window1()

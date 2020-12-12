@@ -26,6 +26,10 @@ namespace Inventory.view
             cmbKategori.Items.Add("Buku");
             cmbKategori.Items.Add("Baju");
             cmbKategori.Items.Add("Kain");
+
+            cmbRak.Items.Add("201");
+            cmbRak.Items.Add("404");
+            cmbRak.Items.Add("305");
         }
 
         private void btnLogout_Click(object sender, RoutedEventArgs e)

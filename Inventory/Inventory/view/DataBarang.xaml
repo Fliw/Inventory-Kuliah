@@ -57,9 +57,9 @@
         <Button x:Name="btnEdit" Content="Edit" HorizontalAlignment="Left" VerticalAlignment="Top" Width="206" Margin="653,126,0,0" Height="37" Background="#FF29BFEE" BorderBrush="{x:Null}" Foreground="White" FontSize="18" FontWeight="Bold"/>
         <Button x:Name="btnHapus1" Content="Hapus" HorizontalAlignment="Left" VerticalAlignment="Top" Width="206" Margin="653,167,0,0" Height="38" Background="#FF29BFEE" BorderBrush="{x:Null}" Foreground="White" FontSize="18" FontWeight="Bold"/>
         <TextBox HorizontalAlignment="Left" Height="35" Margin="234,105,0,0" TextWrapping="Wrap" Text="ID" VerticalAlignment="Top" Width="130" BorderBrush="#FF29BFEE" Foreground="#FF29BFEE"/>
-        <TextBox HorizontalAlignment="Left" Height="33" Margin="234,171,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="130" Foreground="#FF29BFEE" BorderBrush="#FF29BFEE"/>
-        <TextBox HorizontalAlignment="Left" Height="34" Margin="371,106,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" Foreground="#FF29BFEE" BorderBrush="#FF29BFEE"/>
-        <TextBox HorizontalAlignment="Left" Height="33" Margin="371,171,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" BorderBrush="#FF29BFEE" Foreground="#FF29BFEE"/>
+        <TextBox HorizontalAlignment="Left" Height="33" Margin="234,171,0,0" TextWrapping="Wrap" Text="Nama" VerticalAlignment="Top" Width="130" Foreground="#FF29BFEE" BorderBrush="#FF29BFEE"/>
+        <TextBox HorizontalAlignment="Left" Height="34" Margin="371,106,0,0" TextWrapping="Wrap" Text="Stock" VerticalAlignment="Top" Width="120" Foreground="#FF29BFEE" BorderBrush="#FF29BFEE"/>
+        <TextBox HorizontalAlignment="Left" Height="33" Margin="371,171,0,0" TextWrapping="Wrap" Text="Satuan" VerticalAlignment="Top" Width="120" BorderBrush="#FF29BFEE" Foreground="#FF29BFEE"/>
         <Label Content="ID Barang" HorizontalAlignment="Left" Margin="231,72,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16" Foreground="#FF29BFEE" RenderTransformOrigin="0.409,0.541" Background="{x:Null}" Height="32" Width="103"/>
         <Label Content="Nama Barang" HorizontalAlignment="Left" Margin="230,139,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16" Foreground="#FF29BFEE" RenderTransformOrigin="0.409,0.541" Background="{x:Null}" Height="32" Width="115">
             <Label.RenderTransform>
@@ -76,7 +76,7 @@
         <Label Content="Stock" HorizontalAlignment="Left" Margin="369,74,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16" Foreground="#FF29BFEE" RenderTransformOrigin="0.409,0.541" Background="{x:Null}" Height="30" Width="90"/>
         <Label Content="No Rak" HorizontalAlignment="Left" Margin="495,142,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16" Foreground="#FF29BFEE" RenderTransformOrigin="0.409,0.541" Background="{x:Null}" Height="30" Width="90"/>
         <ComboBox x:Name="cmbKategori" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="497,106,0,0" Height="34" SelectionChanged="ComboBox_SelectionChanged" Foreground="#FF29BFEE" BorderBrush="#FF29BFEE"/>
-        <ComboBox x:Name="cmbKategori_Copy" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="497,171,0,0" Height="33" SelectionChanged="ComboBox_SelectionChanged" BorderBrush="#FF29BFEE" Foreground="#FF29BFEE"/>
+        <ComboBox x:Name="cmbRak" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="497,171,0,0" Height="33" SelectionChanged="ComboBox_SelectionChanged" BorderBrush="#FF29BFEE" Foreground="#FF29BFEE"/>
         <Rectangle Fill="#FF29BFEE" HorizontalAlignment="Left" Height="6" Margin="212,211,-2,0" Stroke="#FF29BFEE" VerticalAlignment="Top" Width="694"/>
 
     </Grid>
