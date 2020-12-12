@@ -14,13 +14,13 @@ namespace Inventory.model
         private MySqlConnection koneksi;
         private int IDBarang, IDKategori, IDFaktur, IDRak, Stock;
         private string NamaBarang, Satuan;
-        private int idbarang { get { return IDBarang; } set { IDBarang = value; } }
-        private int idfaktur { get { return IDFaktur; } set { IDFaktur = value; } }
-        private int idkategori { get { return IDKategori; } set { IDKategori = value; } }
-        private int idrak { get { return IDRak; } set { IDRak = value; } }
-        private int stock { get { return Stock; } set { Stock = value; } }
-        private string namabarang { get { return NamaBarang; } set { NamaBarang = value; } }
-        private string satuan { get { return Satuan; } set { Satuan = value; } }
+        public int idbarang { get { return IDBarang; } set { IDBarang = value; } }
+        public int idfaktur { get { return IDFaktur; } set { IDFaktur = value; } }
+        public int idkategori { get { return IDKategori; } set { IDKategori = value; } }
+        public int idrak { get { return IDRak; } set { IDRak = value; } }
+        public int stock { get { return Stock; } set { Stock = value; } }
+        public string namabarang { get { return NamaBarang; } set { NamaBarang = value; } }
+        public string satuan { get { return Satuan; } set { Satuan = value; } }
 
         private MySqlCommand command;
         private string query;
