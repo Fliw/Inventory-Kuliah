@@ -108,6 +108,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="controller\PetugasController.cs" />
+    <Compile Include="model\BarangModel.cs" />
     <Compile Include="model\PetugasModel.cs" />
     <Compile Include="view\Login.xaml.cs">
       <DependentUpon>Login.xaml</DependentUpon>
