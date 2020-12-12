@@ -53,7 +53,7 @@ namespace Inventory.model
             status = false;
             try
             {
-                query = "INSERT INTO barang VALUES(" + idbarang + ",'" + namabarang + "'," + idkategori + "," + idrak + ",'" + satuan + "'," + stock + ")";
+                query = "INSERT INTO barang (`Nama_Barang`,`ID_Kategori`,`ID_Faktur`,`ID_Rak`,`Satuan`,`Stock`) VALUES('" + namabarang + "'," + idkategori + "," + idrak + ",'" + satuan + "'," + stock + ")";
                 koneksi.Open();
                 command = new MySqlCommand();
                 command.Connection = koneksi;
@@ -66,6 +66,71 @@ namespace Inventory.model
                 status = false;
             }
             return status;
+        }
+
+        public Boolean updateBarang()
+        {
+            status = false;
+            try
+            {
+                query = "UPDATE barang SET Nama_Barang  = '" + namabarang + "',ID_Kategori = " + idkategori + ",ID_Rak = " + idrak + ",Satuan = '" + satuan + "',Stock = " + stock + " WHERE ID_Barang = "+idbarang;
+                koneksi.Open();
+                command = new MySqlCommand();
+                command.Connection = koneksi;
+                command.CommandText = query;
+                command.ExecuteNonQuery();
+                status = true;
+                koneksi.Close();
+            }
+            catch (MySqlException)
+            {
+                status = false;
+            }
+            return status; 
+        }
+
+        public Boolean deleteBarang()
+        {
+            status = false;
+            try
+            {
+                query = "DELETE FROM barang WHERE ID_Barang = " + idbarang;
+                koneksi.Open();
+                command = new MySqlCommand();
+                command.Connection = koneksi;
+                command.CommandText = query;
+                command.ExecuteNonQuery();
+                status = true;
+                koneksi.Close();
+            }
+            catch
+            {
+                status = false;
+            }
+            return status;
+        }
+        public int maxPK()
+        {
+            int kode = 0;
+            try
+            {
+                query = "SELECT MAX(ID_Barang) FROM barang";
+                koneksi.Open();
+                command = new MySqlCommand();
+                command.Connection = koneksi;
+                command.CommandText = query;
+                MySqlDataReader reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    kode = Int16.Parse(reader.GetByte(0).ToString()) + 1;
+                }
+                koneksi.Close();
+            }
+            catch(MySqlException)
+            {
+                kode = 0;
+            }
+            return kode;
         }
     }
 }
