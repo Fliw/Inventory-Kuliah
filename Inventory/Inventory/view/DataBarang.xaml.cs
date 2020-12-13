@@ -36,7 +36,7 @@ namespace Inventory.view
             btnEdit.IsEnabled = status;
             btnHapus.IsEnabled = status;
             btnSave.IsEnabled = !status;
-            btnCancel.IsEnabled = !status;
+            btnBatal.IsEnabled = !status;
         }
 
         public void tampilData()
@@ -54,10 +54,18 @@ namespace Inventory.view
         private void btnTambah_Click(object sender, RoutedEventArgs e)
         {
             proses = "INSERT";
-            txtIdBarang.Text = "";
+            txtIdBarang.Text = "TIDAK BISA DIEDIT";
+            txtIdBarang.IsReadOnly = true;
             controller.setKode();
+            txtFaktur.IsReadOnly = true;
             txtNamaBarang.Text = "";
             txtNamaBarang.Focus();
+            txtSatuan.Text = "";
+            txtStock.Text = "";
+            cmbKategori.IsEnabled = true;
+            cmbPetugas.IsEnabled = true;
+            cmbRak.IsEnabled = true;
+            aturButton(false);
         }
 
         private void btnSave_Click(object sender, RoutedEventArgs e)
@@ -65,6 +73,8 @@ namespace Inventory.view
             if (proses == "INSERT")
             {
                 hasil = controller.insertBarang();
+                txtFaktur.IsReadOnly = false;
+                txtIdBarang.IsReadOnly = false;
             }
             else if (proses == "UPDATE")
             {
@@ -114,13 +124,30 @@ namespace Inventory.view
             menu.Show();
             this.Close();
         }
+        private void btnBatal_Click(object sender, RoutedEventArgs e)
+        {
+            txtFaktur.IsEnabled = true;
+            txtFaktur.Text = "";
+            txtIdBarang.IsEnabled = true;
+            txtIdBarang.Text = "";
+            txtNamaBarang.IsEnabled = true;
+            txtNamaBarang.Text = "";
+            txtSatuan.IsEnabled = true;
+            txtSatuan.Text = "";
+            txtStock.IsEnabled = true;
+            txtStock.Text = "";
+            cmbKategori.SelectedIndex = 0;
+            cmbPetugas.SelectedIndex = 0;
+            cmbRak.SelectedIndex = 0;
+            tampilData();
+        }
         private void btnHapus_Click(object sender, RoutedEventArgs e)
         {
             
         }
         private void btnCancel_Click(object sender, RoutedEventArgs e)
         {
-            tampilData();
+            
         }
 
         private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -133,5 +160,7 @@ namespace Inventory.view
         {
 
         }
+
+       
     }
 }

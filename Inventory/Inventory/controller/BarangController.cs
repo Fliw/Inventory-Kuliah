@@ -29,8 +29,6 @@ namespace Inventory.controller
         public Boolean insertBarang()
         {
             DateTime dateAndTime = new DateTime();
-            
-            model.idbarang = Int16.Parse(view.txtIdBarang.Text);
             model.namabarang = view.txtNamaBarang.Text;
             model.idkategori = model.searchKategoriID(view.cmbKategori.SelectedItem.ToString());
             model.idrak = model.searchRakID(view.cmbRak.SelectedItem.ToString());
@@ -63,7 +61,6 @@ namespace Inventory.controller
         }
         public void setKode()
         {
-            view.txtIdBarang.Text = model.maxPK().ToString();
             view.txtFaktur.Text = model.maxPKFaktur().ToString();
         }
         public void fillComboRak()

@@ -67,7 +67,7 @@ namespace Inventory.model
             status = false;
             try
             {
-                query = "INSERT INTO barang (`ID_Barang`,`Nama_Barang`,`ID_Kategori`,`ID_Faktur_Keluar`,`ID_Rak`,`Satuan`,`Stock`,`Tanggal`) VALUES("+idbarang+",'" + namabarang + "'," + idkategori + "," + idfaktur + "," + idrak + ",'" + satuan + "'," + stock + ",'"+tanggal+"')";
+                query = "INSERT INTO barang (`Nama_Barang`,`ID_Kategori`,`ID_Faktur_Keluar`,`ID_Rak`,`Satuan`,`Stock`,`Tanggal`) VALUES('" + namabarang + "'," + idkategori + "," + idfaktur + "," + idrak + ",'" + satuan + "'," + stock + ",'"+tanggal+"')";
                 koneksi.Open();
                 command = new MySqlCommand();
                 command.CommandText = query;
@@ -125,56 +125,7 @@ namespace Inventory.model
             }
             return status;
         }
-        public int maxPK()
-        {
-            int kode = 0;
-            try
-            {
-                query = "SELECT MAX(ID_Barang) FROM barang";
-                koneksi.Open();
-                command = new MySqlCommand();
-                command.Connection = koneksi;
-                command.CommandText = query;
-                MySqlDataReader reader = command.ExecuteReader();
-                while (reader.Read())
-                {
-                    if (!reader.IsDBNull(IDBarang))
-                    {
-                        kode = Int16.Parse(reader.GetString(0).ToString()) + 1;
-                    }  
-                }
-                koneksi.Close();
-            }
-            catch(MySqlException)
-            {
-                kode = 0;
-            }
-            return kode;
-        }
-        public int maxPKFaktur()
-        {
-            int kode = 0;
-            try
-            {
-                query = "SELECT MAX(ID_Faktur_keluar) FROM barangkeluar";
-                koneksi.Open();
-                command = new MySqlCommand();
-                command.Connection = koneksi;
-                command.CommandText = query;
-                MySqlDataReader reader = command.ExecuteReader();
-                while (reader.Read())
-                {
-                    kode = Int16.Parse(reader.GetString(0).ToString());
-                }
-                koneksi.Close();
-            }
-            catch (MySqlException)
-            {
-                kode = 0;
-            }
-            return kode;
-        }
-
+  
         public List<string> fillComboRak()
         {
             List<string> comboArrayList = new List<string>();
@@ -267,6 +218,36 @@ namespace Inventory.model
             }
 
             return comboArrayList;
+        }
+
+        public int maxPKFaktur()
+        {
+            int kode = 0;
+            try
+            {
+                koneksi.Open();
+                MySqlCommand command = new MySqlCommand();
+                command.CommandText = "SELECT MAX(ID_Faktur_keluar) FROM barangkeluar";
+                command.Connection = koneksi;
+                MySqlDataReader reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    var ii = reader.FieldCount;
+                    for (int i = 0; i < ii; i++)
+                    {
+                        if (reader[i] is DBNull)
+                            kode = 0;
+                        else
+                            kode = Int16.Parse(reader.GetString(0).ToString());
+                    }
+                }
+                koneksi.Close();
+            }
+            catch (MySqlException)
+            {
+                kode = 0;
+            }
+            return kode;
         }
         public int searchKategoriID(string nama)
         {

@@ -26,7 +26,7 @@
         <Ellipse Fill="#AAFFFFFF" HorizontalAlignment="Left" Height="43" Margin="246,0,0,0" VerticalAlignment="Top" Width="47" RenderTransformOrigin="-0.64,-0.06" Grid.Column="2"/>
         <Image HorizontalAlignment="Left" Height="360" Margin="266,-32,0,0" VerticalAlignment="Top" Width="414" Source="../assets/my-password 1.png" Stretch="Fill" Grid.ColumnSpan="2" Grid.Column="2"/>
         <TextBlock HorizontalAlignment="Left" Margin="446,200,0,0" TextWrapping="Wrap" Text="LOGIN" VerticalAlignment="Top" Foreground="White" FontSize="25" FontFamily="Trebuchet MS" FontWeight="Bold" Grid.Column="2"/>
-        <TextBox x:Name="txtUsername" HorizontalAlignment="Left" Height="36" Margin="327,264,0,0" TextWrapping="Wrap" Text="Username" VerticalAlignment="Top" Width="301" Background="White" Foreground="#FF29BFEE" BorderBrush="{x:Null}" FontSize="20" TextAlignment="Center" Grid.Column="2"/>
+        <TextBox x:Name="txtUsername" HorizontalAlignment="Left" Height="36" Margin="327,264,0,0" TextWrapping="Wrap" Text="fliw" VerticalAlignment="Top" Width="301" Background="White" Foreground="#FF29BFEE" BorderBrush="{x:Null}" FontSize="20" TextAlignment="Center" Grid.Column="2"/>
         <Image HorizontalAlignment="Left" Height="22" Margin="342,271,0,0" VerticalAlignment="Top" Width="22" Source="../assets/Vector.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Grid.Column="2">
             <Image.RenderTransform>
                 <TransformGroup>
@@ -40,7 +40,7 @@
         <Ellipse Fill="#FF29BFEE" HorizontalAlignment="Left" Height="4" Margin="351,344,0,0" VerticalAlignment="Top" Width="4" Grid.Column="2"/>
         <TextBlock HorizontalAlignment="Left" Margin="327,381,0,0" TextWrapping="Wrap" Text="Doesn't Have An Account?" VerticalAlignment="Top" Foreground="White" FontSize="15" Grid.Column="2"/>
         <Button x:Name="btnLogin" Content="LOGIN" HorizontalAlignment="Left" Height="55" Margin="327,431,0,0" VerticalAlignment="Top" Width="301" Background="White" BorderBrush="{x:Null}" Foreground="#FF29BFEE" FontSize="20" FontWeight="Bold" Click="btnLogin_Click" Grid.Column="2"/>
-        <PasswordBox x:Name="txtPassword" HorizontalAlignment="Center" Margin="327,322,0,0" VerticalAlignment="Top" Width="301" Height="34" BorderBrush="{x:Null}" Background="White" Password="******" Foreground="#FF29BFEE" TextOptions.TextFormattingMode="Display" TextOptions.TextHintingMode="Fixed"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="2" />
+        <PasswordBox x:Name="txtPassword" HorizontalAlignment="Center" Margin="327,322,0,0" VerticalAlignment="Top" Width="301" Height="34" BorderBrush="{x:Null}" Background="White" Password="fliw" Foreground="#FF29BFEE" TextOptions.TextFormattingMode="Display" TextOptions.TextHintingMode="Fixed"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="2" />
         <Image HorizontalAlignment="Left" Height="17" Margin="341,331,0,0" VerticalAlignment="Top" Width="24" Source="../assets/Vector (1).png" Grid.Column="2"/>
         <Ellipse Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="3" Margin="351,337,0,0" VerticalAlignment="Top" Width="3" Grid.Column="2"/>
         <Ellipse Fill="#FF29BFEE" HorizontalAlignment="Left" Height="4" Margin="351,336,0,0" VerticalAlignment="Top" Width="4" Grid.Column="2"/>
