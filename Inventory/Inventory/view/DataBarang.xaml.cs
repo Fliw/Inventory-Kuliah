@@ -54,7 +54,6 @@ namespace Inventory.view
         private void btnTambah_Click(object sender, RoutedEventArgs e)
         {
             proses = "INSERT";
-            aturButton(false);
             txtIdBarang.Text = "";
             controller.setKode();
             txtNamaBarang.Text = "";
@@ -71,6 +70,10 @@ namespace Inventory.view
             {
                 hasil = controller.updateBarang();
             }
+            else if (proses == "DELETE")
+            {
+                hasil = controller.deleteBarang();
+            }
             if (hasil == true)
             {
                 MessageBox.Show("Berhasil!");
@@ -86,18 +89,34 @@ namespace Inventory.view
             proses = "UPDATE";
             aturButton(false);
         }
+        private void btnHapus1_Click(object sender, RoutedEventArgs e)
+        {
+            txtFaktur.Text = "TIDAK BISA DIEDIT";
+            txtFaktur.IsReadOnly = true;
+            txtNamaBarang.Text = "TIDAK BISA DIEDIT";
+            txtNamaBarang.IsReadOnly = true;
+            txtSatuan.Text = "TIDAK BISA DIEDIT";
+            txtSatuan.IsReadOnly = true;
+            txtStock.Text = "TIDAK BISA DIEDIT";
+            txtStock.IsReadOnly = true;
+            cmbKategori.IsEnabled = false;
+            cmbPetugas.IsEnabled = false;
+            cmbRak.IsEnabled = false;
+            txtIdBarang.Text = "";
+            txtIdBarang.Focus();
+            proses = "DELETE";
+            aturButton(false);
+        }
+
+        private void btnBeranda_Click(object sender, RoutedEventArgs e)
+        {
+            view.MenuUtama menu = new view.MenuUtama();
+            menu.Show();
+            this.Close();
+        }
         private void btnHapus_Click(object sender, RoutedEventArgs e)
         {
-            hasil = controller.deleteBarang();
-            if (hasil == true)
-            {
-                MessageBox.Show("Data Berhasil Dihapus");
-            }
-            else
-            {
-                MessageBox.Show("Hapus Data Gagal!");
-            }
-            tampilData();
+            
         }
         private void btnCancel_Click(object sender, RoutedEventArgs e)
         {
@@ -109,25 +128,10 @@ namespace Inventory.view
            
         }
 
-        
+
         private void btnSimpan_Click(object sender, RoutedEventArgs e)
         {
-            
-        }
 
-
-        
-
-        private void btnHapus1_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void btnBeranda_Click(object sender, RoutedEventArgs e)
-        {
-            view.MenuUtama menu = new view.MenuUtama();
-            menu.Show();
-            this.Close();
         }
     }
 }
