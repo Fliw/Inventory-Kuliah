@@ -38,7 +38,7 @@ namespace Inventory.controller
             model.petugas = model.searchPetugasID(view.cmbPetugas.SelectedItem.ToString());
             model.satuan = view.txtSatuan.Text;
             model.stock = Int16.Parse(view.txtStock.Text);
-            model.tanggal = dateAndTime.ToString("dd/MM/yyyy");
+            model.tanggal = DateTime.Now.ToString();
             hasil = model.insertBarang();
             return hasil;
         }
