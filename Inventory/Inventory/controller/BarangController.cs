@@ -18,6 +18,7 @@ namespace Inventory.controller
             model = new model.BarangModel();
             this.fillComboRak();
             this.fillComboKategori();
+            this.fillComboPetugas();
         }
 
         public void selectBarang()
@@ -27,12 +28,17 @@ namespace Inventory.controller
         }
         public Boolean insertBarang()
         {
+            DateTime dateAndTime = new DateTime();
+            
             model.idbarang = Int16.Parse(view.txtIdBarang.Text);
             model.namabarang = view.txtNamaBarang.Text;
-            model.idkategori = Int16.Parse(view.cmbKategori.SelectedItem.ToString());
-            model.idrak = Int16.Parse(view.cmbRak.SelectedItem.ToString());
+            model.idkategori = model.searchKategoriID(view.cmbKategori.SelectedItem.ToString());
+            model.idrak = model.searchRakID(view.cmbRak.SelectedItem.ToString());
+            model.idfaktur = Int16.Parse(view.txtFaktur.Text);
+            model.petugas = model.searchPetugasID(view.cmbPetugas.SelectedItem.ToString());
             model.satuan = view.txtSatuan.Text;
             model.stock = Int16.Parse(view.txtStock.Text);
+            model.tanggal = dateAndTime.ToString("dd/MM/yyyy");
             hasil = model.insertBarang();
             return hasil;
         }
@@ -58,6 +64,7 @@ namespace Inventory.controller
         public void setKode()
         {
             view.txtIdBarang.Text = model.maxPK().ToString();
+            view.txtFaktur.Text = model.maxPKFaktur().ToString();
         }
         public void fillComboRak()
         {
@@ -68,6 +75,11 @@ namespace Inventory.controller
         {
             List<string> dataKategori = model.fillComboKategori();
             view.cmbKategori.ItemsSource = dataKategori;
+        }
+        public void fillComboPetugas()
+        {
+            List<string> dataPetugas = model.fillComboPetugas();
+            view.cmbPetugas.ItemsSource = dataPetugas;
         }
     }
 }

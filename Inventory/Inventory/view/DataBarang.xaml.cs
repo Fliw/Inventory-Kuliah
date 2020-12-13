@@ -34,8 +34,8 @@ namespace Inventory.view
         {
             btnTambah.IsEnabled = status;
             btnEdit.IsEnabled = status;
-            btnHapus1.IsEnabled = status;
-            btnSimpan.IsEnabled = !status;
+            btnHapus.IsEnabled = status;
+            btnSave.IsEnabled = !status;
             btnCancel.IsEnabled = !status;
         }
 
@@ -61,20 +61,9 @@ namespace Inventory.view
             txtNamaBarang.Focus();
         }
 
-        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void btnSave_Click(object sender, RoutedEventArgs e)
         {
-           
-        }
-
-        private void btnEdit_Click(object sender, RoutedEventArgs e)
-        {
-            proses = "UPDATE";
-            aturButton(false);
-        }
-
-        private void btnSimpan_Click(object sender, RoutedEventArgs e)
-        {
-            if(proses == "INSERT")
+            if (proses == "INSERT")
             {
                 hasil = controller.insertBarang();
             }
@@ -82,7 +71,7 @@ namespace Inventory.view
             {
                 hasil = controller.updateBarang();
             }
-            if(hasil == true)
+            if (hasil == true)
             {
                 MessageBox.Show("Berhasil!");
             }
@@ -92,11 +81,15 @@ namespace Inventory.view
             }
             tampilData();
         }
-
-        private void btnHapus1_Click(object sender, RoutedEventArgs e)
+        private void btnEdit_Click(object sender, RoutedEventArgs e)
+        {
+            proses = "UPDATE";
+            aturButton(false);
+        }
+        private void btnHapus_Click(object sender, RoutedEventArgs e)
         {
             hasil = controller.deleteBarang();
-            if(hasil == true)
+            if (hasil == true)
             {
                 MessageBox.Show("Data Berhasil Dihapus");
             }
@@ -106,10 +99,35 @@ namespace Inventory.view
             }
             tampilData();
         }
-
         private void btnCancel_Click(object sender, RoutedEventArgs e)
         {
             tampilData();
+        }
+
+        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+           
+        }
+
+        
+        private void btnSimpan_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
+
+        
+
+        private void btnHapus1_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnBeranda_Click(object sender, RoutedEventArgs e)
+        {
+            view.MenuUtama menu = new view.MenuUtama();
+            menu.Show();
+            this.Close();
         }
     }
 }

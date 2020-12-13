@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Inventory.view"
         xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
         mc:Ignorable="d"
-        Title="DataBarang" Height="548.5" Width="906" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None">
+        Title="DataBarang" Height="548.5" Width="996" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None">
     <Grid Background="White" Margin="0,0,2,1">
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
@@ -21,9 +21,9 @@
         <Ellipse Fill="White" HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="44" Margin="5,193,0,0" Stroke="#FF0092BF" StrokeThickness="2"/>
         <Ellipse Fill="White" HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="43" Margin="4,111,0,0" Stroke="#FF0092BF" StrokeThickness="2"/>
         <Ellipse Fill="White" HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="43" Margin="4,63,0,0" Stroke="#FF0092BF" StrokeThickness="2"/>
-        <Canvas HorizontalAlignment="Left" Height="72" Margin="212,0,-2,0" VerticalAlignment="Top" Width="694" Background="#FF29BFEE">
+        <Canvas HorizontalAlignment="Left" Height="72" Margin="212,1,-2,0" VerticalAlignment="Top" Width="784" Background="#FF29BFEE">
             <Label Content="50" Canvas.Left="10" Canvas.Top="30" FontWeight="Bold" Foreground="#FF29BFEE" RenderTransformOrigin="-0.375,0.577" FontSize="24"/>
-            <Button x:Name="btnBeranda" Content="BERANDA" Canvas.Left="-177" Canvas.Top="67" Width="164" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="32" FontSize="18" FontWeight="Bold"/>
+            <Button x:Name="btnBeranda" Content="BERANDA" Canvas.Left="-177" Canvas.Top="67" Width="164" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="32" FontSize="18" FontWeight="Bold" Click="btnBeranda_Click"/>
             <Button x:Name="btnBarang" Content="DATA BARANG" Canvas.Left="-176" Canvas.Top="115" Width="163" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="32" FontSize="18" FontWeight="Bold"/>
             <Button x:Name="btnDataBarang" Content="Barang" Canvas.Left="-173" Canvas.Top="146" Width="90" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="24"/>
             <Button x:Name="btnKategori" Content="Kategori" Canvas.Left="-173" Canvas.Top="168" Width="90" BorderBrush="#FF29BFEE" Foreground="#FF29BFEE" Background="White" Height="23"/>
@@ -52,13 +52,13 @@
         <Rectangle Fill="White" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="211" Stroke="#FF0092BF" Margin="0,-1,0,0"/>
         <Label Content="Inventory apps" HorizontalAlignment="Left" Margin="5,4,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="26" Foreground="#FF29BFEE" RenderTransformOrigin="0.409,0.541" Background="{x:Null}" Height="52" Width="223"/>
         <Label x:Name="lblBarang" Content="Data Barang&#xD;&#xA;" HorizontalAlignment="Left" Margin="228,2,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="40" Foreground="White" RenderTransformOrigin="0.409,0.541" Background="{x:Null}" Height="64" Width="256"/>
-        <Image HorizontalAlignment="Left" Height="60" Margin="834,9,0,0" VerticalAlignment="Top" Width="59" Source="/Inventory;component/assets/image 6.png"/>
-        <Button x:Name="btnTambah" Content="Tambah" HorizontalAlignment="Left" VerticalAlignment="Top" Width="207" Margin="653,77,0,0" Height="31" Background="#FF29BFEE" BorderBrush="{x:Null}" Foreground="White" FontSize="18" FontWeight="Bold" Click="btnTambah_Click"/>
-        <Button x:Name="btnEdit" Content="Edit" HorizontalAlignment="Left" VerticalAlignment="Top" Width="207" Margin="653,109,0,0" Height="27" Background="#FF29BFEE" BorderBrush="{x:Null}" Foreground="White" FontSize="18" FontWeight="Bold" Click="btnEdit_Click"/>
-        <Button x:Name="btnHapus1" Content="Hapus" HorizontalAlignment="Left" VerticalAlignment="Top" Width="206" Margin="653,137,0,0" Height="28" Background="#FF29BFEE" BorderBrush="{x:Null}" Foreground="White" FontSize="18" FontWeight="Bold" Click="btnHapus1_Click"/>
+        <Image HorizontalAlignment="Left" Height="60" Margin="931,9,0,0" VerticalAlignment="Top" Width="59" Source="/Inventory;component/assets/image 6.png"/>
+        <Button x:Name="btnTambah" Content="Tambah" HorizontalAlignment="Left" VerticalAlignment="Top" Width="207" Margin="768,77,0,0" Height="31" Background="#FF29BFEE" BorderBrush="{x:Null}" Foreground="White" FontSize="18" FontWeight="Bold" Click="btnTambah_Click"/>
+        <Button x:Name="btnEdit" Content="Edit" HorizontalAlignment="Left" VerticalAlignment="Top" Width="207" Margin="768,109,0,0" Height="27" Background="#FF29BFEE" BorderBrush="{x:Null}" Foreground="White" FontSize="18" FontWeight="Bold" Click="btnEdit_Click"/>
+        <Button x:Name="btnHapus" Content="Hapus" HorizontalAlignment="Left" VerticalAlignment="Top" Width="206" Margin="768,137,0,0" Height="28" Background="#FF29BFEE" BorderBrush="{x:Null}" Foreground="White" FontSize="18" FontWeight="Bold" Click="btnHapus1_Click"/>
         <TextBox x:Name="txtIdBarang" HorizontalAlignment="Left" Height="35" Margin="234,105,0,0" TextWrapping="Wrap" Text="ID" VerticalAlignment="Top" Width="130" BorderBrush="#FF29BFEE" Foreground="#FF29BFEE"/>
         <TextBox x:Name="txtNamaBarang" HorizontalAlignment="Left" Height="33" Margin="234,171,0,0" TextWrapping="Wrap" Text="Nama" VerticalAlignment="Top" Width="130" Foreground="#FF29BFEE" BorderBrush="#FF29BFEE"/>
-        <TextBox x:Name="txtStock" HorizontalAlignment="Left" Height="34" Margin="371,106,0,0" TextWrapping="Wrap" Text="Stock" VerticalAlignment="Top" Width="120" Foreground="#FF29BFEE" BorderBrush="#FF29BFEE"/>
+        <TextBox x:Name="txtStock" HorizontalAlignment="Left" Height="34" Margin="504,106,0,0" TextWrapping="Wrap" Text="Stock" VerticalAlignment="Top" Width="120" Foreground="#FF29BFEE" BorderBrush="#FF29BFEE"/>
         <TextBox x:Name="txtSatuan" HorizontalAlignment="Left" Height="33" Margin="371,171,0,0" TextWrapping="Wrap" Text="Satuan" VerticalAlignment="Top" Width="120" BorderBrush="#FF29BFEE" Foreground="#FF29BFEE"/>
         <Label Content="ID Barang" HorizontalAlignment="Left" Margin="231,72,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16" Foreground="#FF29BFEE" RenderTransformOrigin="0.409,0.541" Background="{x:Null}" Height="32" Width="103"/>
         <Label Content="Nama Barang" HorizontalAlignment="Left" Margin="230,139,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16" Foreground="#FF29BFEE" RenderTransformOrigin="0.409,0.541" Background="{x:Null}" Height="32" Width="115">
@@ -71,16 +71,20 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <Label Content="Nama Kategori" HorizontalAlignment="Left" Margin="494,75,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16" Foreground="#FF29BFEE" RenderTransformOrigin="0.409,0.541" Background="{x:Null}" Height="30" Width="125"/>
+        <Label Content="Nama Kategori" HorizontalAlignment="Left" Margin="501,142,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16" Foreground="#FF29BFEE" RenderTransformOrigin="0.409,0.541" Background="{x:Null}" Height="30" Width="125"/>
         <Label Content="Satuan" HorizontalAlignment="Left" Margin="368,141,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16" Foreground="#FF29BFEE" RenderTransformOrigin="0.409,0.541" Background="{x:Null}" Height="30" Width="90"/>
-        <Label Content="Stock" HorizontalAlignment="Left" Margin="369,74,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16" Foreground="#FF29BFEE" RenderTransformOrigin="0.409,0.541" Background="{x:Null}" Height="30" Width="90"/>
-        <Label Content="No Rak" HorizontalAlignment="Left" Margin="495,142,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16" Foreground="#FF29BFEE" RenderTransformOrigin="0.409,0.541" Background="{x:Null}" Height="30" Width="90"/>
-        <ComboBox x:Name="cmbKategori" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="497,106,0,0" Height="34" SelectionChanged="ComboBox_SelectionChanged" Foreground="#FF29BFEE" BorderBrush="#FF29BFEE"/>
-        <ComboBox x:Name="cmbRak" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="497,171,0,0" Height="33" SelectionChanged="ComboBox_SelectionChanged" BorderBrush="#FF29BFEE" Foreground="#FF29BFEE"/>
-        <Rectangle Fill="#FF29BFEE" HorizontalAlignment="Left" Height="6" Margin="212,211,-2,0" Stroke="#FF29BFEE" VerticalAlignment="Top" Width="694"/>
-        <DataGrid x:Name="dgBarang" HorizontalAlignment="Left" Height="330" Margin="212,216,-1,0" VerticalAlignment="Top" Width="693"/>
-        <Button x:Name="btnSimpan" Content="Simpan" HorizontalAlignment="Left" VerticalAlignment="Top" Width="92" Margin="654,172,0,0" Height="31" Background="#FF29BFEE" BorderBrush="{x:Null}" Foreground="Black" FontSize="18" FontWeight="Bold" Click="btnHapus1_Click"/>
-        <Button x:Name="btnCancel" Content="Cancel" HorizontalAlignment="Left" VerticalAlignment="Top" Width="98" Margin="761,172,0,0" Height="31" Background="#FF29BFEE" BorderBrush="{x:Null}" Foreground="Black" FontSize="18" FontWeight="Bold" Click="btnHapus1_Click"/>
+        <Label Content="Stock" HorizontalAlignment="Left" Margin="505,75,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16" Foreground="#FF29BFEE" RenderTransformOrigin="0.409,0.541" Background="{x:Null}" Height="30" Width="90"/>
+        <Label Content="No Rak" HorizontalAlignment="Left" Margin="635,141,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16" Foreground="#FF29BFEE" RenderTransformOrigin="0.409,0.541" Background="{x:Null}" Height="30" Width="90"/>
+        <ComboBox x:Name="cmbKategori" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="504,171,0,0" Height="33" SelectionChanged="ComboBox_SelectionChanged" Foreground="#FF29BFEE" BorderBrush="#FF29BFEE"/>
+        <ComboBox x:Name="cmbRak" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="635,171,0,0" Height="33" SelectionChanged="ComboBox_SelectionChanged" BorderBrush="#FF29BFEE" Foreground="#FF29BFEE"/>
+        <Rectangle Fill="#FF29BFEE" HorizontalAlignment="Left" Height="51" Margin="212,211,-1,0" Stroke="#FF29BFEE" VerticalAlignment="Top" Width="783"/>
+        <DataGrid x:Name="dgBarang" HorizontalAlignment="Left" Height="285" Margin="212,261,-1,0" VerticalAlignment="Top" Width="783"/>
+        <Button x:Name="btnCancel" Content="Cancel" HorizontalAlignment="Left" VerticalAlignment="Top" Width="98" Margin="876,172,0,0" Height="31" Background="#FF29BFEE" BorderBrush="{x:Null}" Foreground="White" FontSize="18" FontWeight="Bold" Click="btnHapus1_Click"/>
+        <Button x:Name="btnSave" Content="Simpan" HorizontalAlignment="Left" Margin="767,172,0,0" VerticalAlignment="Top" Width="101" Height="31" BorderBrush="{x:Null}" Foreground="White" Background="#FF29BFEE" FontSize="18" FontWeight="Bold" Click="btnSave_Click"/>
+        <ComboBox x:Name="cmbPetugas" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="634,106,0,0" Height="34" SelectionChanged="ComboBox_SelectionChanged" Foreground="#FF29BFEE" BorderBrush="#FF29BFEE"/>
+        <Label Content="Petugas" HorizontalAlignment="Left" Margin="633,76,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16" Foreground="#FF29BFEE" RenderTransformOrigin="0.409,0.541" Background="{x:Null}" Height="33" Width="125"/>
+        <Label Content="No Faktur" HorizontalAlignment="Left" Margin="373,75,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16" Foreground="#FF29BFEE" RenderTransformOrigin="0.409,0.541" Background="{x:Null}" Height="30" Width="90"/>
+        <TextBox x:Name="txtFaktur" HorizontalAlignment="Left" Height="34" Margin="371,106,0,0" TextWrapping="Wrap" Text="No Faktur" VerticalAlignment="Top" Width="120" BorderBrush="#FF29BFEE" Foreground="#FF29BFEE"/>
 
     </Grid>
 </Window>
