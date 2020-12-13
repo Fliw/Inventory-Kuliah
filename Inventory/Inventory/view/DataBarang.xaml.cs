@@ -26,20 +26,8 @@ namespace Inventory.view
         public DataBarang()
         {
             InitializeComponent();
-            addListCmb();
             controller = new controller.BarangController(this);
             tampilData();
-        }
-
-        public void addListCmb()
-        {
-            cmbKategori.Items.Add("Buku");
-            cmbKategori.Items.Add("Baju");
-            cmbKategori.Items.Add("Kain");
-
-            cmbRak.Items.Add("201");
-            cmbRak.Items.Add("404");
-            cmbRak.Items.Add("305");
         }
 
         public void aturButton(Boolean status)
@@ -116,6 +104,11 @@ namespace Inventory.view
             {
                 MessageBox.Show("Hapus Data Gagal!");
             }
+            tampilData();
+        }
+
+        private void btnCancel_Click(object sender, RoutedEventArgs e)
+        {
             tampilData();
         }
     }

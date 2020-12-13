@@ -16,6 +16,8 @@ namespace Inventory.controller
         {
             this.view = view;
             model = new model.BarangModel();
+            this.fillComboRak();
+            this.fillComboKategori();
         }
 
         public void selectBarang()
@@ -56,6 +58,16 @@ namespace Inventory.controller
         public void setKode()
         {
             view.txtIdBarang.Text = model.maxPK().ToString();
+        }
+        public void fillComboRak()
+        {
+            List<string> dataRak = model.fillComboRak();
+            view.cmbRak.ItemsSource = dataRak;
+        }
+        public void fillComboKategori()
+        {
+            List<string> dataKategori = model.fillComboKategori();
+            view.cmbKategori.ItemsSource = dataKategori;
         }
     }
 }

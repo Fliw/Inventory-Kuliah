@@ -135,5 +135,68 @@ namespace Inventory.model
             }
             return kode;
         }
+
+        public List<string> fillComboRak()
+        {
+            List<string> comboArrayList = new List<string>();
+            StringBuilder sb = new StringBuilder();
+            try
+            {
+                koneksi.Open();
+                MySqlCommand command = new MySqlCommand();
+                command.CommandText = "SELECT Nama_Rak FROM rak";
+                command.Connection = koneksi;
+                MySqlDataReader reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    var ii = reader.FieldCount;
+                    for(int i = 0; i < ii; i++)
+                    {
+                        if (reader[i] is DBNull)
+                            comboArrayList.Add("Null");
+                        else
+                            comboArrayList.Add(reader[i].ToString());
+                    }
+                }
+                koneksi.Close();
+            }
+            catch(MySqlException e)
+            {
+                System.Windows.MessageBox.Show(e.Message);
+            }
+
+            return comboArrayList;
+        }
+        public List<string> fillComboKategori()
+        {
+            List<string> comboArrayList = new List<string>();
+            StringBuilder sb = new StringBuilder();
+            try
+            {
+                koneksi.Open();
+                MySqlCommand command = new MySqlCommand();
+                command.CommandText = "SELECT Nama_Kategori FROM kategori";
+                command.Connection = koneksi;
+                MySqlDataReader reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    var ii = reader.FieldCount;
+                    for (int i = 0; i < ii; i++)
+                    {
+                        if (reader[i] is DBNull)
+                            comboArrayList.Add("Null");
+                        else
+                            comboArrayList.Add(reader[i].ToString());
+                    }
+                }
+                koneksi.Close();
+            }
+            catch (MySqlException e)
+            {
+                System.Windows.MessageBox.Show(e.Message);
+            }
+
+            return comboArrayList;
+        }
     }
 }
