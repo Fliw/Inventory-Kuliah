@@ -78,5 +78,13 @@ namespace Inventory.controller
             List<string> dataPetugas = model.fillComboPetugas();
             view.cmbPetugas.ItemsSource = dataPetugas;
         }
+        public List<string> GetDataUpdateById()
+        {
+            int idBar = Int32.Parse(view.txtIdBarang.Text);
+            model.idbarang = idBar;
+            List<string> dataBarang = new List<string>();
+            dataBarang = model.getDataUpdateById();
+            return dataBarang;
+        }
     }
 }

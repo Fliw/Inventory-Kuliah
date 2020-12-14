@@ -96,8 +96,19 @@ namespace Inventory.view
         }
         private void btnEdit_Click(object sender, RoutedEventArgs e)
         {
-            proses = "UPDATE";
-            aturButton(false);
+            if(txtIdBarang.Text == "" || txtIdBarang.Text == "ID")
+            {
+                MessageBox.Show("MOHON ISI ID BARANG", "ERROR!");
+            }
+            else
+            {
+                proses = "UPDATE";
+                aturButton(false);
+                List<string> dataBarang = new List<string>();
+                dataBarang = controller.GetDataUpdateById();
+                MessageBox.Show(dataBarang[2]);
+            }
+            
         }
         private void btnHapus1_Click(object sender, RoutedEventArgs e)
         {
