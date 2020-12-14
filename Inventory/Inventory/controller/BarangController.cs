@@ -45,8 +45,10 @@ namespace Inventory.controller
         {
             model.idbarang = Int16.Parse(view.txtIdBarang.Text);
             model.namabarang = view.txtNamaBarang.Text;
-            model.idkategori = Int16.Parse(view.cmbKategori.SelectedItem.ToString());
-            model.idrak = Int16.Parse(view.cmbRak.SelectedItem.ToString());
+            model.idfaktur = Int16.Parse(view.txtFaktur.Text);
+            model.petugas = model.searchPetugasID(view.cmbPetugas.SelectedItem.ToString());
+            model.idkategori = model.searchKategoriID(view.cmbKategori.SelectedItem.ToString());
+            model.idrak = model.searchRakID(view.cmbRak.SelectedItem.ToString());
             model.satuan = view.txtSatuan.Text;
             model.stock = Int16.Parse(view.txtStock.Text);
             hasil = model.updateBarang();

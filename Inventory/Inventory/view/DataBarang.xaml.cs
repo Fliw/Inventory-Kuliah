@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using Inventory.view;
 
+
 namespace Inventory.view
 {
     /// <summary>
@@ -72,17 +73,22 @@ namespace Inventory.view
         {
             if (proses == "INSERT")
             {
+                checkNull();
                 hasil = controller.insertBarang();
-                txtFaktur.IsReadOnly = false;
-                txtIdBarang.IsReadOnly = false;
+                clearAll();
             }
             else if (proses == "UPDATE")
             {
+                checkNull();
                 hasil = controller.updateBarang();
+                clearAll();
+
             }
             else if (proses == "DELETE")
             {
                 hasil = controller.deleteBarang();
+                clearAll();
+
             }
             if (hasil == true)
             {
@@ -106,7 +112,16 @@ namespace Inventory.view
                 aturButton(false);
                 List<string> dataBarang = new List<string>();
                 dataBarang = controller.GetDataUpdateById();
-                MessageBox.Show(dataBarang[2]);
+                txtIdBarang.Text = dataBarang[0];
+                txtIdBarang.IsReadOnly = true;
+                controller.setKode();
+                txtFaktur.IsReadOnly = true;
+                txtNamaBarang.Text = dataBarang[1];
+                cmbRak.SelectedItem = dataBarang[2];
+                cmbKategori.SelectedItem = dataBarang[3];
+                cmbPetugas.SelectedItem = dataBarang[4];
+                txtSatuan.Text = dataBarang[5];
+                txtStock.Text = dataBarang[6];
             }
             
         }
@@ -137,9 +152,23 @@ namespace Inventory.view
         }
         private void btnBatal_Click(object sender, RoutedEventArgs e)
         {
-            txtFaktur.IsEnabled = true;
+            
+            clearAll();
+
+            tampilData();
+        }
+        private void checkNull()
+        {
+            if (txtFaktur.Text == "" || txtIdBarang.Text == "" || txtNamaBarang.Text == "" || txtSatuan.Text == "" || txtStock.Text =="")
+            {
+                MessageBox.Show("ANDA HARUS MENGISI SEMUA FIELD!", "ERROR!");
+            }
+        }
+        private void clearAll()
+        {
+            txtFaktur.IsReadOnly = false;
             txtFaktur.Text = "";
-            txtIdBarang.IsEnabled = true;
+            txtIdBarang.IsReadOnly = false;
             txtIdBarang.Text = "";
             txtNamaBarang.IsEnabled = true;
             txtNamaBarang.Text = "";
@@ -150,7 +179,6 @@ namespace Inventory.view
             cmbKategori.SelectedIndex = 0;
             cmbPetugas.SelectedIndex = 0;
             cmbRak.SelectedIndex = 0;
-            tampilData();
         }
         private void btnHapus_Click(object sender, RoutedEventArgs e)
         {

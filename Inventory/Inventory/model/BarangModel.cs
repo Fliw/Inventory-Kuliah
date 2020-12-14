@@ -89,7 +89,17 @@ namespace Inventory.model
             status = false;
             try
             {
-                query = "UPDATE barang SET Nama_Barang  = '" + namabarang + "',ID_Kategori = " + idkategori + ",ID_Rak = " + idrak + ",Satuan = '" + satuan + "',Stock = " + stock + " WHERE ID_Barang = "+idbarang;
+                query = "UPDATE barang as b " +
+                    "INNER JOIN barangkeluar as bk ON b.ID_Faktur_Keluar = bk.ID_Faktur_Keluar " +
+                    "INNER JOIN petugas as p ON bk.ID_Petugas = p.ID_Petugas " +
+                    "SET b.Nama_Barang = '"+namabarang+"' ," +
+                    "b.ID_Kategori = "+idkategori+" ," +
+                    "b.ID_Rak = "+idrak+"," +
+                    "b.Satuan = '"+satuan+"'," +
+                    "b.Stock = "+stock+"," +
+                    "b.ID_Faktur_Keluar = "+idfaktur+"," +
+                    "bk.ID_Petugas = "+petugas+" " +
+                    "WHERE b.ID_Barang = "+idbarang;
                 koneksi.Open();
                 command = new MySqlCommand();
                 command.Connection = koneksi;
@@ -98,8 +108,9 @@ namespace Inventory.model
                 status = true;
                 koneksi.Close();
             }
-            catch (MySqlException)
+            catch (MySqlException e)
             {
+                System.Windows.MessageBox.Show(e.Message);
                 status = false;
             }
             return status; 
