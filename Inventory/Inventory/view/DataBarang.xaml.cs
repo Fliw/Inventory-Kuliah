@@ -29,6 +29,14 @@ namespace Inventory.view
             InitializeComponent();
             controller = new controller.BarangController(this);
             tampilData();
+
+        }
+        private void Window_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (e.LeftButton == MouseButtonState.Pressed)
+            {
+                DragMove();
+            }
         }
 
         public void aturButton(Boolean status)
@@ -73,14 +81,13 @@ namespace Inventory.view
         {
             if (proses == "INSERT")
             {
-                checkNull();
-                hasil = controller.insertBarang();
-                clearAll();
+
+                if (!checkNull()) hasil = controller.insertBarang();
+                clearAll(); 
             }
             else if (proses == "UPDATE")
             {
-                checkNull();
-                hasil = controller.updateBarang();
+                if (!checkNull()) hasil = controller.updateBarang();
                 clearAll();
 
             }
@@ -157,12 +164,16 @@ namespace Inventory.view
 
             tampilData();
         }
-        private void checkNull()
+        private Boolean checkNull()
         {
+            bool kosong;
+            kosong = false;
             if (txtFaktur.Text == "" || txtIdBarang.Text == "" || txtNamaBarang.Text == "" || txtSatuan.Text == "" || txtStock.Text =="")
             {
                 MessageBox.Show("ANDA HARUS MENGISI SEMUA FIELD!", "ERROR!");
+                kosong = true;
             }
+            return kosong;
         }
         private void clearAll()
         {

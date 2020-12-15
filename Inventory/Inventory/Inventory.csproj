@@ -108,9 +108,15 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="controller\BarangController.cs" />
+    <Compile Include="controller\BarangController.cs" />
+    <Compile Include="controller\KategoriController.cs" />
     <Compile Include="controller\PetugasController.cs" />
     <Compile Include="model\BarangModel.cs" />
+    <Compile Include="model\KategoriModel.cs" />
     <Compile Include="model\PetugasModel.cs" />
+    <Compile Include="view\KategoriBarang.xaml.cs">
+      <DependentUpon>KategoriBarang.xaml</DependentUpon>
+    </Compile>
     <Compile Include="view\Login.xaml.cs">
       <DependentUpon>Login.xaml</DependentUpon>
     </Compile>
@@ -135,6 +141,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="view\KategoriBarang.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="view\Login.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

@@ -58,5 +58,12 @@ namespace Inventory.view
             loginPage.Show();
             this.Hide();
         }
+
+        private void btnKategori_Click(object sender, RoutedEventArgs e)
+        {
+            KategoriBarang view = new KategoriBarang();
+            view.Show();
+            this.Close();
+        }
     }
 }

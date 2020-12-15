@@ -40,17 +40,7 @@ namespace Inventory.model
                 command = new MySqlCommand();
                 command.Connection = koneksi;
                 command.CommandType = CommandType.Text;
-                command.CommandText = "" +
-                    "SELECT barang.ID_Barang AS `Nomor Barang`," +
-                    "barang.Nama_Barang AS `Nama Barang`," +
-                    "rak.Nama_Rak AS `Nama Rak`," +
-                    "kategori.Nama_Kategori AS `Nama Kategori`," +
-                    "petugas.Nama_Petugas AS `Petugas Bertanggung Jawab`, " +
-                    "barang.Satuan,barang.Stock,barang.Tanggal FROM barang " +
-                    "INNER JOIN rak ON barang.ID_Rak = rak.ID_Rak " +
-                    "INNER JOIN kategori ON barang.ID_Kategori = kategori.ID_Kategori " +
-                    "INNER JOIN barangkeluar ON barang.ID_Faktur_Keluar = barangkeluar.ID_Faktur_Keluar " +
-                    "INNER JOIN petugas on barangkeluar.ID_Faktur_Keluar = petugas.Nama_Petugas";
+                command.CommandText = "SELECT barang.ID_Barang AS `Nomor Barang`, barang.Nama_Barang AS `Nama Barang`,rak.Nama_Rak AS `Nama Rak`, kategori.Nama_Kategori AS `Nama Kategori`,  petugas.Nama_Petugas AS `Petugas Bertanggung Jawab`,  barang.Satuan,barang.Stock,barang.Tanggal FROM barang  INNER JOIN rak ON barang.ID_Rak = rak.ID_Rak  INNER JOIN kategori ON barang.ID_Kategori = kategori.ID_Kategori INNER JOIN barangkeluar ON barang.ID_Faktur_Keluar = barangkeluar.ID_Faktur_Keluar  INNER JOIN petugas on barangkeluar.ID_Petugas = petugas.ID_Petugas GROUP BY barang.ID_Barang ORDER BY barang.ID_Barang ASC";
                 MySqlDataAdapter sda = new MySqlDataAdapter();
                 sda.SelectCommand = command;
                 sda.Fill(ds, "barang");
