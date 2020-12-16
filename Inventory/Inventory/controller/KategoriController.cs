@@ -30,6 +30,7 @@ namespace Inventory.controller
          ###### METHOD FOR SELECTING DATA ######
          */
 
+
         //method untuk mengisi datagrid kategori
         public void selectKategori()
         {
@@ -48,7 +49,7 @@ namespace Inventory.controller
 
 
         /*
-         ###### METHOD FOR SELECTING DATA ######
+         ###### METHOD FOR INSERTING DATA ######
          */
 
         public Boolean insertKategori()
@@ -59,7 +60,7 @@ namespace Inventory.controller
         }
 
         /*
-         ###### METHOD FOR SELECTING DATA ######
+         ###### METHOD FOR UPDATING DATA ######
          */
 
 
@@ -72,7 +73,7 @@ namespace Inventory.controller
         }
 
         /*
-         ###### METHOD FOR SELECTING DATA ######
+         ###### METHOD FOR DELETING DATA ######
          */
 
 
