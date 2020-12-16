@@ -113,5 +113,25 @@ namespace Inventory.model
             }
             return status; 
         }
+        public Boolean deleteKategori()
+        {
+            status = false;
+            try
+            {
+                query = "DELETE FROM kategori WHERE ID_Kategori = " + idkategori;
+                koneksi.Open();
+                command = new MySqlCommand();
+                command.Connection = koneksi;
+                command.CommandText = query;
+                command.ExecuteNonQuery();
+                status = true;
+                koneksi.Close();
+            }
+            catch
+            {
+                status = false;
+            }
+            return status;
+        }
     }
 }

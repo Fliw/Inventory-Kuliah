@@ -43,5 +43,11 @@ namespace Inventory.controller
             hasil = model.updateKategori();
             return hasil;
         }
+        public Boolean deleteKategori()
+        {
+            model.idkategori = Int16.Parse(view.txtIdKategori.Text);
+            hasil = model.deleteKategori();
+            return hasil;
+        }
     }
 }

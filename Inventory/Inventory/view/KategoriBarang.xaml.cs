@@ -65,7 +65,7 @@ namespace Inventory.view
             }
             else if (proses == "DELETE")
             {
-                //hasil = controller.deleteKategori();
+                hasil = controller.deleteKategori();
                 clearAll();
 
             }
@@ -128,7 +128,12 @@ namespace Inventory.view
 
         private void btnHapus1_Click(object sender, RoutedEventArgs e)
         {
-
+            txtNamaKategori.Text = "TIDAK BISA DIEDIT";
+            txtNamaKategori.IsReadOnly = true;
+            txtIdKategori.Text = "";
+            txtIdKategori.Focus();
+            proses = "DELETE";
+            aturButton(false);
         }
 
         private void btnBatal_Click(object sender, RoutedEventArgs e)
