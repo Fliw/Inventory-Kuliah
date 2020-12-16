@@ -15,22 +15,32 @@ namespace Inventory.controller
         private PetugasModel model;
         private register registerPage;
 
-        public PetugasController(register registerPage) 
-        {
-            this.model = new PetugasModel();
-            this.registerPage = registerPage;
-            model.Nama = registerPage.txtName.Text;
-            model.Password = registerPage.txtPassword.Password;
-            model.RegisterPetugas();
-        }
-        
 
+        /*
+         ###### CONSTRUCTOR ######
+         */
+
+        //constructor if view was registerpage
+        public PetugasController(register registerPage)
+        {
+            model = new PetugasModel();
+            this.registerPage = registerPage;
+        }
+        //constructor if view was loginpage
         public PetugasController(Window1 login)
         {
+            model = new PetugasModel();
             this.login = login;
-            model = new model.PetugasModel();
         }
 
+
+
+        /*
+         ###### METHOD FOR SELECTING DATA ######
+         */
+
+
+        //method for check if data was exist
         public void LoginCheck()
         {
             model.Nama = login.txtUsername.Text;
@@ -50,6 +60,21 @@ namespace Inventory.controller
                 login.txtPassword.Password = "";
                 login.txtUsername.Focus();
             }
+        }
+
+
+
+        /*
+         ###### METHOD FOR INSERTING DATA ######
+         */
+
+
+        //methodfor registering new petugas
+        public void Register()
+        {
+            model.Nama = registerPage.txtName.Text;
+            model.Password = registerPage.txtPassword.Password;
+            model.RegisterPetugas();
         }
     }
 }
