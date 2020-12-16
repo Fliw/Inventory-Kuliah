@@ -13,7 +13,10 @@ namespace Inventory.controller
         model.BarangModel model;
         private Boolean hasil;
 
-        //constructor untuk mengisi combobox dan instansiasi object
+        /*
+         ###### CONSTRUCTOR ######
+         */
+
         public BarangController(view.DataBarang view)
         {
             this.view = view;
