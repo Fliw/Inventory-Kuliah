@@ -221,6 +221,11 @@ namespace Inventory.view
 
         }
 
-       
+        private void btnKategori_Click(object sender, RoutedEventArgs e)
+        {
+            KategoriBarang kategori = new KategoriBarang();
+            kategori.Show();
+            this.Close();
+        }
     }
 }

@@ -31,7 +31,9 @@ namespace Inventory.view
 
         private void btnBeranda_Click(object sender, RoutedEventArgs e)
         {
-
+            view.MenuUtama menu = new view.MenuUtama();
+            menu.Show();
+            this.Close();
         }
 
         private void btnTambah_Click(object sender, RoutedEventArgs e)
@@ -105,7 +107,9 @@ namespace Inventory.view
 
         private void btnLogout_Click(object sender, RoutedEventArgs e)
         {
-
+            Window1 loginPage = new Window1();
+            loginPage.Show();
+            this.Hide();
         }
 
         private void btnEdit_Click(object sender, RoutedEventArgs e)
@@ -140,6 +144,20 @@ namespace Inventory.view
         {
             clearAll();
             aturButton(true);
+        }
+
+        private void btnBarang1_Click(object sender, RoutedEventArgs e)
+        {
+            DataBarang data = new DataBarang();
+            data.Show();
+            this.Close();
+        }
+
+        private void btnDataBarang1_Click(object sender, RoutedEventArgs e)
+        {
+            DataBarang data = new DataBarang();
+            data.Show();
+            this.Close();
         }
     }
 }

@@ -26,8 +26,8 @@
         <Canvas HorizontalAlignment="Left" Height="72" Margin="74,1,-2,0" VerticalAlignment="Top" Width="784" Background="#FF29BFEE" Grid.RowSpan="2" Grid.Column="2">
             <Label Content="50" Canvas.Left="10" Canvas.Top="30" FontWeight="Bold" Foreground="#FF29BFEE" RenderTransformOrigin="-0.375,0.577" FontSize="24"/>
             <Button x:Name="btnBeranda1" Content="BERANDA" Canvas.Left="-177" Canvas.Top="67" Width="164" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="32" FontSize="18" FontWeight="Bold" Click="btnBeranda_Click"/>
-            <Button x:Name="btnBarang1" Content="DATA BARANG" Canvas.Left="-176" Canvas.Top="115" Width="163" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="32" FontSize="18" FontWeight="Bold"/>
-            <Button x:Name="btnDataBarang1" Content="Barang" Canvas.Left="-173" Canvas.Top="146" Width="90" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="24"/>
+            <Button x:Name="btnBarang1" Content="DATA BARANG" Canvas.Left="-176" Canvas.Top="115" Width="163" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="32" FontSize="18" FontWeight="Bold" Click="btnBarang1_Click"/>
+            <Button x:Name="btnDataBarang1" Content="Barang" Canvas.Left="-173" Canvas.Top="146" Width="90" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="24" Click="btnDataBarang1_Click"/>
             <Button x:Name="btnKategori1" Content="Kategori" Canvas.Left="-173" Canvas.Top="168" Width="90" BorderBrush="#FF29BFEE" Foreground="#FF29BFEE" Background="White" Height="23"/>
             <Button x:Name="btnTransaksi1" Content="TRANSAKSI" Canvas.Left="-176" Canvas.Top="197" Width="162" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="32" FontWeight="Bold" FontSize="18"/>
             <Button x:Name="btnBarangMasuk1" Content="Barang Masuk" Canvas.Left="-171" Canvas.Top="228" Width="90" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="24"/>
