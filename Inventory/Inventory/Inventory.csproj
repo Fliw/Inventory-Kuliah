@@ -115,6 +115,12 @@
     <Compile Include="model\KategoriModel.cs" />
     <Compile Include="model\KategoriModel.cs" />
     <Compile Include="model\PetugasModel.cs" />
+    <Compile Include="view\BarangKeluar.xaml.cs">
+      <DependentUpon>BarangKeluar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="view\BarangMasuk.xaml.cs">
+      <DependentUpon>BarangMasuk.xaml</DependentUpon>
+    </Compile>
     <Compile Include="view\KategoriBarang.xaml.cs">
       <DependentUpon>KategoriBarang.xaml</DependentUpon>
     </Compile>
@@ -142,6 +148,14 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="view\BarangKeluar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="view\BarangMasuk.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="view\KategoriBarang.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
