@@ -65,7 +65,7 @@
         <Button x:Name="btnSave" Content="Simpan" HorizontalAlignment="Left" Margin="428,155,0,0" VerticalAlignment="Top" Width="232" Height="27" BorderBrush="{x:Null}" Foreground="White" Background="#FF29BFEE" FontSize="18" FontWeight="Bold" Click="btnSave_Click" Grid.Row="1" Grid.Column="2"/>
         <Label Content="Nama Kategori" HorizontalAlignment="Left" Margin="425,50,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16" Foreground="#FF29BFEE" RenderTransformOrigin="0.409,0.541" Background="{x:Null}" Height="30" Width="125" Grid.Row="1" Grid.Column="2"/>
         <TextBox x:Name="txtNamaKategori" HorizontalAlignment="Left" Height="38" Margin="429,78,0,0" TextWrapping="Wrap" Text="nama" VerticalAlignment="Top" Width="230" BorderBrush="#FF29BFEE" Foreground="#FF29BFEE" Grid.Row="1" Grid.Column="2"/>
-        <Button x:Name="btnBatal" Content="Batal" HorizontalAlignment="Left" Margin="673,78,0,0" VerticalAlignment="Top" Width="97" Height="38" BorderBrush="{x:Null}" Foreground="White" Background="#FF29BFEE" FontSize="18" FontWeight="Bold" Grid.Row="1" Grid.Column="2"/>
+        <Button x:Name="btnBatal" Content="Batal" HorizontalAlignment="Left" Margin="673,78,0,0" VerticalAlignment="Top" Width="97" Height="38" BorderBrush="{x:Null}" Foreground="White" Background="#FF29BFEE" FontSize="18" FontWeight="Bold" Grid.Row="1" Grid.Column="2" Click="btnBatal_Click"/>
 
 
     </Grid>

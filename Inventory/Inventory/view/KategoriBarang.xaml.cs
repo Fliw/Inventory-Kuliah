@@ -130,5 +130,11 @@ namespace Inventory.view
         {
 
         }
+
+        private void btnBatal_Click(object sender, RoutedEventArgs e)
+        {
+            clearAll();
+            aturButton(true);
+        }
     }
 }
