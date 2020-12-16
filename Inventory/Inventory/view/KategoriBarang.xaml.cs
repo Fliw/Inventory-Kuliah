@@ -22,6 +22,12 @@ namespace Inventory.view
         private string proses;
         private Boolean hasil;
         private controller.KategoriController controller;
+
+        /*
+        ###### CONSTRUCTOR ######
+        */
+        
+
         public KategoriBarang()
         {
             InitializeComponent();
@@ -29,13 +35,18 @@ namespace Inventory.view
             tampilData();
         }
 
-        private void btnBeranda_Click(object sender, RoutedEventArgs e)
+        /*
+        ###### OPERASI ######
+        */
+
+        //operasi tampil data
+        public void tampilData()
         {
-            view.MenuUtama menu = new view.MenuUtama();
-            menu.Show();
-            this.Close();
+            controller.selectKategori();
+            aturButton(true);
         }
 
+        //operasi tambah
         private void btnTambah_Click(object sender, RoutedEventArgs e)
         {
             proses = "INSERT";
@@ -43,14 +54,45 @@ namespace Inventory.view
             txtIdKategori.IsReadOnly = true;
             aturButton(false);
         }
-        public void aturButton(Boolean status)
+
+        //operasi edit
+        private void btnEdit_Click(object sender, RoutedEventArgs e)
         {
-            btnTambah.IsEnabled = status;
-            btnEdit.IsEnabled = status;
-            btnHapus.IsEnabled = status;
-            btnSave.IsEnabled = !status;
-            btnBatal.IsEnabled = !status;
+            if (txtIdKategori.Text == "" || txtIdKategori.Text == "ID")
+            {
+                MessageBox.Show("MOHON ISI ID KATEGORI", "ERROR!");
+            }
+            else
+            {
+                proses = "UPDATE";
+                aturButton(false);
+                List<string> dataKategori = new List<string>();
+                dataKategori = controller.GetDataUpdateById();
+                txtIdKategori.Text = dataKategori[0];
+                txtIdKategori.IsReadOnly = true;
+                txtNamaKategori.Text = dataKategori[1];
+            }
         }
+
+        //operasi hapus
+        private void btnHapus1_Click(object sender, RoutedEventArgs e)
+        {
+            txtNamaKategori.Text = "TIDAK BISA DIEDIT";
+            txtNamaKategori.IsReadOnly = true;
+            txtIdKategori.Text = "";
+            txtIdKategori.Focus();
+            proses = "DELETE";
+            aturButton(false);
+        }
+
+        //operasi batal
+        private void btnBatal_Click(object sender, RoutedEventArgs e)
+        {
+            clearAll();
+            aturButton(true);
+        }
+
+        //operasi simpan
         private void btnSave_Click(object sender, RoutedEventArgs e)
         {
             if (proses == "INSERT")
@@ -81,6 +123,58 @@ namespace Inventory.view
             }
             tampilData();
         }
+
+        /*
+        ###### NAVIGASI ######
+        */
+
+        //navigasi logout
+        private void btnLogout_Click(object sender, RoutedEventArgs e)
+        {
+            Window1 loginPage = new Window1();
+            loginPage.Show();
+            this.Hide();
+        }
+
+        //navigasi databarang
+        private void btnBarang1_Click(object sender, RoutedEventArgs e)
+        {
+            DataBarang data = new DataBarang();
+            data.Show();
+            this.Close();
+        }
+
+        //navigasi databarang
+        private void btnDataBarang1_Click(object sender, RoutedEventArgs e)
+        {
+            DataBarang data = new DataBarang();
+            data.Show();
+            this.Close();
+        }
+
+        //navigasi beranda
+        private void btnBeranda_Click(object sender, RoutedEventArgs e)
+        {
+            view.MenuUtama menu = new view.MenuUtama();
+            menu.Show();
+            this.Close();
+        }
+
+        /*
+        ###### HELPER ######
+        */
+
+        //metode untuk atur button
+        public void aturButton(Boolean status)
+        {
+            btnTambah.IsEnabled = status;
+            btnEdit.IsEnabled = status;
+            btnHapus.IsEnabled = status;
+            btnSave.IsEnabled = !status;
+            btnBatal.IsEnabled = !status;
+        }
+
+        //metode untuk check kekosongan form
         private Boolean checkNull()
         {
             bool kosong;
@@ -92,72 +186,14 @@ namespace Inventory.view
             }
             return kosong;
         }
+
+        //metode untuk menghapus semua data form
         private void clearAll()
         {
             txtIdKategori.IsReadOnly = false;
             txtIdKategori.Text = "";
             txtNamaKategori.IsReadOnly = false;
             txtNamaKategori.Text = "";
-        }
-        public void tampilData()
-        {
-            controller.selectKategori();
-            aturButton(true);
-        }
-
-        private void btnLogout_Click(object sender, RoutedEventArgs e)
-        {
-            Window1 loginPage = new Window1();
-            loginPage.Show();
-            this.Hide();
-        }
-
-        private void btnEdit_Click(object sender, RoutedEventArgs e)
-        {
-            if (txtIdKategori.Text == "" || txtIdKategori.Text == "ID")
-            {
-                MessageBox.Show("MOHON ISI ID KATEGORI", "ERROR!");
-            }
-            else
-            {
-                proses = "UPDATE";
-                aturButton(false);
-                List<string> dataKategori = new List<string>();
-                dataKategori = controller.GetDataUpdateById();
-                txtIdKategori.Text = dataKategori[0];
-                txtIdKategori.IsReadOnly = true;
-                txtNamaKategori.Text = dataKategori[1];
-            }
-        }
-
-        private void btnHapus1_Click(object sender, RoutedEventArgs e)
-        {
-            txtNamaKategori.Text = "TIDAK BISA DIEDIT";
-            txtNamaKategori.IsReadOnly = true;
-            txtIdKategori.Text = "";
-            txtIdKategori.Focus();
-            proses = "DELETE";
-            aturButton(false);
-        }
-
-        private void btnBatal_Click(object sender, RoutedEventArgs e)
-        {
-            clearAll();
-            aturButton(true);
-        }
-
-        private void btnBarang1_Click(object sender, RoutedEventArgs e)
-        {
-            DataBarang data = new DataBarang();
-            data.Show();
-            this.Close();
-        }
-
-        private void btnDataBarang1_Click(object sender, RoutedEventArgs e)
-        {
-            DataBarang data = new DataBarang();
-            data.Show();
-            this.Close();
         }
     }
 }

@@ -112,6 +112,13 @@ namespace Inventory.view
             proses = "DELETE";
             aturButton(false);
         }
+        //operasi batal
+        private void btnBatal_Click(object sender, RoutedEventArgs e)
+        {
+
+            clearAll();
+            tampilData();
+        }
 
         //operasi Simpan
         private void btnSave_Click(object sender, RoutedEventArgs e)
@@ -176,14 +183,6 @@ namespace Inventory.view
         /*
         ###### Fungsi Helper ######
         */
-
-        //ketika klik batal
-        private void btnBatal_Click(object sender, RoutedEventArgs e)
-        {
-
-            clearAll();
-            tampilData();
-        }
 
         //check apakah ada form kosong
         private Boolean checkNull()
