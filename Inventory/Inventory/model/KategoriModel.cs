@@ -10,18 +10,36 @@ namespace Inventory.model
 {
     class KategoriModel
     {
+        //properti mysql
         private MySqlConnection koneksi;
-        private int IDKategori;
-        private string NamaKategori;
-        public int idkategori { get { return IDKategori; } set { IDKategori = value; } }
-        public string namakategori { get { return NamaKategori;} set { NamaKategori = value; } }
         private MySqlCommand command;
         private string query;
+        //properti custom
         private Boolean status;
+        //properti berdasarkan kolom
+        private int IDKategori;
+        private string NamaKategori;
+
+        //setter & getter untuk kolom tabel
+        public int idkategori { get { return IDKategori; } set { IDKategori = value; } }
+        public string namakategori { get { return NamaKategori;} set { NamaKategori = value; } }
+
+
+        /*
+         ###### CONSTRUCTOR ######
+         */
+
+
         public KategoriModel()
         {
             koneksi = DBConnect.GetConnection();
         }
+
+        /*
+         ###### METHOD FOR SELECTING DATA ######
+         */
+
+        //metode untuk mengisi datagridview
         public DataSet selectKategori()
         {
             DataSet ds = new DataSet();
@@ -43,27 +61,7 @@ namespace Inventory.model
             }
             return ds;
         }
-        public Boolean insertKategori()
-        {
-            status = false;
-            try
-            {
-                query = "INSERT INTO kategori (`Nama_Kategori`) VALUES ('"+namakategori+"')";
-                koneksi.Open();
-                command = new MySqlCommand();
-                command.CommandText = query;
-                command.Connection = koneksi;
-                command.ExecuteNonQuery();
-                status = true;
-                koneksi.Close();
-            }
-            catch (MySqlException e)
-            {
-                System.Windows.MessageBox.Show(e.Message);
-                status = false;
-            }
-            return status;
-        }
+        //metode untuk get value berdasarkan referensi id
         public List<string> getDataUpdateById()
         {
             List<string> data = new List<string>();
@@ -92,6 +90,41 @@ namespace Inventory.model
             }
             return data;
         }
+
+
+        /*
+         ###### METHOD FOR INSERTING DATA ######
+         */
+
+
+        public Boolean insertKategori()
+        {
+            status = false;
+            try
+            {
+                query = "INSERT INTO kategori (`Nama_Kategori`) VALUES ('"+namakategori+"')";
+                koneksi.Open();
+                command = new MySqlCommand();
+                command.CommandText = query;
+                command.Connection = koneksi;
+                command.ExecuteNonQuery();
+                status = true;
+                koneksi.Close();
+            }
+            catch (MySqlException e)
+            {
+                System.Windows.MessageBox.Show(e.Message);
+                status = false;
+            }
+            return status;
+        }
+
+
+        /*
+         ###### METHOD FOR UPDATING DATA ######
+         */
+
+
         public Boolean updateKategori()
         {
             status = false;
@@ -113,6 +146,12 @@ namespace Inventory.model
             }
             return status; 
         }
+
+        /*
+         ###### METHOD FOR DELETING DATA ######
+         */
+
+
         public Boolean deleteKategori()
         {
             status = false;
