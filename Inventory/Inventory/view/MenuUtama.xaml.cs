@@ -22,6 +22,11 @@ namespace Inventory.view
     /// </summary>
     public partial class MenuUtama : Window
     {
+
+        /*
+        ###### CONSTRUCTOR ######
+        */
+
         public MenuUtama()
         {
             InitializeComponent();
@@ -38,6 +43,11 @@ namespace Inventory.view
             };
         }
 
+        /*
+        ###### NAVIGASI ######
+        */
+
+        //navigasi barang
         private void btnBarang_Click(object sender, RoutedEventArgs e)
         {
             DataBarang dataBarangPage = new DataBarang();
@@ -45,6 +55,7 @@ namespace Inventory.view
             this.Close();
         }
 
+        //navigasi barang
         private void btnDataBarang_Click(object sender, RoutedEventArgs e)
         {
             DataBarang dataBarangPage = new DataBarang();
@@ -52,6 +63,7 @@ namespace Inventory.view
             this.Close();
         }
 
+        //navigasi logout
         private void btnLogout_Click(object sender, RoutedEventArgs e)
         {
             Window1 loginPage = new Window1();
@@ -59,6 +71,7 @@ namespace Inventory.view
             this.Hide();
         }
 
+        //navigasi kategori
         private void btnKategori_Click(object sender, RoutedEventArgs e)
         {
             KategoriBarang view = new KategoriBarang();
