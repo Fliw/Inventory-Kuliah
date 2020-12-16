@@ -22,6 +22,10 @@ namespace Inventory.view
     {
         private PetugasController controller;
 
+        /*
+        ###### CONSTRUCTOR ######
+        */
+
         public Window1()
         {
             InitializeComponent();
@@ -31,12 +35,19 @@ namespace Inventory.view
             controller = new PetugasController(this);
         }
 
-        private void btnRegister_Click(object sender, RoutedEventArgs e)
+        /*
+        ###### OPERASI ######
+        */
+        private void btnLogin_Click(object sender, RoutedEventArgs e)
         {
-            register registerPage = new register();
-            registerPage.Show();
-            this.Close();
+            controller.LoginCheck();
         }
+
+        /*
+        ###### NAVIGASI ######
+        */
+
+        //navigasi register
         private void btnRegister_Click_1(object sender, RoutedEventArgs e)
         {
             register registerPage = new register();
@@ -44,11 +55,7 @@ namespace Inventory.view
             this.Close();
         }
 
-        private void btnLogin_Click(object sender, RoutedEventArgs e)
-        {
-            controller.LoginCheck();
-        }
-
+        //navigasi exit
         private void btnExit_Click(object sender, RoutedEventArgs e)
         {
             Application.Current.Shutdown();

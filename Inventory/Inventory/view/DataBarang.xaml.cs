@@ -181,7 +181,7 @@ namespace Inventory.view
         }
 
         /*
-        ###### Fungsi Helper ######
+        ###### HELPER ######
         */
 
         //check apakah ada form kosong
