@@ -8,16 +8,16 @@
         Title="KategoriBarang" Height="538.833" Width="996" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None">
     <Grid Background="White" Margin="0,0,2,0">
         <Grid.RowDefinitions>
-            <RowDefinition Height="24*"/>
-            <RowDefinition Height="526*"/>
-            <RowDefinition Height="21*"/>
+            <RowDefinition Height="26*"/>
+            <RowDefinition Height="468*"/>
+            <RowDefinition Height="45*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition Width="34*"/>
             <ColumnDefinition Width="218*"/>
         </Grid.ColumnDefinitions>
-        <Rectangle Fill="#FF29BFEE" HorizontalAlignment="Left" Height="537" VerticalAlignment="Top" Width="212" Margin="0,10,0,-7.478" RenderTransformOrigin="0.14,0.479" Grid.RowSpan="3" Grid.ColumnSpan="3"/>
+        <Rectangle Fill="#FF29BFEE" HorizontalAlignment="Left" Height="529" VerticalAlignment="Top" Width="212" Margin="0,10,0,0" RenderTransformOrigin="0.14,0.479" Grid.RowSpan="3" Grid.ColumnSpan="3"/>
         <Ellipse Fill="White" HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="44" Margin="3,408,0,0" Stroke="#FF0092BF" StrokeThickness="2" Grid.Row="1" Grid.ColumnSpan="2"/>
         <Ellipse Fill="White" HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="44" Margin="0,251,0,0" Stroke="#FF0092BF" StrokeThickness="2" Grid.Row="1" Grid.Column="1"/>
         <Ellipse Fill="White" HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="44" Margin="1,170,0,0" Stroke="#FF0092BF" StrokeThickness="2" Grid.Row="1" Grid.Column="1"/>
@@ -47,10 +47,10 @@
         <Image HorizontalAlignment="Left" Height="26" VerticalAlignment="Top" Width="26" Source="../assets/icon-transaksi2.png" Margin="12,178,0,0" Grid.Row="1" Grid.Column="1"/>
         <Image HorizontalAlignment="Left" Height="26" VerticalAlignment="Top" Width="30" Source="../assets/icon-laporan2.png" Margin="12,257,0,0" RenderTransformOrigin="0.87,1.981" Grid.Row="1" Grid.Column="1"/>
         <Image HorizontalAlignment="Left" Height="26" VerticalAlignment="Top" Width="28" Source="../assets/icon-setting-akun2.png" Margin="8,415,0,0" RenderTransformOrigin="0.741,2.056" Grid.Row="1" Grid.Column="1"/>
-        <Ellipse Fill="White" HorizontalAlignment="Left" Height="42" Margin="30,458,0,0" VerticalAlignment="Top" Width="44" Grid.Row="1" Grid.Column="2" Grid.RowSpan="2"/>
-        <Ellipse Fill="White" HorizontalAlignment="Left" Height="25" Margin="0,486,0,0" VerticalAlignment="Top" Width="26" Grid.Row="1" Grid.Column="2" Grid.RowSpan="2"/>
-        <Ellipse Fill="White" HorizontalAlignment="Left" Height="43" Margin="66,480,0,-6.478" VerticalAlignment="Top" Width="44" Grid.Row="1" Grid.Column="1" Grid.RowSpan="2"/>
-        <Ellipse Fill="White" HorizontalAlignment="Left" Height="25" Margin="1,489,0,0" VerticalAlignment="Top" Width="26" Grid.Row="1" Grid.Column="1" Grid.RowSpan="2"/>
+        <Ellipse Fill="White" HorizontalAlignment="Left" Height="42" Margin="30,3,0,0" VerticalAlignment="Top" Width="44" Grid.Row="2" Grid.Column="2"/>
+        <Ellipse Fill="White" HorizontalAlignment="Left" Height="25" Margin="0,3,0,0" VerticalAlignment="Top" Width="26" Grid.Row="2" Grid.Column="2"/>
+        <Ellipse Fill="White" HorizontalAlignment="Left" Height="43" Margin="66,3,0,-1" VerticalAlignment="Top" Width="44" Grid.Row="2" Grid.Column="1"/>
+        <Ellipse Fill="White" HorizontalAlignment="Left" Height="25" Margin="1,2,0,0" VerticalAlignment="Top" Width="26" Grid.Row="2" Grid.Column="1"/>
         <Rectangle Fill="White" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="211" Stroke="#FF0092BF" Margin="0,-1,0,0" Grid.RowSpan="2" Grid.ColumnSpan="3"/>
         <Label Content="Inventory apps" HorizontalAlignment="Left" Margin="1,4,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="26" Foreground="#FF29BFEE" RenderTransformOrigin="0.409,0.541" Background="{x:Null}" Height="52" Width="223" Grid.ColumnSpan="2" Grid.Column="1" Grid.RowSpan="2"/>
         <Label x:Name="lblBarang_Copy" Content="Kategori Barang&#xA;" HorizontalAlignment="Left" Margin="90,2,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="40" Foreground="White" RenderTransformOrigin="0.409,0.541" Background="{x:Null}" Height="64" Width="344" Grid.RowSpan="2" Grid.Column="2"/>
@@ -61,7 +61,7 @@
         <TextBox x:Name="txtIdKategori" HorizontalAlignment="Left" Height="38" Margin="196,78,0,0" TextWrapping="Wrap" Text="ID" VerticalAlignment="Top" Width="225" BorderBrush="#FF29BFEE" Foreground="#FF29BFEE" Grid.Row="1" Grid.Column="2"/>
         <Label Content="ID Kategori" HorizontalAlignment="Left" Margin="194,49,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16" Foreground="#FF29BFEE" RenderTransformOrigin="0.409,0.541" Background="{x:Null}" Height="32" Width="103" Grid.Row="1" Grid.Column="2"/>
         <Rectangle Fill="#FF29BFEE" HorizontalAlignment="Left" Height="51" Margin="74,186,-1,0" Stroke="#FF29BFEE" VerticalAlignment="Top" Width="783" Grid.Row="1" Grid.Column="2"/>
-        <DataGrid x:Name="dgKategori" HorizontalAlignment="Left" Height="279" Margin="74,237,0,0" VerticalAlignment="Top" Width="782" Grid.Row="1" Grid.Column="2" Grid.RowSpan="2"/>
+        <DataGrid x:Name="dgKategori" HorizontalAlignment="Left" Height="279" Margin="74,237,0,-3" VerticalAlignment="Top" Width="782" Grid.Row="1" Grid.Column="2" Grid.RowSpan="2"/>
         <Button x:Name="btnSave" Content="Simpan" HorizontalAlignment="Left" Margin="428,155,0,0" VerticalAlignment="Top" Width="232" Height="27" BorderBrush="{x:Null}" Foreground="White" Background="#FF29BFEE" FontSize="18" FontWeight="Bold" Click="btnSave_Click" Grid.Row="1" Grid.Column="2"/>
         <Label Content="Nama Kategori" HorizontalAlignment="Left" Margin="425,50,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16" Foreground="#FF29BFEE" RenderTransformOrigin="0.409,0.541" Background="{x:Null}" Height="30" Width="125" Grid.Row="1" Grid.Column="2"/>
         <TextBox x:Name="txtNamaKategori" HorizontalAlignment="Left" Height="38" Margin="429,78,0,0" TextWrapping="Wrap" Text="nama" VerticalAlignment="Top" Width="230" BorderBrush="#FF29BFEE" Foreground="#FF29BFEE" Grid.Row="1" Grid.Column="2"/>
