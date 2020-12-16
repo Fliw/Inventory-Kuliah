@@ -24,6 +24,10 @@ namespace Inventory.view
         private string proses;
         private Boolean hasil;
         private controller.BarangController controller;
+
+        /*
+        ###### CONSTRUCTOR ######
+        */
         public DataBarang()
         {
             InitializeComponent();
@@ -32,44 +36,19 @@ namespace Inventory.view
             ComboProps();
 
         }
-        private void Window_MouseDown(object sender, MouseButtonEventArgs e)
-        {
-            if (e.LeftButton == MouseButtonState.Pressed)
-            {
-                DragMove();
-            }
-        }
 
-        private void ComboProps()
-        {
-            cmbKategori.IsEditable = true;
-            cmbPetugas.IsEditable = true;
-            cmbRak.IsEditable = true;
-            cmbKategori.IsTextSearchEnabled = true;
-            cmbPetugas.IsTextSearchEnabled = true;
-            cmbRak.IsTextSearchEnabled = true;
-        }
-        public void aturButton(Boolean status)
-        {
-            btnTambah.IsEnabled = status;
-            btnEdit.IsEnabled = status;
-            btnHapus.IsEnabled = status;
-            btnSave.IsEnabled = !status;
-            btnBatal.IsEnabled = !status;
-        }
+        /*
+       ###### OPERASI ######
+       */
 
+        //Operasi Ambil data
         public void tampilData()
         {
             controller.selectBarang();
             aturButton(true);
         }
 
-        private void btnLogout_Click(object sender, RoutedEventArgs e)
-        {
-            Window1 loginPage = new Window1();
-            loginPage.Show();
-            this.Hide();
-        }
+        //Operasi tambah
         private void btnTambah_Click(object sender, RoutedEventArgs e)
         {
             proses = "INSERT";
@@ -87,36 +66,7 @@ namespace Inventory.view
             aturButton(false);
         }
 
-        private void btnSave_Click(object sender, RoutedEventArgs e)
-        {
-            if (proses == "INSERT")
-            {
-
-                if (!checkNull()) hasil = controller.insertBarang();
-                clearAll(); 
-            }
-            else if (proses == "UPDATE")
-            {
-                if (!checkNull()) hasil = controller.updateBarang();
-                clearAll();
-
-            }
-            else if (proses == "DELETE")
-            {
-                hasil = controller.deleteBarang();
-                clearAll();
-
-            }
-            if (hasil == true)
-            {
-                MessageBox.Show("Berhasil!");
-            }
-            else
-            {
-                MessageBox.Show("Gagal Menyimpan");
-            }
-            tampilData();
-        }
+        //operasi edit
         private void btnEdit_Click(object sender, RoutedEventArgs e)
         {
             if(txtIdBarang.Text == "" || txtIdBarang.Text == "ID")
@@ -142,6 +92,8 @@ namespace Inventory.view
             }
             
         }
+
+        //operasi hapus
         private void btnHapus1_Click(object sender, RoutedEventArgs e)
         {
             txtFaktur.Text = "TIDAK BISA DIEDIT";
@@ -161,19 +113,79 @@ namespace Inventory.view
             aturButton(false);
         }
 
+        //operasi Simpan
+        private void btnSave_Click(object sender, RoutedEventArgs e)
+        {
+            if (proses == "INSERT")
+            {
+
+                if (!checkNull()) hasil = controller.insertBarang();
+                clearAll();
+            }
+            else if (proses == "UPDATE")
+            {
+                if (!checkNull()) hasil = controller.updateBarang();
+                clearAll();
+
+            }
+            else if (proses == "DELETE")
+            {
+                hasil = controller.deleteBarang();
+                clearAll();
+
+            }
+            if (hasil == true)
+            {
+                MessageBox.Show("Berhasil!");
+            }
+            else
+            {
+                MessageBox.Show("Gagal Menyimpan");
+            }
+            tampilData();
+        }
+
+        /*
+        ###### NAVIGASI ######
+        */
+
+        //navigasi ke logout
+        private void btnLogout_Click(object sender, RoutedEventArgs e)
+        {
+            Window1 loginPage = new Window1();
+            loginPage.Show();
+            this.Hide();
+        }
+
+        //navigasi ke beranda
         private void btnBeranda_Click(object sender, RoutedEventArgs e)
         {
             view.MenuUtama menu = new view.MenuUtama();
             menu.Show();
             this.Close();
         }
+
+        //navigasi ke kategori
+        private void btnKategori_Click(object sender, RoutedEventArgs e)
+        {
+            KategoriBarang kategori = new KategoriBarang();
+            kategori.Show();
+            this.Close();
+        }
+
+        /*
+        ###### Fungsi Helper ######
+        */
+
+        //ketika klik batal
         private void btnBatal_Click(object sender, RoutedEventArgs e)
         {
-            
-            clearAll();
 
+            clearAll();
             tampilData();
         }
+
+        //check apakah ada form kosong
         private Boolean checkNull()
         {
             bool kosong;
@@ -185,6 +197,8 @@ namespace Inventory.view
             }
             return kosong;
         }
+
+        //metode untuk mengosongkan semua field
         private void clearAll()
         {
             txtFaktur.IsReadOnly = false;
@@ -201,31 +215,26 @@ namespace Inventory.view
             cmbPetugas.SelectedIndex = 0;
             cmbRak.SelectedIndex = 0;
         }
-        private void btnHapus_Click(object sender, RoutedEventArgs e)
-        {
-            
-        }
-        private void btnCancel_Click(object sender, RoutedEventArgs e)
-        {
-            
-        }
 
-        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        //metode untuk membuat combobox searchable
+        private void ComboProps()
         {
-           
+            cmbKategori.IsEditable = true;
+            cmbPetugas.IsEditable = true;
+            cmbRak.IsEditable = true;
+            cmbKategori.IsTextSearchEnabled = true;
+            cmbPetugas.IsTextSearchEnabled = true;
+            cmbRak.IsTextSearchEnabled = true;
         }
 
-
-        private void btnSimpan_Click(object sender, RoutedEventArgs e)
+       //metode untuk disable button dalam kondisi tertentu
+        public void aturButton(Boolean status)
         {
-
-        }
-
-        private void btnKategori_Click(object sender, RoutedEventArgs e)
-        {
-            KategoriBarang kategori = new KategoriBarang();
-            kategori.Show();
-            this.Close();
+            btnTambah.IsEnabled = status;
+            btnEdit.IsEnabled = status;
+            btnHapus.IsEnabled = status;
+            btnSave.IsEnabled = !status;
+            btnBatal.IsEnabled = !status;
         }
     }
 }
