@@ -28,7 +28,7 @@
             </Canvas.Background>
         </Canvas>
         <Label Content="Let's Start With Your Name" HorizontalAlignment="Left" Margin="511,102,0,0" VerticalAlignment="Top" Foreground="White" FontSize="20" Height="37" Width="246" Grid.ColumnSpan="3"/>
-        <TextBox x:Name="txtName" HorizontalAlignment="Left" Height="43" Margin="476,144,-7,0" TextWrapping="Wrap" Text="Place your name here !" VerticalAlignment="Top" Width="301" BorderBrush="{x:Null}" Foreground="#FF29BFEE" TextChanged="txtName_TextChanged" FontWeight="Bold" FontSize="20" Grid.ColumnSpan="3"/>
+        <TextBox x:Name="txtName" HorizontalAlignment="Left" Height="43" Margin="476,144,-7,0" TextWrapping="Wrap" Text="Place your name here !" VerticalAlignment="Top" Width="301" BorderBrush="{x:Null}" Foreground="#FF29BFEE" FontWeight="Bold" FontSize="20" Grid.ColumnSpan="3"/>
         <Label Content="Already Done ? Let's Go" HorizontalAlignment="Left" Margin="559,277,0,0" VerticalAlignment="Top" Foreground="White" Width="152" Height="26" Grid.ColumnSpan="3"/>
         <Button x:Name="btnLetsgo" Content=" Register Me" HorizontalAlignment="Left" Height="48" Margin="476,322,-7,0" VerticalAlignment="Top" Width="301" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" FontWeight="Bold" Click="btnLetsgo_Click" FontSize="20" Grid.ColumnSpan="3"/>
         <Image HorizontalAlignment="Left" Height="100" Margin="201,195,0,0" VerticalAlignment="Top" Width="100"/>

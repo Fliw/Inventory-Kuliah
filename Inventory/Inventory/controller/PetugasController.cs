@@ -33,8 +33,6 @@ namespace Inventory.controller
             this.login = login;
         }
 
-
-
         /*
          ###### METHOD FOR SELECTING DATA ######
          */

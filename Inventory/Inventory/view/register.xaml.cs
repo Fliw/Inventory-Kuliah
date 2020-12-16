@@ -19,26 +19,27 @@ namespace Inventory.view
     /// </summary>
     public partial class register : Window
     {
+        private PetugasController controller;
+
+        /*
+        ###### CONSTRUCTOR ######
+        */
         public register()
         {
             InitializeComponent();
+            PetugasController controller = new PetugasController(this);
+            this.controller = controller;
         }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void txtName_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
-
+        /*
+        ###### OPERASI ######
+        */
         private void btnLetsgo_Click(object sender, RoutedEventArgs e)
         {
-            PetugasController controller = new PetugasController(this);
+            this.controller.Register();
         }
-
+        /*
+        ###### NAVIGASI ######
+        */
         private void btnBack_Click(object sender, RoutedEventArgs e)
         {
             Window1 loginpage = new Window1();
