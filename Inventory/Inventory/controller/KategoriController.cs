@@ -28,5 +28,20 @@ namespace Inventory.controller
             hasil = model.insertKategori();
             return hasil;
         }
+        public List<string> GetDataUpdateById()
+        {
+            int idKat = Int32.Parse(view.txtIdKategori.Text);
+            model.idkategori = idKat;
+            List<string> dataKategori = new List<string>();
+            dataKategori = model.getDataUpdateById();
+            return dataKategori;
+        }
+        public Boolean updateKategori()
+        {
+            model.idkategori = Int16.Parse(view.txtIdKategori.Text);
+            model.namakategori = view.txtNamaKategori.Text;
+            hasil = model.updateKategori();
+            return hasil;
+        }
     }
 }

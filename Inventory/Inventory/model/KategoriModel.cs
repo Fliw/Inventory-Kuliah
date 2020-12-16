@@ -64,5 +64,54 @@ namespace Inventory.model
             }
             return status;
         }
+        public List<string> getDataUpdateById()
+        {
+            List<string> data = new List<string>();
+            try
+            {
+                koneksi.Open();
+                MySqlCommand command = new MySqlCommand();
+                command.CommandText = "SELECT * FROM kategori WHERE ID_Kategori = " + idkategori;
+                command.Connection = koneksi;
+                MySqlDataReader reader = command.ExecuteReader();
+                int kolom = 0;
+                while (reader.Read())
+                {
+                    var ii = reader.FieldCount;
+                    for (int i = 0; i < ii; i++)
+                    {
+                        data.Add(reader.GetString(kolom));
+                        kolom++;
+                    }
+                }
+                koneksi.Close();
+            }
+            catch (MySqlException e)
+            {
+                System.Windows.MessageBox.Show(e.Message);
+            }
+            return data;
+        }
+        public Boolean updateKategori()
+        {
+            status = false;
+            try
+            {
+                query = "UPDATE kategori SET `Nama_Kategori` = '" + namakategori + "' WHERE `ID_Kategori` = "+idkategori;
+                koneksi.Open();
+                command = new MySqlCommand();
+                command.Connection = koneksi;
+                command.CommandText = query;
+                command.ExecuteNonQuery();
+                status = true;
+                koneksi.Close();
+            }
+            catch (MySqlException e)
+            {
+                System.Windows.MessageBox.Show(e.Message);
+                status = false;
+            }
+            return status; 
+        }
     }
 }

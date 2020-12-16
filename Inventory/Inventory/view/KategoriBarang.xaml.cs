@@ -59,7 +59,7 @@ namespace Inventory.view
             }
             else if (proses == "UPDATE")
             {
-                //if (!checkNull()) hasil = controller.updateKategori();
+                if (!checkNull()) hasil = controller.updateKategori();
                 clearAll();
 
             }
@@ -110,7 +110,20 @@ namespace Inventory.view
 
         private void btnEdit_Click(object sender, RoutedEventArgs e)
         {
-
+            if (txtIdKategori.Text == "" || txtIdKategori.Text == "ID")
+            {
+                MessageBox.Show("MOHON ISI ID KATEGORI", "ERROR!");
+            }
+            else
+            {
+                proses = "UPDATE";
+                aturButton(false);
+                List<string> dataKategori = new List<string>();
+                dataKategori = controller.GetDataUpdateById();
+                txtIdKategori.Text = dataKategori[0];
+                txtIdKategori.IsReadOnly = true;
+                txtNamaKategori.Text = dataKategori[1];
+            }
         }
 
         private void btnHapus1_Click(object sender, RoutedEventArgs e)
