@@ -54,7 +54,7 @@ namespace Inventory.view
             if (proses == "INSERT")
             {
 
-                //if (!checkNull()) hasil = controller.insertKategori();
+                if (!checkNull()) hasil = controller.insertKategori();
                 clearAll();
             }
             else if (proses == "UPDATE")

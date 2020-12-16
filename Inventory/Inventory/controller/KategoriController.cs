@@ -22,5 +22,11 @@ namespace Inventory.controller
             DataSet data = model.selectKategori();
             view.dgKategori.ItemsSource = data.Tables[0].DefaultView;
         }
+        public Boolean insertKategori()
+        {
+            model.namakategori = view.txtNamaKategori.Text;
+            hasil = model.insertKategori();
+            return hasil;
+        }
     }
 }

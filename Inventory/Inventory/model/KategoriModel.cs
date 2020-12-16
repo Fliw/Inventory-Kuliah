@@ -43,5 +43,26 @@ namespace Inventory.model
             }
             return ds;
         }
+        public Boolean insertKategori()
+        {
+            status = false;
+            try
+            {
+                query = "INSERT INTO kategori (`Nama_Kategori`) VALUES ('"+namakategori+"')";
+                koneksi.Open();
+                command = new MySqlCommand();
+                command.CommandText = query;
+                command.Connection = koneksi;
+                command.ExecuteNonQuery();
+                status = true;
+                koneksi.Close();
+            }
+            catch (MySqlException e)
+            {
+                System.Windows.MessageBox.Show(e.Message);
+                status = false;
+            }
+            return status;
+        }
     }
 }

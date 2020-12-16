@@ -29,6 +29,7 @@ namespace Inventory.view
             InitializeComponent();
             controller = new controller.BarangController(this);
             tampilData();
+            ComboProps();
 
         }
         private void Window_MouseDown(object sender, MouseButtonEventArgs e)
@@ -39,6 +40,15 @@ namespace Inventory.view
             }
         }
 
+        private void ComboProps()
+        {
+            cmbKategori.IsEditable = true;
+            cmbPetugas.IsEditable = true;
+            cmbRak.IsEditable = true;
+            cmbKategori.IsTextSearchEnabled = true;
+            cmbPetugas.IsTextSearchEnabled = true;
+            cmbRak.IsTextSearchEnabled = true;
+        }
         public void aturButton(Boolean status)
         {
             btnTambah.IsEnabled = status;

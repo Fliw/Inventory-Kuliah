@@ -113,6 +113,7 @@
     <Compile Include="controller\PetugasController.cs" />
     <Compile Include="model\BarangModel.cs" />
     <Compile Include="model\KategoriModel.cs" />
+    <Compile Include="model\KategoriModel.cs" />
     <Compile Include="model\PetugasModel.cs" />
     <Compile Include="view\KategoriBarang.xaml.cs">
       <DependentUpon>KategoriBarang.xaml</DependentUpon>
