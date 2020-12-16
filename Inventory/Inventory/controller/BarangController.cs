@@ -12,6 +12,12 @@ namespace Inventory.controller
         view.DataBarang view;
         model.BarangModel model;
         private Boolean hasil;
+
+        /*
+         ###### METHOD FOR SELECTING DATA ######
+         */
+
+        //method untuk mengisi combobox dan instansiasi object
         public BarangController(view.DataBarang view)
         {
             this.view = view;
@@ -21,11 +27,59 @@ namespace Inventory.controller
             this.fillComboPetugas();
         }
 
+        //method untuk set kode faktur ke primary key tertinggi / terbaru
+        public void setKode()
+        {
+            view.txtFaktur.Text = model.maxPKFaktur().ToString();
+        }
+
+        //method untuk mengisi combobox rak
+        public void fillComboRak()
+        {
+            List<string> dataRak = model.fillComboRak();
+            view.cmbRak.ItemsSource = dataRak;
+        }
+
+        //method untuk mengisi combobox kategori
+        public void fillComboKategori()
+        {
+            List<string> dataKategori = model.fillComboKategori();
+            view.cmbKategori.ItemsSource = dataKategori;
+        }
+
+        //method untuk mengisi combobox petugas
+        public void fillComboPetugas()
+        {
+            List<string> dataPetugas = model.fillComboPetugas();
+            view.cmbPetugas.ItemsSource = dataPetugas;
+        }
+
+        //method untuk meminta data barang untuk ditampilkan
         public void selectBarang()
         {
             DataSet data = model.selectBarang();
             view.dgBarang.ItemsSource = data.Tables[0].DefaultView;
         }
+
+        //method untuk mengisi value form berdasarkan id referensi
+        public List<string> GetDataUpdateById()
+        {
+            int idBar = Int32.Parse(view.txtIdBarang.Text);
+            model.idbarang = idBar;
+            List<string> dataBarang = new List<string>();
+            dataBarang = model.getDataUpdateById();
+            return dataBarang;
+        }
+
+
+
+
+        /*
+        ###### METHOD FOR INSERTING DATA ######
+        */
+
+
+
         public Boolean insertBarang()
         {
             DateTime dateAndTime = new DateTime();
@@ -41,6 +95,13 @@ namespace Inventory.controller
             return hasil;
         }
 
+
+
+        /*
+        ###### METHOD FOR UPDATING DATA ######
+        */
+
+
         public Boolean updateBarang()
         {
             model.idbarang = Int16.Parse(view.txtIdBarang.Text);
@@ -55,38 +116,19 @@ namespace Inventory.controller
             return hasil;
         }
 
+
+        /*
+        ###### METHOD FOR DELETING DATA ######
+        */
+
+
         public Boolean deleteBarang()
         {
             model.idbarang = Int16.Parse(view.txtIdBarang.Text);
             hasil = model.deleteBarang();
             return hasil;
         }
-        public void setKode()
-        {
-            view.txtFaktur.Text = model.maxPKFaktur().ToString();
-        }
-        public void fillComboRak()
-        {
-            List<string> dataRak = model.fillComboRak();
-            view.cmbRak.ItemsSource = dataRak;
-        }
-        public void fillComboKategori()
-        {
-            List<string> dataKategori = model.fillComboKategori();
-            view.cmbKategori.ItemsSource = dataKategori;
-        }
-        public void fillComboPetugas()
-        {
-            List<string> dataPetugas = model.fillComboPetugas();
-            view.cmbPetugas.ItemsSource = dataPetugas;
-        }
-        public List<string> GetDataUpdateById()
-        {
-            int idBar = Int32.Parse(view.txtIdBarang.Text);
-            model.idbarang = idBar;
-            List<string> dataBarang = new List<string>();
-            dataBarang = model.getDataUpdateById();
-            return dataBarang;
-        }
+        
+        
     }
 }
