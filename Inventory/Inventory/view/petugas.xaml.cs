@@ -68,5 +68,17 @@ namespace Inventory.view
         {
             
         }
+
+        private void btnBeranda_Click(object sender, RoutedEventArgs e)
+        {
+           
+        }
+
+        private void btnBeranda1_Click(object sender, RoutedEventArgs e)
+        {
+            MenuUtama menu = new MenuUtama();
+            menu.Show();
+            this.Close();
+        }
     }
 }

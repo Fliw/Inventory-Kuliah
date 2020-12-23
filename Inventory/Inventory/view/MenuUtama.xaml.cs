@@ -78,5 +78,12 @@ namespace Inventory.view
             view.Show();
             this.Close();
         }
+
+        private void btnPetugas_Click(object sender, RoutedEventArgs e)
+        {
+            petugas viewpetugas = new petugas();
+            viewpetugas.Show();
+            this.Close();
+        }
     }
 }
