@@ -129,24 +129,39 @@ namespace Inventory.model
          */
 
 
-        public void RegisterPetugas()
+        public Boolean insertPetugas()
         {
-            this.koneksi.Open();
-            MySqlCommand query = new MySqlCommand("INSERT INTO `PETUGAS` (`Nama_Petugas`,`Password_Petugas`,`Status_Petugas`) VALUES ('" + nama + "','" + password + "','" + status + "')", koneksi);
-            query.ExecuteNonQuery();
-            MessageBox.Show("Hai " + nama + "!, Selamat akunmu telah berhasil dibuat!");
+            result = false;
+            try
+            {
+                query = "INSERT INTO petugas (`Nama_Petugas`,`Password_Petugas`,`Status_Petugas`) VALUES ('" + nama + "','"+password+"','petugas')";
+                koneksi.Open();
+                command = new MySqlCommand();
+                command.CommandText = query;
+                command.Connection = koneksi;
+                command.ExecuteNonQuery();
+                result = true;
+                koneksi.Close();
+            }
+            catch (MySqlException e)
+            {
+                MessageBox.Show(e.Message);
+                result = false;
+            }
+            return result;
         }
+
         /*
          ###### METHOD FOR UPDATING DATA ######
          */
 
 
-        public Boolean updateKategori()
+        public Boolean updatePetugas()
         {
             result = false;
             try
             {
-                query = "UPDATE petugas SET `Nama_Petugas` = '" + nama + "', `Password_Petugas` = '"+password+"', `Status_Petugas` = 'petugas' WHERE `ID_Kategori` = " + petugasId;
+                query = "UPDATE petugas SET `Nama_Petugas` = '" + nama + "', `Password_Petugas` = '"+password+"', `Status_Petugas` = 'petugas' WHERE `ID_Petugas` = " + petugasId;
                 koneksi.Open();
                 command = new MySqlCommand();
                 command.Connection = koneksi;
@@ -168,7 +183,7 @@ namespace Inventory.model
          */
 
 
-        public Boolean deleteKategori()
+        public Boolean deletePetugas()
         {
             result = false;
             try

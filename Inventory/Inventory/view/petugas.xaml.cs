@@ -99,7 +99,7 @@ namespace Inventory.view
         }
 
         //operasi simpan
-        private void btnSave_Click(object sender, RoutedEventArgs e)
+        private void btnSave_Click_1(object sender, RoutedEventArgs e)
         {
             if (proses == "INSERT")
             {
