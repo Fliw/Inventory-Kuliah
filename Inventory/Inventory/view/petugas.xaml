@@ -55,7 +55,6 @@
         <DataGrid x:Name="dgPetugas" HorizontalAlignment="Left" Height="285" Margin="209,248,0,0" VerticalAlignment="Top" Width="782" SelectionChanged="dgKategori_SelectionChanged"/>
         <TextBox x:Name="txtIdPetugas" HorizontalAlignment="Left" Height="36" Margin="262,100,0,0" TextWrapping="Wrap" Text="ID" VerticalAlignment="Top" Width="130" Foreground="#FF29BFEE"/>
         <TextBox x:Name="txtNamaPetugas" HorizontalAlignment="Left" Height="34" Margin="262,162,0,0" TextWrapping="Wrap" Text="Nama" VerticalAlignment="Top" Width="130" TextChanged="TextBox_TextChanged" Foreground="#FF29BFEE"/>
-        <TextBox x:Name="txtPasswordPetugas" HorizontalAlignment="Left" Height="36" Margin="408,100,0,0" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" Width="130" Foreground="#FF29BFEE"/>
         <TextBox x:Name="txtStatusPetugas" HorizontalAlignment="Left" Height="34" Margin="408,162,0,0" TextWrapping="Wrap" Text="Status" VerticalAlignment="Top" Width="130" TextChanged="TextBox_TextChanged_1" Foreground="#FF29BFEE"/>
         <Label Content="ID Petugas" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="262,70,0,0" FontSize="16" FontWeight="Bold" Foreground="#FF29BFEE" Height="30" Width="90"/>
         <Label Content="Nama Petugas" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="262,136,0,0" FontSize="16" FontWeight="Bold" Foreground="#FF29BFEE" Height="30" Width="118"/>
@@ -66,5 +65,6 @@
         <Button x:Name="btnHapus" Content="Hapus" HorizontalAlignment="Left" VerticalAlignment="Top" Width="206" Margin="586,128,0,0" Height="28" Background="#FF29BFEE" BorderBrush="{x:Null}" Foreground="White" FontSize="18" FontWeight="Bold" Click="btnHapus1_Click"/>
         <Button x:Name="btnSave" Content="Simpan" HorizontalAlignment="Left" Margin="844,100,0,0" VerticalAlignment="Top" Width="102" Height="32" BorderBrush="{x:Null}" Foreground="White" Background="#FF29BFEE" FontSize="18" FontWeight="Bold" RenderTransformOrigin="2.314,-0.806"/>
         <Button x:Name="btnBatal" Content="Batal" HorizontalAlignment="Left" Margin="844,144,0,0" VerticalAlignment="Top" Width="102" Height="32" BorderBrush="{x:Null}" Foreground="White" Background="#FF29BFEE" FontSize="18" FontWeight="Bold" Click="btnBatal_Click"/>
+        <PasswordBox x:Name="txtPassswordPetugas" HorizontalAlignment="Left" Margin="408,100,0,0" VerticalAlignment="Top" Width="130" Height="36" Password="dsa" Foreground="#FF29BFEE"/>
     </Grid>
 </Window>
