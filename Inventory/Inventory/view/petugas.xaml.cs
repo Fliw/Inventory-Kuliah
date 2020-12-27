@@ -52,6 +52,8 @@ namespace Inventory.view
             proses = "INSERT";
             txtIdPetugas.Text = "TIDAK BISA DIEDIT";
             txtIdPetugas.IsReadOnly = true;
+            txtStatusPetugas.Text = "petugas";
+            txtStatusPetugas.IsReadOnly = true;
             aturButton(false);
         }
 
@@ -73,6 +75,7 @@ namespace Inventory.view
                 txtNamaPetugas.Text = dataPetugas[1];
                 txtPassswordPetugas.Password = dataPetugas[2];
                 txtStatusPetugas.Text = dataPetugas[3];
+                txtStatusPetugas.IsReadOnly = true;
             }
         }
 
@@ -83,7 +86,7 @@ namespace Inventory.view
             txtNamaPetugas.IsReadOnly = true;
             txtPassswordPetugas.Password = "";
             txtPassswordPetugas.IsEnabled = false;
-            txtStatusPetugas.Text = "";
+            txtStatusPetugas.Text = "TIDAK BISA DIEDIT";
             txtStatusPetugas.IsReadOnly = true;
             txtIdPetugas.Text = "";
             txtIdPetugas.Focus();
@@ -103,7 +106,6 @@ namespace Inventory.view
         {
             if (proses == "INSERT")
             {
-
                 if (!checkNull()) hasil = controller.insertPetugas();
                 clearAll();
             }
