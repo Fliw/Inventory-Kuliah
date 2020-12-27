@@ -180,6 +180,14 @@ namespace Inventory.view
             this.Close();
         }
 
+        //navigasi ke petugas
+        private void btnPetugas_Click(object sender, RoutedEventArgs e)
+        {
+            view.petugas petugaspage = new petugas();
+            petugaspage.Show();
+            this.Close();
+        }
+
         /*
         ###### HELPER ######
         */

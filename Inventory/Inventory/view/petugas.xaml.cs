@@ -137,7 +137,7 @@ namespace Inventory.view
         */
 
         //navigasi logout
-        private void btnLogout_Click(object sender, RoutedEventArgs e)
+        private void btnLogout1_Click(object sender, RoutedEventArgs e)
         {
             Window1 loginPage = new Window1();
             loginPage.Show();
@@ -145,7 +145,7 @@ namespace Inventory.view
         }
 
         //navigasi databarang
-        private void btnBarang1_Click(object sender, RoutedEventArgs e)
+        private void btnBarang1_Click_1(object sender, RoutedEventArgs e)
         {
             DataBarang data = new DataBarang();
             data.Show();
@@ -161,10 +161,18 @@ namespace Inventory.view
         }
 
         //navigasi beranda
-        private void btnBeranda_Click(object sender, RoutedEventArgs e)
+        private void btnBeranda1_Click(object sender, RoutedEventArgs e)
         {
             view.MenuUtama menu = new view.MenuUtama();
             menu.Show();
+            this.Close();
+        }
+
+        //navigasi kategori
+        private void btnKategori1_Click(object sender, RoutedEventArgs e)
+        {
+            view.KategoriBarang viewkategori = new KategoriBarang();
+            viewkategori.Show();
             this.Close();
         }
 
@@ -207,5 +215,7 @@ namespace Inventory.view
             txtStatusPetugas.Text = "";
             txtStatusPetugas.IsReadOnly = false;
         }
+
+        
     }
 }

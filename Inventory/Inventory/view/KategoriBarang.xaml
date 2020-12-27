@@ -35,7 +35,7 @@
             <Button x:Name="btnLaporan1" Content="LAPORAN" Canvas.Left="-176" Canvas.Top="278" Width="162" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="32" FontWeight="Bold" FontSize="18"/>
             <Button x:Name="btnBarangKeluar1" Content="Barang Keluar" Canvas.Left="-171" Canvas.Top="251" Width="90" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="24"/>
             <Button x:Name="btnSupplier1" Content="Supplier" Canvas.Left="-171" Canvas.Top="309" Width="90" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="24"/>
-            <Button x:Name="btnPetugas1" Content="Petugas" Canvas.Left="-171" Canvas.Top="332" Width="90" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="24"/>
+            <Button x:Name="btnPetugas1" Content="Petugas" Canvas.Left="-171" Canvas.Top="332" Width="90" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="24" Click="btnPetugas1_Click"/>
             <Button x:Name="btnDetailKeluar1" Content="Detail Keluar" Canvas.Left="-171" Canvas.Top="355" Width="90" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="24" IsDefault="True"/>
             <Button x:Name="btnStockOpname1" Content="Stock Opname" Canvas.Left="-171" Canvas.Top="378" Width="90" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="24"/>
             <Button x:Name="btnStockBarang1" Content="Stock Barang" Canvas.Left="-171" Canvas.Top="401" Width="90" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="24"/>

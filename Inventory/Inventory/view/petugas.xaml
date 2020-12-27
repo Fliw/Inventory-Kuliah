@@ -21,10 +21,10 @@
         <Ellipse Fill="White" HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="44" Margin="2,65,0,0" Stroke="#FF0092BF" StrokeThickness="2"/>
         <Canvas HorizontalAlignment="Left" Height="74" Margin="210,0,0,0" VerticalAlignment="Top" Width="783" Background="#FF29BFEE">
             <Label Content="50" Canvas.Left="10" Canvas.Top="30" FontWeight="Bold" Foreground="#FF29BFEE" RenderTransformOrigin="-0.375,0.577" FontSize="24"/>
-            <Button x:Name="btnBeranda1" Content="BERANDA" Canvas.Left="-178" Canvas.Top="68" Width="164" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="32" FontSize="18" FontWeight="Bold"/>
-            <Button x:Name="btnBarang1" Content="DATA BARANG" Canvas.Left="-176" Canvas.Top="115" Width="163" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="32" FontSize="18" FontWeight="Bold" />
-            <Button x:Name="btnDataBarang1" Content="Barang" Canvas.Left="-173" Canvas.Top="146" Width="90" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="24" />
-            <Button x:Name="btnKategori1" Content="Kategori" Canvas.Left="-173" Canvas.Top="168" Width="90" BorderBrush="#FF29BFEE" Foreground="#FF29BFEE" Background="White" Height="23"/>
+            <Button x:Name="btnBeranda1" Content="BERANDA" Canvas.Left="-178" Canvas.Top="68" Width="164" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="32" FontSize="18" FontWeight="Bold" Click="btnBeranda1_Click"/>
+            <Button x:Name="btnBarang1" Content="DATA BARANG" Canvas.Left="-176" Canvas.Top="115" Width="163" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="32" FontSize="18" FontWeight="Bold" Click="btnBarang1_Click_1" />
+            <Button x:Name="btnDataBarang1" Content="Barang" Canvas.Left="-173" Canvas.Top="146" Width="90" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="24" Click="btnDataBarang1_Click" />
+            <Button x:Name="btnKategori1" Content="Kategori" Canvas.Left="-173" Canvas.Top="168" Width="90" BorderBrush="#FF29BFEE" Foreground="#FF29BFEE" Background="White" Height="23" Click="btnKategori1_Click"/>
             <Button x:Name="btnTransaksi1" Content="TRANSAKSI" Canvas.Left="-176" Canvas.Top="197" Width="162" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="32" FontWeight="Bold" FontSize="18"/>
             <Button x:Name="btnBarangMasuk1" Content="Barang Masuk" Canvas.Left="-171" Canvas.Top="228" Width="90" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="24"/>
             <Button Content="Button" Canvas.Left="-171" Canvas.Top="251" Width="90" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="24"/>
@@ -36,7 +36,7 @@
             <Button x:Name="btnStockOpname1" Content="Stock Opname" Canvas.Left="-171" Canvas.Top="383" Width="90" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="24"/>
             <Button x:Name="btnStockBarang1" Content="Stock Barang" Canvas.Left="-171" Canvas.Top="407" Width="90" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="24"/>
             <Button x:Name="btnSetting1" Content="SETTING AKUN" Canvas.Left="-176" Canvas.Top="436" Width="160" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="32" FontSize="18" FontWeight="Bold"/>
-            <Button x:Name="btnLogout1" Content="Logout" Canvas.Left="-171" Canvas.Top="473" Width="90" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="24"/>
+            <Button x:Name="btnLogout1" Content="Logout" Canvas.Left="-171" Canvas.Top="473" Width="90" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="24" Click="btnLogout1_Click"/>
             <Image HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="60" Source="../assets/image 6.png" Canvas.Left="713" Canvas.Top="10"/>
         </Canvas>
         <Image HorizontalAlignment="Left" Height="26" VerticalAlignment="Top" Width="28" Source="../assets/icon-rumah.png" Margin="10,71,0,0"/>
