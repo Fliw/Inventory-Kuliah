@@ -30,7 +30,7 @@
             <Button x:Name="btnStockOpname1" Content="Stock Opname" Canvas.Left="-156" Canvas.Top="469" Width="90" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="24"/>
             <Button x:Name="btnStockBarang1" Content="Stock Barang" Canvas.Left="-156" Canvas.Top="493" Width="90" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="24"/>
             <Button x:Name="btnSetting1" Content="SETTING AKUN" Canvas.Left="-171" Canvas.Top="522" Width="160" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="32" FontSize="18" FontWeight="Bold"/>
-            <Button x:Name="btnLogout1" Content="Logout" Canvas.Left="-171" Canvas.Top="554" Width="90" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="24" Click="btnLogout1_Click"/>
+            <Button x:Name="btnLogout1" Content="Logout" Canvas.Left="-154" Canvas.Top="553" Width="90" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="24" Click="btnLogout1_Click"/>
             <Image HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="60" Source="/Inventory;component/assets/image 6.png" Canvas.Left="713" Canvas.Top="10"/>
             <Label x:Name="lblBarang_Copy" Content="Table Rak&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" FontWeight="Bold" FontSize="40" Foreground="White" RenderTransformOrigin="0.409,0.541" Background="{x:Null}" Height="64" Width="344"/>
         </Canvas>
