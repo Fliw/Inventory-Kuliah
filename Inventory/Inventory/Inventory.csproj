@@ -137,6 +137,9 @@
     <Compile Include="view\DataBarang.xaml.cs">
       <DependentUpon>DataBarang.xaml</DependentUpon>
     </Compile>
+    <Compile Include="view\Table Rak.xaml.cs">
+      <DependentUpon>Table Rak.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -170,6 +173,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="view\DataBarang.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="view\Table Rak.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
