@@ -90,7 +90,7 @@
             <Button x:Name="btnStockOpname2" Content="Stock Opname" Canvas.Left="-156" Canvas.Top="469" Width="90" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="24"/>
             <Button x:Name="btnStockBarang2" Content="Stock Barang" Canvas.Left="-156" Canvas.Top="493" Width="90" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="24"/>
             <Button x:Name="btnSetting2" Content="SETTING AKUN" Canvas.Left="-179" Canvas.Top="530" Width="160" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="32" FontSize="18" FontWeight="Bold"/>
-            <Button x:Name="btnLogout2" Content="Logout" Canvas.Left="-154" Canvas.Top="567" Width="90" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="24" Click="btnLogout1_Click"/>
+            <Button x:Name="btnLogout2" Content="Logout" Canvas.Left="-154" Canvas.Top="567" Width="90" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="24" />
         </Canvas>
         <Image HorizontalAlignment="Left" Height="26" VerticalAlignment="Top" Width="28" Source="../assets/icon-rumah.png" Margin="11,74,0,0"/>
         <Image HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="28" Source="../assets/icon-data-check.png" Margin="14,133,0,0"/>

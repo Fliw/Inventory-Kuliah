@@ -51,7 +51,7 @@
             <Button x:Name="btnStockOpname2" Content="Stock Opname" Canvas.Left="-156" Canvas.Top="469" Width="90" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="24"/>
             <Button x:Name="btnStockBarang2" Content="Stock Barang" Canvas.Left="-156" Canvas.Top="493" Width="90" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="24"/>
             <Button x:Name="btnSetting2" Content="SETTING AKUN" Canvas.Left="-171" Canvas.Top="522" Width="160" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="32" FontSize="18" FontWeight="Bold"/>
-            <Button x:Name="btnLogout2" Content="Logout" Canvas.Left="-154" Canvas.Top="553" Width="90" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="24" Click="btnLogout1_Click"/>
+            <Button x:Name="btnLogout2" Content="Logout" Canvas.Left="-154" Canvas.Top="553" Width="90" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="24"/>
             <Image HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="60" Source="../assets/image 6.png" Canvas.Left="713" Canvas.Top="10"/>
             <Label x:Name="lblBarang" Content="Kategori Barang;" HorizontalAlignment="Left" VerticalAlignment="Top" FontWeight="Bold" FontSize="40" Foreground="White" RenderTransformOrigin="0.409,0.541" Background="{x:Null}" Height="64" Width="334" Canvas.Left="10"/>
         </Canvas>
@@ -67,7 +67,7 @@
         <Rectangle Fill="White" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="211" Stroke="#FF0092BF" Margin="-5,-2,0,0" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
         <Label Content="Inventory apps" HorizontalAlignment="Left" Margin="-1,3,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="26" Foreground="#FF29BFEE" RenderTransformOrigin="0.409,0.541" Background="{x:Null}" Height="52" Width="223" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
         <Rectangle Fill="#FF29BFEE" HorizontalAlignment="Left" Height="52" Margin="69,188,0,0" Stroke="#FF29BFEE" VerticalAlignment="Top" Width="787" Grid.Column="2" Grid.Row="1"/>
-        <DataGrid x:Name="dgPetugas" Margin="69,240,0,-45.492" Grid.Column="2" Grid.RowSpan="2" Grid.Row="1" HorizontalAlignment="Left" Width="787"/>
+        <DataGrid x:Name="dgKategori" Margin="69,240,0,-45.492" Grid.Column="2" Grid.RowSpan="2" Grid.Row="1" HorizontalAlignment="Left" Width="787"/>
         <Button x:Name="btnTableRak" Content="Table Rak" HorizontalAlignment="Left" Height="24" Margin="47,134,0,0" VerticalAlignment="Top" Width="86" Foreground="#FF29BFEE" BorderBrush="White" Background="White" Grid.Column="1" Grid.Row="1"/>
 
 

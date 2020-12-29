@@ -70,7 +70,7 @@
             <Button x:Name="btnStockOpname2" Content="Stock Opname" Canvas.Left="-156" Canvas.Top="469" Width="90" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="24"/>
             <Button x:Name="btnStockBarang2" Content="Stock Barang" Canvas.Left="-156" Canvas.Top="493" Width="90" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="24"/>
             <Button x:Name="btnSetting2" Content="SETTING AKUN" Canvas.Left="-175" Canvas.Top="530" Width="160" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="32" FontSize="18" FontWeight="Bold"/>
-            <Button x:Name="btnLogout2" Content="Logout" Canvas.Left="-154" Canvas.Top="567" Width="90" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="24" Click="btnLogout1_Click"/>
+            <Button x:Name="btnLogout2" Content="Logout" Canvas.Left="-154" Canvas.Top="567" Width="90" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="24"/>
             <Image HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="60" Source="../assets/image 6.png" Canvas.Left="713" Canvas.Top="10"/>
             <Label x:Name="lblBarang1" Content="Data Barang" HorizontalAlignment="Left" VerticalAlignment="Top" FontWeight="Bold" FontSize="40" Foreground="White" RenderTransformOrigin="0.409,0.541" Background="{x:Null}" Height="64" Width="334" Canvas.Left="10"/>
         </Canvas>
@@ -86,7 +86,7 @@
         <Rectangle Fill="White" HorizontalAlignment="Left" Height="62" VerticalAlignment="Top" Width="211" Stroke="#FF0092BF" Margin="-9,0,0,0"/>
         <Label Content="Inventory apps" HorizontalAlignment="Left" Margin="-5,8,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="26" Foreground="#FF29BFEE" RenderTransformOrigin="0.409,0.541" Background="{x:Null}" Height="52" Width="223"/>
         <Rectangle Fill="#FF29BFEE" HorizontalAlignment="Left" Height="52" Margin="202,222,0,0" Stroke="#FF29BFEE" VerticalAlignment="Top" Width="791" Grid.ColumnSpan="3"/>
-        <DataGrid x:Name="dgPetugas" Margin="202,274,0,-49" HorizontalAlignment="Left" Width="791" Grid.ColumnSpan="3"/>
+        <DataGrid x:Name="dgBarang" Margin="202,274,0,-49" HorizontalAlignment="Left" Width="791" Grid.ColumnSpan="3"/>
         <Button x:Name="btnTableRak" Content="Table Rak" HorizontalAlignment="Left" Height="24" Margin="49,169,0,0" VerticalAlignment="Top" Width="87" Foreground="#FF29BFEE" BorderBrush="White" Background="White" RenderTransformOrigin="0.5,0.5"/>
 
     </Grid>
