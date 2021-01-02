@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Inventory.view"
         mc:Ignorable="d"
-        Title="petugas" Height="551.119" Width="995.031"  WindowStyle="None" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" >
+        Title="petugas" Height="593.119" Width="995.031"  WindowStyle="None" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" >
     <Grid Margin="0,0,2,-1">
         <Grid.RowDefinitions>
             <RowDefinition/>
@@ -13,46 +13,10 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Rectangle Fill="#FF29BFEE" HorizontalAlignment="Left" Height="547" VerticalAlignment="Top" Width="213" Margin="-1,2,0,0" RenderTransformOrigin="0.14,0.479"/>
-        <Ellipse Fill="White" HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="44" Margin="4,433,0,0" Stroke="#FF0092BF" StrokeThickness="2"/>
-        <Ellipse Fill="White" HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="44" Margin="2,276,0,0" Stroke="#FF0092BF" StrokeThickness="2"/>
-        <Ellipse Fill="White" HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="44" Margin="5,194,0,0" Stroke="#FF0092BF" StrokeThickness="2"/>
-        <Ellipse Fill="White" HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="43" Margin="5,111,0,0" Stroke="#FF0092BF" StrokeThickness="2"/>
-        <Ellipse Fill="White" HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="44" Margin="2,65,0,0" Stroke="#FF0092BF" StrokeThickness="2"/>
-        <Canvas HorizontalAlignment="Left" Height="74" Margin="210,0,0,0" VerticalAlignment="Top" Width="783" Background="#FF29BFEE">
-            <Label Content="50" Canvas.Left="10" Canvas.Top="30" FontWeight="Bold" Foreground="#FF29BFEE" RenderTransformOrigin="-0.375,0.577" FontSize="24"/>
-            <Button x:Name="btnBeranda1" Content="BERANDA" Canvas.Left="-178" Canvas.Top="68" Width="164" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="32" FontSize="18" FontWeight="Bold" Click="btnBeranda1_Click"/>
-            <Button x:Name="btnBarang1" Content="DATA BARANG" Canvas.Left="-176" Canvas.Top="115" Width="163" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="32" FontSize="18" FontWeight="Bold" Click="btnBarang1_Click_1" />
-            <Button x:Name="btnDataBarang1" Content="Barang" Canvas.Left="-173" Canvas.Top="146" Width="90" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="24" Click="btnDataBarang1_Click" />
-            <Button x:Name="btnKategori1" Content="Kategori" Canvas.Left="-173" Canvas.Top="168" Width="90" BorderBrush="#FF29BFEE" Foreground="#FF29BFEE" Background="White" Height="23" Click="btnKategori1_Click"/>
-            <Button x:Name="btnTransaksi1" Content="TRANSAKSI" Canvas.Left="-176" Canvas.Top="197" Width="162" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="32" FontWeight="Bold" FontSize="18"/>
-            <Button x:Name="btnBarangMasuk1" Content="Barang Masuk" Canvas.Left="-171" Canvas.Top="228" Width="90" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="24"/>
-            <Button Content="Button" Canvas.Left="-171" Canvas.Top="251" Width="90" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="24"/>
-            <Button x:Name="btnLaporan1" Content="LAPORAN" Canvas.Left="-178" Canvas.Top="279" Width="162" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="32" FontWeight="Bold" FontSize="18"/>
-            <Button x:Name="btnBarangKeluar1" Content="Barang Keluar" Canvas.Left="-171" Canvas.Top="251" Width="90" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="24"/>
-            <Button x:Name="btnSupplier1" Content="Supplier" Canvas.Left="-171" Canvas.Top="311" Width="90" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="24"/>
-            <Button x:Name="btnPetugas1" Content="Petugas" Canvas.Left="-171" Canvas.Top="335" Width="90" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="24"/>
-            <Button x:Name="btnDetailKeluar1" Content="Detail Keluar" Canvas.Left="-171" Canvas.Top="359" Width="90" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="24" IsDefault="True"/>
-            <Button x:Name="btnStockOpname1" Content="Stock Opname" Canvas.Left="-171" Canvas.Top="383" Width="90" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="24"/>
-            <Button x:Name="btnStockBarang1" Content="Stock Barang" Canvas.Left="-171" Canvas.Top="407" Width="90" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="24"/>
-            <Button x:Name="btnSetting1" Content="SETTING AKUN" Canvas.Left="-176" Canvas.Top="436" Width="160" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="32" FontSize="18" FontWeight="Bold"/>
-            <Button x:Name="btnLogout1" Content="Logout" Canvas.Left="-171" Canvas.Top="473" Width="90" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="24" Click="btnLogout1_Click"/>
-            <Image HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="60" Source="../assets/image 6.png" Canvas.Left="713" Canvas.Top="10"/>
-        </Canvas>
-        <Image HorizontalAlignment="Left" Height="26" VerticalAlignment="Top" Width="28" Source="../assets/icon-rumah.png" Margin="10,71,0,0"/>
-        <Image HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="28" Source="../assets/icon-data-check.png" Margin="13,117,0,0"/>
-        <Image HorizontalAlignment="Left" Height="26" VerticalAlignment="Top" Width="26" Source="../assets/icon-transaksi2.png" Margin="16,202,0,0"/>
-        <Image HorizontalAlignment="Left" Height="26" VerticalAlignment="Top" Width="30" Source="../assets/icon-laporan2.png" Margin="14,282,0,0" RenderTransformOrigin="0.87,1.981"/>
-        <Image HorizontalAlignment="Left" Height="26" VerticalAlignment="Top" Width="28" Source="../assets/icon-setting-akun2.png" Margin="13,440,0,0" RenderTransformOrigin="0.741,2.056"/>
-        <Ellipse Fill="White" HorizontalAlignment="Left" Height="42" Margin="165,469,0,0" VerticalAlignment="Top" Width="44"/>
-        <Ellipse Fill="White" HorizontalAlignment="Left" Height="25" Margin="135,497,0,0" VerticalAlignment="Top" Width="26"/>
-        <Ellipse Fill="White" HorizontalAlignment="Left" Height="43" Margin="67,491,0,0" VerticalAlignment="Top" Width="44"/>
-        <Ellipse Fill="White" HorizontalAlignment="Left" Height="25" Margin="2,500,0,0" VerticalAlignment="Top" Width="26"/>
         <Rectangle Fill="White" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="211" Stroke="#FF0092BF" Margin="0,-1,0,0"/>
         <Label Content="Inventory apps" HorizontalAlignment="Left" Margin="4,4,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="26" Foreground="#FF29BFEE" RenderTransformOrigin="0.409,0.541" Background="{x:Null}" Height="52" Width="223"/>
-        <Label x:Name="lblBarang_Copy" Content="Petugas&#xA;" HorizontalAlignment="Left" Margin="226,2,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="40" Foreground="White" RenderTransformOrigin="0.409,0.541" Background="{x:Null}" Height="64" Width="344"/>
-        <Rectangle Fill="#FF29BFEE" HorizontalAlignment="Left" Height="52" Margin="208,200,0,0" Stroke="#FF29BFEE" VerticalAlignment="Top" Width="783"/>
-        <DataGrid x:Name="dgPetugas" HorizontalAlignment="Left" Height="285" Margin="209,248,0,0" VerticalAlignment="Top" Width="782"/>
+        <Rectangle Fill="#FF29BFEE" HorizontalAlignment="Left" Height="52" Margin="209,200,0,0" Stroke="#FF29BFEE" VerticalAlignment="Top" Width="784"/>
+        <DataGrid x:Name="dgPetugas" HorizontalAlignment="Left" Height="346" Margin="209,248,0,0" VerticalAlignment="Top" Width="782"/>
         <TextBox x:Name="txtIdPetugas" HorizontalAlignment="Left" Height="36" Margin="262,100,0,0" TextWrapping="Wrap" Text="ID" VerticalAlignment="Top" Width="130" Foreground="#FF29BFEE"/>
         <TextBox x:Name="txtNamaPetugas" HorizontalAlignment="Left" Height="34" Margin="262,162,0,0" TextWrapping="Wrap" Text="Nama" VerticalAlignment="Top" Width="130" Foreground="#FF29BFEE"/>
         <TextBox x:Name="txtStatusPetugas" HorizontalAlignment="Left" Height="34" Margin="408,162,0,0" TextWrapping="Wrap" Text="Status" VerticalAlignment="Top" Width="130" Foreground="#FF29BFEE"/>
@@ -66,5 +30,42 @@
         <Button x:Name="btnSave" Content="Simpan" HorizontalAlignment="Left" Margin="844,100,0,0" VerticalAlignment="Top" Width="102" Height="32" BorderBrush="{x:Null}" Foreground="White" Background="#FF29BFEE" FontSize="18" FontWeight="Bold" RenderTransformOrigin="2.314,-0.806" Click="btnSave_Click_1"/>
         <Button x:Name="btnBatal" Content="Batal" HorizontalAlignment="Left" Margin="844,144,0,0" VerticalAlignment="Top" Width="102" Height="32" BorderBrush="{x:Null}" Foreground="White" Background="#FF29BFEE" FontSize="18" FontWeight="Bold" Click="btnBatal_Click"/>
         <PasswordBox x:Name="txtPassswordPetugas" HorizontalAlignment="Left" Margin="408,100,0,0" VerticalAlignment="Top" Width="130" Height="36" Password="dsa" Foreground="#FF29BFEE"/>
+        <Rectangle Fill="#FF29BFEE" HorizontalAlignment="Left" Height="580" VerticalAlignment="Top" Width="211" Margin="0,58,0,-44" RenderTransformOrigin="0.14,0.479"/>
+        <Ellipse Fill="White" HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="44" Margin="5,518,0,0" Stroke="#FF0092BF" StrokeThickness="2"/>
+        <Ellipse Fill="White" HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="44" Margin="7,357,0,0" Stroke="#FF0092BF" StrokeThickness="2" RenderTransformOrigin="0.5,1.325"/>
+        <Ellipse Fill="White" HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="44" Margin="7,240,0,0" Stroke="#FF0092BF" StrokeThickness="2"/>
+        <Ellipse Fill="White" HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="43" Margin="6,124,0,0" Stroke="#FF0092BF" StrokeThickness="2"/>
+        <Ellipse Fill="White" HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="44" Margin="2,65,0,0" Stroke="#FF0092BF" StrokeThickness="2"/>
+        <Canvas HorizontalAlignment="Left" Height="74" Margin="211,-1,0,0" VerticalAlignment="Top" Width="782" Background="#FF29BFEE">
+            <Button x:Name="btnBeranda1" Content="BERANDA" Canvas.Left="-175" Canvas.Top="68" Width="164" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="32" FontSize="18" FontWeight="Bold"/>
+            <Button x:Name="btnBarang1" Content="DATA BARANG" Canvas.Left="-171" Canvas.Top="128" Width="163" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="32" FontSize="18" FontWeight="Bold" />
+            <Button x:Name="btnDataBarang1" Content="Barang" Canvas.Left="-156" Canvas.Top="189" Width="90" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="24" />
+            <Button x:Name="btnKategori1" Content="Kategori" Canvas.Left="-156" Canvas.Top="213" Width="90" BorderBrush="#FF29BFEE" Foreground="#FF29BFEE" Background="White" Height="23"/>
+            <Button x:Name="btnTransaksi1" Content="TRANSAKSI" Canvas.Left="-171" Canvas.Top="245" Width="162" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="32" FontWeight="Bold" FontSize="18"/>
+            <Button x:Name="btnBarangMasuk1" Content="Barang Masuk" Canvas.Left="-156" Canvas.Top="282" Width="90" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="24"/>
+            <Button Content="Button" Canvas.Left="-156" Canvas.Top="305" Width="90" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="24"/>
+            <Button x:Name="btnLaporan1" Content="LAPORAN" Canvas.Left="-175" Canvas.Top="360" Width="162" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="32" FontWeight="Bold" FontSize="18"/>
+            <Button x:Name="btnBarangKeluar1" Content="Barang Keluar" Canvas.Left="-156" Canvas.Top="329" Width="90" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="24"/>
+            <Button x:Name="btnSupplier1" Content="Supplier" Canvas.Left="-156" Canvas.Top="397" Width="90" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="24"/>
+            <Button x:Name="btnPetugas1" Content="Petugas" Canvas.Left="-156" Canvas.Top="421" Width="90" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="24"/>
+            <Button x:Name="btnDetailKeluar1" Content="Detail Keluar" Canvas.Left="-156" Canvas.Top="445" Width="90" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="24" IsDefault="True"/>
+            <Button x:Name="btnStockOpname1" Content="Stock Opname" Canvas.Left="-156" Canvas.Top="469" Width="90" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="24"/>
+            <Button x:Name="btnStockBarang1" Content="Stock Barang" Canvas.Left="-156" Canvas.Top="493" Width="90" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="24"/>
+            <Button x:Name="btnSetting1" Content="SETTING AKUN" Canvas.Left="-171" Canvas.Top="522" Width="160" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="32" FontSize="18" FontWeight="Bold"/>
+            <Button x:Name="btnLogout1" Content="Logout" Canvas.Left="-154" Canvas.Top="553" Width="90" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="24" Click="btnLogout1_Click"/>
+            <Image HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="60" Source="../assets/image 6.png" Canvas.Left="713" Canvas.Top="10"/>
+            <Label x:Name="lblBarang_Copy1" Content="Petugas&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" FontWeight="Bold" FontSize="40" Foreground="White" RenderTransformOrigin="0.409,0.541" Background="{x:Null}" Height="64" Width="334" Canvas.Left="10"/>
+        </Canvas>
+        <Image HorizontalAlignment="Left" Height="26" VerticalAlignment="Top" Width="28" Source="../assets/icon-rumah.png" Margin="10,71,0,0"/>
+        <Image HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="28" Source="../assets/icon-data-check.png" Margin="13,130,0,0"/>
+        <Image HorizontalAlignment="Left" Height="26" VerticalAlignment="Top" Width="26" Source="../assets/icon-transaksi2.png" Margin="16,248,0,0"/>
+        <Image HorizontalAlignment="Left" Height="26" VerticalAlignment="Top" Width="30" Source="../assets/icon-laporan2.png" Margin="20,364,0,0" RenderTransformOrigin="0.87,1.981"/>
+        <Image HorizontalAlignment="Left" Height="26" VerticalAlignment="Top" Width="28" Source="../assets/icon-setting-akun2.png" Margin="14,524,0,0" RenderTransformOrigin="0.741,2.056"/>
+        <Ellipse Fill="White" HorizontalAlignment="Left" Height="42" Margin="166,564,0,-12" VerticalAlignment="Top" Width="44"/>
+        <Ellipse Fill="White" HorizontalAlignment="Left" Height="25" Margin="136,592,0,-23" VerticalAlignment="Top" Width="26"/>
+        <Ellipse Fill="White" HorizontalAlignment="Left" Height="43" Margin="62,595,0,-44" VerticalAlignment="Top" Width="44"/>
+        <Ellipse Fill="White" HorizontalAlignment="Left" Height="25" Margin="3,595,0,-26" VerticalAlignment="Top" Width="26"/>
+        <DataGrid x:Name="dgPetugas_Copy" HorizontalAlignment="Left" Margin="211,248,0,-44" Width="782" SelectionChanged="dgPetugas_Copy_SelectionChanged"/>
+        <Button x:Name="btnTableRak" Content="Table Rak" HorizontalAlignment="Left" Height="24" Margin="54,162,0,0" VerticalAlignment="Top" Width="87" Foreground="#FF29BFEE" BorderBrush="White" Background="White"/>
     </Grid>
 </Window>

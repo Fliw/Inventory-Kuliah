@@ -7,13 +7,13 @@
         mc:Ignorable="d"
         Title="Table_Rak" Height="593.119" Width="995.031"  WindowStyle="None" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" >
     <Grid>
-        <Rectangle Fill="#FF29BFEE" HorizontalAlignment="Left" Height="580" VerticalAlignment="Top" Width="215" Margin="0,58,0,-45" RenderTransformOrigin="0.14,0.479"/>
+        <Rectangle Fill="#FF29BFEE" HorizontalAlignment="Left" Height="580" VerticalAlignment="Top" Width="211" Margin="0,58,0,-45" RenderTransformOrigin="0.14,0.479"/>
         <Ellipse Fill="White" HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="44" Margin="5,518,0,0" Stroke="#FF0092BF" StrokeThickness="2"/>
         <Ellipse Fill="White" HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="44" Margin="7,357,0,0" Stroke="#FF0092BF" StrokeThickness="2" RenderTransformOrigin="0.5,1.325"/>
         <Ellipse Fill="White" HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="44" Margin="7,240,0,0" Stroke="#FF0092BF" StrokeThickness="2"/>
         <Ellipse Fill="White" HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="43" Margin="6,124,0,0" Stroke="#FF0092BF" StrokeThickness="2"/>
         <Ellipse Fill="White" HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="44" Margin="2,65,0,0" Stroke="#FF0092BF" StrokeThickness="2"/>
-        <Canvas HorizontalAlignment="Left" Height="74" Margin="210,0,0,0" VerticalAlignment="Top" Width="783" Background="#FF29BFEE">
+        <Canvas HorizontalAlignment="Left" Height="74" Margin="211,0,0,0" VerticalAlignment="Top" Width="782" Background="#FF29BFEE">
             <Label Content="50" Canvas.Left="10" Canvas.Top="30" FontWeight="Bold" Foreground="#FF29BFEE" RenderTransformOrigin="-0.375,0.577" FontSize="24"/>
             <Button x:Name="btnBeranda1" Content="BERANDA" Canvas.Left="-175" Canvas.Top="68" Width="164" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="32" FontSize="18" FontWeight="Bold"/>
             <Button x:Name="btnBarang1" Content="DATA BARANG" Canvas.Left="-171" Canvas.Top="128" Width="163" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="32" FontSize="18" FontWeight="Bold" />
@@ -31,22 +31,22 @@
             <Button x:Name="btnStockBarang1" Content="Stock Barang" Canvas.Left="-156" Canvas.Top="493" Width="90" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="24"/>
             <Button x:Name="btnSetting1" Content="SETTING AKUN" Canvas.Left="-171" Canvas.Top="522" Width="160" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="32" FontSize="18" FontWeight="Bold"/>
             <Button x:Name="btnLogout1" Content="Logout" Canvas.Left="-154" Canvas.Top="553" Width="90" BorderBrush="{x:Null}" Foreground="#FF29BFEE" Background="White" Height="24" Click="btnLogout1_Click"/>
-            <Image HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="60" Source="/Inventory;component/assets/image 6.png" Canvas.Left="713" Canvas.Top="10"/>
-            <Label x:Name="lblBarang_Copy" Content="Table Rak&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" FontWeight="Bold" FontSize="40" Foreground="White" RenderTransformOrigin="0.409,0.541" Background="{x:Null}" Height="64" Width="344"/>
+            <Image HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="60" Source="../assets/image 6.png" Canvas.Left="713" Canvas.Top="10"/>
+            <Label x:Name="lblBarang_Copy" Content="Table Rak&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" FontWeight="Bold" FontSize="40" Foreground="White" RenderTransformOrigin="0.409,0.541" Background="{x:Null}" Height="64" Width="334" Canvas.Left="10"/>
         </Canvas>
-        <Image HorizontalAlignment="Left" Height="26" VerticalAlignment="Top" Width="28" Source="/Inventory;component/assets/icon-rumah.png" Margin="10,71,0,0"/>
-        <Image HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="28" Source="/Inventory;component/assets/icon-data-check.png" Margin="13,130,0,0"/>
-        <Image HorizontalAlignment="Left" Height="26" VerticalAlignment="Top" Width="26" Source="/Inventory;component/assets/icon-transaksi2.png" Margin="16,248,0,0"/>
-        <Image HorizontalAlignment="Left" Height="26" VerticalAlignment="Top" Width="30" Source="/Inventory;component/assets/icon-laporan2.png" Margin="20,364,0,0" RenderTransformOrigin="0.87,1.981"/>
-        <Image HorizontalAlignment="Left" Height="26" VerticalAlignment="Top" Width="28" Source="/Inventory;component/assets/icon-setting-akun2.png" Margin="14,524,0,0" RenderTransformOrigin="0.741,2.056"/>
+        <Image HorizontalAlignment="Left" Height="26" VerticalAlignment="Top" Width="28" Source="../assets/icon-rumah.png" Margin="10,71,0,0"/>
+        <Image HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="28" Source="../assets/icon-data-check.png" Margin="13,130,0,0"/>
+        <Image HorizontalAlignment="Left" Height="26" VerticalAlignment="Top" Width="26" Source="../assets/icon-transaksi2.png" Margin="16,248,0,0"/>
+        <Image HorizontalAlignment="Left" Height="26" VerticalAlignment="Top" Width="30" Source="../assets/icon-laporan2.png" Margin="20,364,0,0" RenderTransformOrigin="0.87,1.981"/>
+        <Image HorizontalAlignment="Left" Height="26" VerticalAlignment="Top" Width="28" Source="../assets/icon-setting-akun2.png" Margin="14,524,0,0" RenderTransformOrigin="0.741,2.056"/>
         <Ellipse Fill="White" HorizontalAlignment="Left" Height="42" Margin="166,564,0,-13" VerticalAlignment="Top" Width="44"/>
         <Ellipse Fill="White" HorizontalAlignment="Left" Height="25" Margin="136,592,0,-24" VerticalAlignment="Top" Width="26"/>
         <Ellipse Fill="White" HorizontalAlignment="Left" Height="43" Margin="62,595,0,-45" VerticalAlignment="Top" Width="44"/>
         <Ellipse Fill="White" HorizontalAlignment="Left" Height="25" Margin="3,595,0,-27" VerticalAlignment="Top" Width="26"/>
         <Rectangle Fill="White" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="211" Stroke="#FF0092BF" Margin="0,-1,0,0"/>
         <Label Content="Inventory apps" HorizontalAlignment="Left" Margin="4,4,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="26" Foreground="#FF29BFEE" RenderTransformOrigin="0.409,0.541" Background="{x:Null}" Height="52" Width="223"/>
-        <Rectangle Fill="#FF29BFEE" HorizontalAlignment="Left" Height="52" Margin="208,200,0,0" Stroke="#FF29BFEE" VerticalAlignment="Top" Width="783"/>
-        <DataGrid x:Name="dgPetugas" HorizontalAlignment="Left" Margin="209,248,0,-45" Width="782"/>
+        <Rectangle Fill="#FF29BFEE" HorizontalAlignment="Left" Height="52" Margin="211,200,0,0" Stroke="#FF29BFEE" VerticalAlignment="Top" Width="784"/>
+        <DataGrid x:Name="dgPetugas" HorizontalAlignment="Left" Margin="211,252,0,-45" Width="784"/>
         <Button x:Name="btnTambah" Content="Tambah" HorizontalAlignment="Left" VerticalAlignment="Top" Width="206" Margin="586,94,0,0" Height="32" Background="#FF29BFEE" BorderBrush="{x:Null}" Foreground="White" FontSize="18" FontWeight="Bold" />
         <Button x:Name="btnEdit" Content="Edit" HorizontalAlignment="Left" VerticalAlignment="Top" Width="206" Margin="586,160,0,0" Height="28" Background="#FF29BFEE" BorderBrush="{x:Null}" Foreground="White" FontSize="18" FontWeight="Bold"  RenderTransformOrigin="0.515,0.148"/>
         <Button x:Name="btnHapus" Content="Hapus" HorizontalAlignment="Left" VerticalAlignment="Top" Width="206" Margin="586,128,0,0" Height="28" Background="#FF29BFEE" BorderBrush="{x:Null}" Foreground="White" FontSize="18" FontWeight="Bold" />

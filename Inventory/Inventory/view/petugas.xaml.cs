@@ -216,6 +216,9 @@ namespace Inventory.view
             txtStatusPetugas.IsReadOnly = false;
         }
 
-        
+        private void dgPetugas_Copy_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }

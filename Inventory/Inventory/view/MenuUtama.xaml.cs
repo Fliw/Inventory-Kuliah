@@ -85,5 +85,10 @@ namespace Inventory.view
             viewpetugas.Show();
             this.Close();
         }
+
+        private void dgPetugas_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }

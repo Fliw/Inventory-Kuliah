@@ -243,5 +243,10 @@ namespace Inventory.view
             btnSave.IsEnabled = !status;
             btnBatal.IsEnabled = !status;
         }
+
+        private void btnDataBarang_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
