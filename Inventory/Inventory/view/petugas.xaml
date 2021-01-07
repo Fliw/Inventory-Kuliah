@@ -8,7 +8,7 @@
         Title="petugas" Height="593.119" Width="995.031"  WindowStyle="None" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" >
     <Grid Margin="0,0,2,-1">
         <Grid.RowDefinitions>
-            <RowDefinition/>
+            <RowDefinition Height="594"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>

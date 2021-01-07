@@ -119,6 +119,15 @@
     <Compile Include="model\KategoriModel.cs" />
     <Compile Include="model\KategoriModel.cs" />
     <Compile Include="model\PetugasModel.cs" />
+    <Compile Include="view\BarangKeluar.xaml.cs">
+      <DependentUpon>BarangKeluar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="view\BarangMasuk.xaml.cs">
+      <DependentUpon>BarangMasuk.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="view\DetailKeluar.xaml.cs">
+      <DependentUpon>DetailKeluar.xaml</DependentUpon>
+    </Compile>
     <Compile Include="view\KategoriBarang.xaml.cs">
       <DependentUpon>KategoriBarang.xaml</DependentUpon>
     </Compile>
@@ -140,6 +149,15 @@
     <Compile Include="view\Rak.xaml.cs">
       <DependentUpon>Rak.xaml</DependentUpon>
     </Compile>
+    <Compile Include="view\StockBarang.xaml.cs">
+      <DependentUpon>StockBarang.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="view\StockOpname.xaml.cs">
+      <DependentUpon>StockOpname.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="view\Supplier.xaml.cs">
+      <DependentUpon>Supplier.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -152,6 +170,18 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="view\BarangKeluar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="view\BarangMasuk.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="view\DetailKeluar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="view\KategoriBarang.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -177,6 +207,18 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="view\Rak.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="view\StockBarang.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="view\StockOpname.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="view\Supplier.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
